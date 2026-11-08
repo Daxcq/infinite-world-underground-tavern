@@ -1,0 +1,19 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 595.97 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+PASS: Autoload starts a looping stream
+PASS: Full track imported
+PASS: Default music volume is 40 percent
+AUDIO: driver=WASAPI, output_peak=0.211816
+PASS: Master output contains non-clipping music samples
+PASS: Music continues while paused
+PASS: Zero volume silences actual master output
+PASS: Slider changes music volume while paused
+PASS: First-person transition preserves music position
+PASS: Seated pause menu fits (960, 600)
+PASS: Seated pause menu fits (1280, 800)
+PASS: Restart preserves the same player and playback position
+PASS: Restart preserves session music volume
+PASS: Restart creates no duplicate music players
+PASS: Track loops across its actual ending
+MUSIC: 14 checks, 0 failed
