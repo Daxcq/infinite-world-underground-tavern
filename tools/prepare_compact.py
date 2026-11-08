@@ -6,6 +6,7 @@ from pathlib import Path
 import json
 import re
 import shutil
+from PIL import Image
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / 'game'
@@ -54,6 +55,32 @@ verification.mkdir(exist_ok=True)
 (verification / '.gdignore').touch()
 # Verify using existing tests; these are excluded from the deliverable.
 shutil.copytree(SOURCE / 'tests', STAGE / 'tests', dirs_exist_ok=True)
+# Lossless WebP preserves dimensions and all RGBA pixels.
+texture_names = {}
+for relative in copied:
+    if relative.suffix != '.png':
+        continue
+    original = STAGE / relative
+    compact = original.with_suffix('.webp')
+    with Image.open(original) as image:
+        image.save(compact, 'WEBP', lossless=True, exact=True, method=6)
+        with Image.open(compact) as decoded:
+            assert image.convert('RGBA').tobytes() == decoded.convert('RGBA').tobytes()
+    metadata = Path(str(original) + '.import')
+    if metadata.exists():
+        text = metadata.read_text(encoding='utf-8').replace(original.name, compact.name)
+        Path(str(compact) + '.import').write_text(text, encoding='utf-8')
+        metadata.unlink()
+    original.unlink()
+    texture_names[original.name] = compact.name
+for folder in ('scripts', 'scenes', 'tests'):
+    for path in (STAGE / folder).rglob('*'):
+        if path.suffix not in ('.gd', '.tscn'):
+            continue
+        text = path.read_text(encoding='utf-8-sig')
+        for original, compact in texture_names.items():
+            text = text.replace(original, compact)
+        path.write_text(text, encoding='utf-8')
 manifest = {'models': sorted(models), 'files': len(copied),
             'source_bytes': sum((SOURCE / p).stat().st_size for p in copied)}
 (STAGE.parent / 'manifest.json').write_text(json.dumps(manifest, indent=2), encoding='utf-8')

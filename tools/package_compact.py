@@ -26,7 +26,8 @@ Esc 暂停，F11 全屏；赌桌内按住鼠标左键拖动环顾。
 
 本版保留原有玩法、七位可选 NPC、酒保及已有动画。
 3D 模型降低面数，角色/圆桌贴图缩至 1024，其他道具贴图缩至 512。
-原二维背景、人物图集与对白数据保持原样。近看精细纹饰会有所减少。
+二维背景与人物图集采用无损 WebP，像素与尺寸不变，画面不变。
+对白数据保持原样。近看精细纹饰会有所减少。
 不包含原始高模、编辑缓存、测试截图、历史美术素材或引擎。
 首次打开后 Godot 会生成 .godot 缓存，解压/导入后体积大于压缩包属正常。
 '''
@@ -43,7 +44,7 @@ def launcher(extra):
 
 files = sorted(p for p in STAGE.rglob('*') if p.is_file()
                and p.relative_to(STAGE).parts[0] in ('assets', 'scenes', 'scripts', 'data')
-               and p.suffix in ('.glb', '.png', '.jpg', '.gdshader', '.gd', '.tscn', '.json', '.import', '.uid'))
+               and p.suffix in ('.glb', '.png', '.webp', '.jpg', '.gdshader', '.gd', '.tscn', '.json', '.import', '.uid'))
 files.append(STAGE / 'project.godot')
 with zipfile.ZipFile(OUTPUT, 'w', zipfile.ZIP_DEFLATED, compresslevel=9) as archive:
     for path in files:
