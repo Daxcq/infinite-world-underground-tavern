@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#100e12">
+  <meta name="description" content="在雨夜的地下酒馆，完成合注、共渡与清桌，集齐三类钥匙碎片。Godot 网页试玩。">
+  <title>地下酒馆赌局 · 网页试玩</title>
+  
+  <style>
+    :root{color-scheme:dark;--ink:#100e12;--paper:#ede1cb;--muted:#b9aa98;--gold:#cfaa70;--line:#66513c;--wine:#612b36}
+    *{box-sizing:border-box}body{margin:0;background:var(--ink);color:var(--paper);font:16px/1.7 Georgia,"Noto Serif CJK SC","Songti SC",SimSun,serif;min-height:100vh}
+    body:before{content:"";position:fixed;inset:0;background:linear-gradient(90deg,rgba(12,9,13,.94),rgba(12,9,13,.55)),url('cover.webp') center/cover;z-index:-1}
+    a{color:var(--gold);text-underline-offset:5px}a:hover{color:var(--paper)}button{font:inherit;cursor:pointer}a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:6px}
+    header{max-width:1320px;margin:auto;padding:28px 40px;display:flex;align-items:center;justify-content:space-between;gap:24px;font:13px/1.5 Georgia,serif;letter-spacing:.12em}
+    .brand{display:flex;align-items:center;gap:14px;color:var(--gold)}.seal{border:1px solid var(--line);width:40px;height:48px;border-radius:50% 50% 0 0;display:grid;place-items:center;font-size:18px}
+    nav{display:flex;gap:24px;align-items:center}nav a{text-decoration:none}.game-tools{display:none}
+    main{min-height:calc(100vh - 160px);display:grid;place-items:center;padding:36px 24px 60px}
+    .entrance{width:min(640px,100%);text-align:center;padding:54px 36px 44px;position:relative;border:1px solid var(--line);border-top:0;background:linear-gradient(180deg,rgba(17,13,19,.4),rgba(17,13,19,.9));border-radius:46% 46% 3px 3px/70px 70px 3px 3px}
+    .entrance:before{content:"";position:absolute;inset:11px;pointer-events:none;border:1px solid #caa46722;border-radius:inherit}
+    .ornament{color:var(--gold);font-size:28px;margin:0 0 14px}.eyebrow{font:12px/1.7 Georgia,serif;letter-spacing:.27em;color:var(--gold)}
+    h1{font-size:clamp(36px,6vw,57px);font-weight:400;letter-spacing:.13em;line-height:1.4;margin:16px 0 22px}h1 span{display:block;font-size:15px;color:var(--muted);letter-spacing:.45em;margin-top:8px}
+    .intro{color:var(--muted);line-height:2;font-size:17px;margin:0 auto 28px;max-width:420px}.acts{display:flex;justify-content:center;gap:22px;color:var(--gold);font-size:14px;letter-spacing:.22em;margin-bottom:32px}.acts span+span:before{content:"◇";font-size:9px;margin-right:22px;color:var(--line)}
+    #play{min-width:230px;min-height:56px;border:1px solid var(--gold);color:var(--paper);background:var(--wine);letter-spacing:.2em;transition:background .2s,box-shadow .2s}#play:hover{background:#793544;box-shadow:0 0 30px #a859311c}#play:disabled{cursor:wait;background:#32252c}
+    #loading{margin:22px auto 0;max-width:340px}#progress{width:100%;height:3px;accent-color:var(--gold);display:block}#status{color:var(--muted);font:13px/1.8 system-ui,sans-serif;margin:12px 0 0;min-height:24px;white-space:pre-line}.help{font:13px/1.9 system-ui,sans-serif;color:var(--muted);margin-top:24px}.help strong{color:var(--paper);font-weight:400}.small-screen{display:none}
+    footer{padding:0 24px 24px;text-align:center;color:var(--muted);font:12px/1.8 system-ui,sans-serif}#canvas{display:none;outline:none}body.playing:before,body.playing main,body.playing footer{display:none}body.playing #canvas{display:block;position:fixed;inset:0;width:100%;height:100%;touch-action:none}body.playing header{position:fixed;bottom:12px;left:12px;padding:0;z-index:2;background:#100e12c9;border:1px solid #66513c80;font-size:12px;letter-spacing:0}body.playing .brand,body.playing .project-links{display:none}body.playing .game-tools{display:flex;gap:0}.game-tools button{color:var(--paper);background:none;border:0;padding:9px 14px;font:13px/1.4 system-ui,sans-serif;min-height:40px}.game-tools button:hover{background:#38262f}
+    @media(max-width:640px){header{padding:20px}.brand{font-size:11px}nav{gap:14px;letter-spacing:0}.entrance{padding:48px 22px 28px}main{padding-top:20px}.intro{font-size:15px}.small-screen{display:block;color:var(--gold)}.acts{gap:12px}.acts span+span:before{margin-right:12px}}
+    @media(prefers-reduced-motion:reduce){*{transition:none!important}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand"><span class="seal" aria-hidden="true">XX</span><span>第二十号世界<br>THE LAST TAVERN</span></div>
+    <nav class="project-links" aria-label="项目链接"><a href="https://github.com/Daxcq/infinite-world-underground-tavern">项目仓库</a><a href="https://github.com/Daxcq/infinite-world-underground-tavern/releases">下载工程</a></nav>
+    <nav class="game-tools" aria-label="试玩工具"><button id="home" type="button">返回封面</button><button id="fullscreen" type="button">全屏游玩</button></nav>
+  </header>
+  <main>
+    <section class="entrance" aria-labelledby="title">
+      <p class="ornament" aria-hidden="true">✦</p>
+      <div class="eyebrow">WORLD XX · BROWSER DEMO</div>
+      <h1 id="title">地下酒馆赌局<span>雨 夜 来 客</span></h1>
+      <p class="intro">雨还在下。最后一盏灯，还没有熄。<br>推开这扇门，把信任与命运押上赌桌。</p>
+      <div class="acts"><span>合注</span><span>共渡</span><span>清桌</span></div>
+      <button id="play" type="button">推门试玩</button>
+      <div id="loading" hidden><progress id="progress" aria-label="游戏加载进度"></progress></div>
+      <p id="status" role="status" aria-live="polite">无需安装 · 建议使用电脑与耳机</p>
+      <p class="help"><strong>WASD / 方向键</strong> 移动　<strong>E</strong> 交互　<strong>Enter</strong> 确认<br><strong>Esc</strong> 暂停　赌桌内拖动鼠标环顾<span class="small-screen">本试玩需要键盘，建议在电脑浏览器中打开。</span></p>
+    </section>
+  </main>
+  <footer>开发中试玩 · 三类碎片集齐，方可离开。<br><a href="font-license.txt">字体许可</a> · <a href="https://godotengine.org/license/">Godot Engine</a></footer>
+  <canvas id="canvas" tabindex="0" aria-label="地下酒馆赌局游戏画面">当前浏览器不支持游戏画布，请使用新版 Chrome、Edge 或 Firefox。</canvas>
+  <noscript>试玩需要启用 JavaScript。</noscript>
+  <script src="index.js"></script>
+  <script>
+    const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"emscriptenPoolSize":8,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":46495668,"index.wasm":39514754},"focusCanvas":true,"gdextensionLibs":[],"godotPoolSize":4};
+    const engine = new Engine(GODOT_CONFIG);
+    const play = document.getElementById('play');
+    const status = document.getElementById('status');
+    const progress = document.getElementById('progress');
+    document.getElementById('home').onclick = () => { if (confirm('返回封面会结束本次试玩，确定返回？')) location.reload(); };
+    document.getElementById('fullscreen').onclick = () => {
+      const action = document.fullscreenElement ? document.exitFullscreen() : document.documentElement.requestFullscreen();
+      action.catch(() => { document.getElementById('fullscreen').textContent = '浏览器暂不支持全屏'; });
+    };
+    document.addEventListener('fullscreenchange', () => { document.getElementById('fullscreen').textContent = document.fullscreenElement ? '退出全屏' : '全屏游玩'; });
+    play.onclick = async () => {
+      play.disabled = true;
+      play.textContent = '正在叩门…';
+      document.getElementById('loading').hidden = false;
+      const missing = Engine.getMissingFeatures({ threads: false });
+      try {
+        if (missing.length) throw new Error('浏览器缺少运行支持：' + missing.join('、') + '。请尝试新版 Chrome、Edge 或 Firefox。');
+        await engine.startGame({
+          onProgress(current, total) {
+            if (total > 0) {
+              progress.max = total; progress.value = current;
+              status.textContent = current < total ? `正在加载酒馆… ${Math.floor(current / total * 100)}%` : '烛火将明，正在布置赌桌…';
+            } else status.textContent = '正在加载酒馆，请稍候…';
+          },
+          onExit() { location.reload(); }
+        });
+        document.body.classList.add('playing');
+        document.body.dataset.gameState = 'running';
+        document.getElementById('canvas').focus();
+      } catch (error) {
+        console.error(error);
+        document.body.dataset.gameState = 'failed';
+        status.textContent = '酒馆暂未开启。\n' + (error.message || String(error));
+        play.disabled = false; play.textContent = '重新加载';
+        play.onclick = () => location.reload();
+      }
+    };
+  </script>
+</body>
+</html>
+
