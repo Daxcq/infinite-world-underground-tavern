@@ -7,3 +7,10 @@ venv/
 !.env.example
 Thumbs.db
 .DS_Store
+
+# Generated builds and downloaded toolchains
+/build/
+
+# Godot generated data
+game/.godot/
+game/.mono/

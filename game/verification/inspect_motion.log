@@ -1,0 +1,7 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ANIMATION_PLAYER AnimationPlayer clips ["idle", "seated", "walk"]
+CLIP idle length 0.83333331346512 first_track Armature/Skeleton3D:BoneRoot
+CLIP seated length 0.83333331346512 first_track Armature/Skeleton3D:BoneRoot
+CLIP walk length 0.83333331346512 first_track Armature/Skeleton3D:BoneRoot
+SKELETON Armature/Skeleton3D bones 59

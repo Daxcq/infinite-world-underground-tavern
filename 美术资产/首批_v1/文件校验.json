@@ -1,0 +1,299 @@
+{
+  "scope": "PNG解码、尺寸、真实透明通道、提示词与索引链接存在性、文件哈希；不代表已切帧或已通过Godot验收",
+  "selected": 17,
+  "candidate": 3,
+  "selected_with_alpha": 12,
+  "files": [
+    {
+      "file": "01_场景背景/现实酒馆_无人物底图.png",
+      "status": "selected",
+      "size": [
+        971,
+        1620
+      ],
+      "mode": "RGB",
+      "sha256": "4ee62412e9deccdc12e1c89f6dd838ef502c93637a85a9dd66430077aa0ecf53"
+    },
+    {
+      "file": "01_场景背景/虚幻赌局_无人物无桌椅底图.png",
+      "status": "selected",
+      "size": [
+        971,
+        1619
+      ],
+      "mode": "RGB",
+      "sha256": "9c0570461285f07ab3b1056b0d7dc8df70202b93f2134e7d3deb8a8a607d2c14"
+    },
+    {
+      "file": "02_家具摆件/酒馆家具_透明图集.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "2d5d781261a81feaa6c59af3bfcb93fe6f47041127ee5cc56d72ecddc56b38f5",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 69.07,
+      "subject_percent": 28.27
+    },
+    {
+      "file": "02_家具摆件/黑金赌桌与三向座椅_透明图集.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "d8f7509ed2be6e3e70d3cfd59d00ec33e3f5f06b120e2e531fd2d1be84544483",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 72.39,
+      "subject_percent": 25.1
+    },
+    {
+      "file": "03_核心角色/主角_六姿态透明图集.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "09e33b74a238f78a56ba3f97b56a3241fbbf0a41553f20b5f80d4904b362f3d0",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 74.0,
+      "subject_percent": 23.27
+    },
+    {
+      "file": "03_核心角色/算计者NPC_六姿态透明图集.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "0694547e59c39a4ba573378caa66266d2a0a028dcb9b36da978aae0d5f009fd5",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 73.54,
+      "subject_percent": 23.68
+    },
+    {
+      "file": "03_核心角色/面具荷官_六姿态透明图集.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "27e1ffcd0c6a06b5dbb710cf066826de69a545fb6a40bfa494b198cb28e98aa2",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 63.96,
+      "subject_percent": 30.26
+    },
+    {
+      "file": "03_核心角色/面具荷官_全身六姿态透明图集.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "3b984c4e9e6550faa758c4c681a8995b2be045b17c1a519c31d44ac75f839ec4",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 77.17,
+      "subject_percent": 18.64
+    },
+    {
+      "file": "04_环境NPC/现实酒客_六人透明图集.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "2f9e07610ae557e1718a65ff1760f9d729332171c3171f5c6556a3e2ef4c7e78",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 56.07,
+      "subject_percent": 40.42
+    },
+    {
+      "file": "04_环境NPC/权贵观众_八人透明图集.png",
+      "status": "selected",
+      "size": [
+        1774,
+        887
+      ],
+      "mode": "RGBA",
+      "sha256": "6657992231d26fc95c0b61ac129d1fd8a48799c35b4662dca76238ede0ed0f32",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "fully_transparent_percent": 63.8,
+      "subject_percent": 32.44
+    },
+    {
+      "file": "05_赌具道具/骰子筹码赌具_十二格透明图集.png",
+      "status": "selected",
+      "size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "sha256": "a1e63484078d398b7ff0269e4898a6803fd538b349a52c12bdf56f9425d06073",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "fully_transparent_percent": 62.52,
+      "subject_percent": 33.36
+    },
+    {
+      "file": "06_进度与技能图标/命筹钥匙与技能_十二格透明图集.png",
+      "status": "selected",
+      "size": [
+        1448,
+        1086
+      ],
+      "mode": "RGBA",
+      "sha256": "5da20ec2780b5f5e6aed4d6606417e3403776169020a66d772d4bd1104e112db",
+      "alpha_range": [
+        0,
+        255
+      ],
+      "fully_transparent_percent": 53.49,
+      "subject_percent": 35.47
+    },
+    {
+      "file": "07_界面组件/黑金暗红UI_透明组件图集.png",
+      "status": "candidate",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "87f345ec258b4280d686b7a8852d35e422576a9f505198dbf6390a0e1da213e2",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 53.74,
+      "subject_percent": 40.27
+    },
+    {
+      "file": "07_界面组件/黑金暗红UI_空白组件图集_v2.png",
+      "status": "candidate",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "fe7e51dfbff9067a2906a6a7784408d456dfedd2a177e37fe7091ecec1fd5a3d",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 11.43,
+      "subject_percent": 40.02
+    },
+    {
+      "file": "08_演出特效/暗投器官与钥匙_九格透明特效.png",
+      "status": "candidate",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "d9c6cc0aa507afdd776a30d5fff513478f0ca7d01f392473648dc01c9516830a",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 13.99,
+      "subject_percent": 19.49
+    },
+    {
+      "file": "09_转场与结局/忘情酒_酒面开门转场.png",
+      "status": "selected",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "9b43c1f5fd07a482000bf5613ba7e9cd940586481a649084e4225fef8b0825c9"
+    },
+    {
+      "file": "09_转场与结局/通关_雨夜开门.png",
+      "status": "selected",
+      "size": [
+        971,
+        1619
+      ],
+      "mode": "RGB",
+      "sha256": "3db16a37d72ae7358ce7b9580fecea7caa6e76358521dafc1846aba04c8a46f3"
+    },
+    {
+      "file": "09_转场与结局/失败_面具接班.png",
+      "status": "selected",
+      "size": [
+        1672,
+        941
+      ],
+      "mode": "RGB",
+      "sha256": "57cb10ad62612fbbd1f93b810bc2d3c75a5b2dc99568e78a064663909b7035ad"
+    },
+    {
+      "file": "07_界面组件/黑金暗红UI_纯透明组件图集_v3.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "21345446a753aa77cc5fa1a79899f110703c15bb136ea724a733e8abc3302d24",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 53.56,
+      "subject_percent": 41.38
+    },
+    {
+      "file": "08_演出特效/暗投器官与钥匙_纯透明特效_v2.png",
+      "status": "selected",
+      "size": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "sha256": "263a9cf2e2569949d1da326280fdb7c226cd219309ea009851f2744a72642882",
+      "alpha_range": [
+        0,
+        254
+      ],
+      "fully_transparent_percent": 65.95,
+      "subject_percent": 20.98
+    }
+  ],
+  "reference_images": 2
+}

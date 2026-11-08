@@ -1,0 +1,58 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Exploration player uses actual walking frames
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:24)
+ERROR: Walking advances limb frames: move_down
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:36)
+ERROR: Animation keeps the collision/sort anchor fixed: move_down
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:38)
+ERROR: Walking advances limb frames: move_up
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:36)
+ERROR: Stopping selects a still idle frame: move_up
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:37)
+ERROR: Walking advances limb frames: move_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:36)
+ERROR: Animation keeps the collision/sort anchor fixed: move_left
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:38)
+ERROR: Walking advances limb frames: move_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:36)
+ERROR: Animation keeps the collision/sort anchor fixed: move_right
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:38)
+ERROR: Table character has authored seated animation: AdventurerLeft
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:43)
+ERROR: Table character has authored seated animation: AdventurerRight
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/animation_regression.gd:15)
+       [1] run (res://tests/animation_regression.gd:43)
+ANIMATION: 15 checks, 11 failures

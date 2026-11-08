@@ -1,0 +1,38 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+ERROR: Visible boots must align with collision/sorting origin for pose 0
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/geometry_regression.gd:15)
+       [1] run (res://tests/geometry_regression.gd:29)
+ERROR: Visible boots must align with collision/sorting origin for pose 1
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/geometry_regression.gd:15)
+       [1] run (res://tests/geometry_regression.gd:29)
+ERROR: Seated card must not rotate through table while camera turns
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/geometry_regression.gd:15)
+       [1] run (res://tests/geometry_regression.gd:36)
+ERROR: Seated boots must reach floor, rather than float at chair-seat height
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/geometry_regression.gd:15)
+       [1] run (res://tests/geometry_regression.gd:42)
+ERROR: Seated card must not rotate through table while camera turns
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/geometry_regression.gd:15)
+       [1] run (res://tests/geometry_regression.gd:36)
+ERROR: Seated character plane must clear the table rim
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/geometry_regression.gd:15)
+       [1] run (res://tests/geometry_regression.gd:39)
+ERROR: Seated boots must reach floor, rather than float at chair-seat height
+   at: push_error (core/variant/variant_utility.cpp:1023)
+   GDScript backtrace (most recent call first):
+       [0] check (res://tests/geometry_regression.gd:15)
+       [1] run (res://tests/geometry_regression.gd:42)
+GEOMETRY: 9 checks, 7 failures

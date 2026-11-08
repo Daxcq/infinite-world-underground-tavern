@@ -1,0 +1,115 @@
+{
+  "created_on": "2026-11-08",
+  "purpose": "Tripo image-to-3D reference inputs for the approved hybrid 2D exploration / first-person 3D tabletop game",
+  "status": "reference_images_visually_checked; generated_meshes_and_rigs_not_yet_available",
+  "generation_tool": "built-in image_gen",
+  "visual_target": "Existing approved sprites: restrained semi-realistic painted materials; ivory shirt and white mask dealer; olive/brown/gold companion; burgundy/ebony/brass round table. Single subject per image, neutral background, readable geometry.",
+  "scope": "Three separate model-generation tasks. Characters are in standing A-pose for later rigging and seated animation. No scene or full tavern generation.",
+  "assets": [
+    {
+      "id": "dealer",
+      "file": "01_面具荷官_A姿势_单体建模参考.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-bbc3857f-5e68-4130-836e-144b2bbe45e1.png",
+      "references": [
+        "美术资产/首批_v1/03_核心角色/面具荷官_全身六姿态透明图集.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: ONE image-to-3D input reference for a humanoid game model, not a sprite sheet.\nInput image 1 is the identity and costume reference for the masked dealer in the game's approved artwork. It contains multiple poses; use those only to understand the SAME character. Produce exactly ONE character in the output, one front view.\nPrimary request: reconstruct this dealer as a clean isolated full-body, straight-on front-facing neutral A-pose modeling reference, from the top of his hair to the soles of both shoes. Preserve his slim adult male proportions, softly waved side-parted brown hair, plain white porcelain full-face mask with small dark eye apertures and restrained nose shape, cream long-sleeved shirt, very dark brown fitted waistcoat with brass buttons, dark necktie, dark tailored trousers and worn dark leather shoes. Mask must be expressionless, uncracked, opaque, no mouth grin. Keep the ivory shirt sleeves rolled neatly to the forearms as in the reference. Keep costume practical and restrained. Remove the pocket-watch chain so it does not form floating geometry.\nPose and geometry readability: stand upright, legs straight and slightly apart, both feet pointing forward, arms symmetrically angled 30 degrees out from torso, elbows straight, both empty hands fully visible with anatomically correct distinct fingers relaxed and slightly separated, palms facing forward. No hands touching the body. Clothing follows body, no loose cape.\nView: near-orthographic eye-level front view with minimal perspective, not top-down. One full-length figure centered with at least 8% clean margin all around, portrait 2:3 composition. Hair, fingers, and both shoes completely in frame.\nStyle/medium: high-quality sculptural game-character concept, restrained semi-realistic hand-painted material finish matching the project's worn wood / muted cloth / old brass world; readable volumetric anatomy and garment construction, not glossy plastic and not a photograph. Crisp silhouette and clear material boundaries, moderate detail.\nBackground and light: perfectly plain light neutral gray studio background, flat soft balanced lighting on all sides. No vignette, dramatic shadows, glow, floor plane, platform or environment. No cast shadow.\nStrict exclusions: no chair, table, dice, cup, coins, cloth in hand, extra props, text, labels, measurements, watermark, grid, turnaround sheet, second character or duplicate view. This is an unrigged visual reference; do not draw bones or skeleton guides.",
+      "tripo_prompt": "A single slim adult male masked dealer, full-body neutral A-pose. Preserve the reference identity, wavy brown hair, plain white porcelain full-face mask, cream rolled-sleeve shirt, dark brown waistcoat, dark tie, dark trousers and leather shoes. Empty hands with separate fingers, separate legs, complete front and back anatomy, connected clothing, no table or props. Semi-realistic hand-painted game materials, no environment or ground plane.",
+      "target_model_filename": "dealer.glb",
+      "intended_height_m": 1.82,
+      "rig": "humanoid rig required later; verify fingers, shoulders, elbows and knees",
+      "animation_states_required_later": [
+        "seated_idle",
+        "push_dice_cup",
+        "push_chips",
+        "raise_hand_to_mask"
+      ],
+      "pivot": "ground between feet; normalize in Blender/Godot after generation",
+      "collision_role": "simple interaction proxy in Godot, not detailed render mesh",
+      "license_note": "AI-generated project reference using existing project artwork. No external 3D asset purchased; generated mesh provider terms must be recorded with the returned model.",
+      "image_dimensions_px": [
+        1024,
+        1536
+      ],
+      "image_mode": "RGB",
+      "sha256": "3cfb382c65e5e5aec7a64e083bb1b4d22fceaf635b70ad8c20cf2fabbf6b5507",
+      "bytes": 1558054,
+      "visual_checks": [
+        "one subject",
+        "complete silhouette",
+        "no labels or extra views",
+        "clear model-input pose/view",
+        "matches existing identity or approved furniture style"
+      ]
+    },
+    {
+      "id": "npc",
+      "file": "02_算计者NPC_A姿势_单体建模参考.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-5801ffa9-15f7-4d18-8303-c9a521599d4a.png",
+      "references": [
+        "美术资产/首批_v1/03_核心角色/算计者NPC_六姿态透明图集.png",
+        "美术资产/Tripo建模输入包_v1/01_面具荷官_A姿势_单体建模参考.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: ONE image-to-3D input reference for a humanoid game model.\nInput image 1 is the approved identity and costume reference of the calculating companion NPC. It is a six-pose sheet of the SAME person; do not reproduce the sheet. Produce exactly ONE character, one front view. Input image 2, if provided, is only the newly approved dealer reference for consistent framing and painted-game material finish, never a second subject.\nPrimary request: a clean isolated full-body straight-on neutral A-pose of this adult male calculating companion. Preserve his wavy short-to-medium brown hair, angular clean-shaven face, watchful eyes, muted dark olive-green weathered long coat with modest aged gold embroidered edging at collar and shoulders, brown waistcoat and shirt, dark brown trousers, and worn brown leather boots. An ordinary wary tavern guest, not a noble, wizard or superhero. The coat falls to around the knees with its front clearly open, a simple split hem and sleeves following arms. Keep all garment elements attached naturally; no detached cape, scarf, loose straps or excessive jewelry.\nPose and visibility: stand straight facing the camera, both legs straight slightly apart, feet forward, arms symmetrically extended 30 degrees down from the torso in A-pose, elbows straight. Both hands empty, palms forward, correct human anatomy with all fingers relaxed and slightly separated. No gesture, no bent seated legs. Neutral expression with only a subtle calculating gaze.\nView: near-orthographic eye-level front view, minimal perspective, head-to-shoes full-body portrait 2:3, centered, 8% clear margin on every side. Clear separation between hands, arms and torso and between both legs. No cropping.\nStyle: sculptural semi-realistic hand-painted game character with believable material volume and cloth/leather construction. Match the approved game's subdued green/brown/old-gold palette, not anime, chibi, pixel art, shiny plastic or photography.\nLighting/background: perfectly plain light neutral gray background, even soft diffuse studio illumination, readable dark clothing, no dramatic shadows, vignette, platform, floor plane or cast shadow.\nExclude: props in hands, table, chair, dice, coins, other people, extra views, pose sheet, labels, text, numbers, watermarks, anatomy diagrams, skeleton overlay.",
+      "tripo_prompt": "A single adult male companion, full-body neutral A-pose. Preserve the reference face, wavy brown hair, weathered olive-green knee-length open coat with restrained antique-gold embroidery, brown waistcoat, trousers and leather boots. Empty hands with separate fingers, clear leg separation. Complete back, no detached cape, no props, no chair. Semi-realistic hand-painted game materials. Preserve coat openings so the legs can bend for later seated animation.",
+      "target_model_filename": "companion.glb",
+      "intended_height_m": 1.78,
+      "rig": "humanoid rig required later; verify coat deformation when seated",
+      "animation_states_required_later": [
+        "seated_idle",
+        "speak_open_hand",
+        "conceal_resource",
+        "offer_die"
+      ],
+      "pivot": "ground between feet; normalize in Blender/Godot after generation",
+      "collision_role": "simple interaction proxy in Godot",
+      "license_note": "AI-generated project reference using existing project artwork. No external 3D asset purchased; generated mesh provider terms must be recorded with the returned model.",
+      "image_dimensions_px": [
+        1024,
+        1536
+      ],
+      "image_mode": "RGB",
+      "sha256": "934df8c59f16a27b9d7a9f0c1c5b2e7fffd7b4056e329bcc7cec1a9c52c87e8a",
+      "bytes": 1565885,
+      "visual_checks": [
+        "one subject",
+        "complete silhouette",
+        "no labels or extra views",
+        "clear model-input pose/view",
+        "matches existing identity or approved furniture style"
+      ]
+    },
+    {
+      "id": "table",
+      "file": "03_黑金红绒赌桌_单体建模参考.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-dcb555e4-bb0b-4be7-a03e-58ad8c250b3b.png",
+      "references": [
+        "美术资产/首批_v1/02_家具摆件/黑金赌桌与三向座椅_透明图集.png"
+      ],
+      "generation_prompt": "Use case: precise-object-edit.\nAsset type: ONE isolated furniture image for image-to-3D reconstruction.\nInput image 1 is the approved furniture style sheet. Use ONLY the circular dark red tabletop from its upper-left cell as the identity/style reference. Ignore every chair, lamp, tray, grid and background in the input. Derive the missing table support simply and coherently.\nPrimary request: exactly ONE complete free-standing round gambling table, presented as a clean three-quarter furniture product/model reference. Preserve the circular deep wine-red velvet playing surface, sturdy near-black aged wooden rim, restrained antique brass edge bands, brass studs and modest carved floral rim accents. The large central playing surface must be perfectly empty, flat, unmarked and unobstructed. No casino markings, printed numbers, compartments or props.\nConstruction: show the complete circular tabletop thickness, a single robust dark carved wooden central pedestal underneath, and a stable broad three-footed wooden base as parts of ONE connected table. Feet simple and solid, no thin fragile ornament. Approximate intended proportions: round tabletop diameter 1.6 m, height 0.76 m; this is only a proportion guide, do not print dimensions. Leave knee space under the rim for three seated people. Under-table support dark wood with small restrained antique brass accents; no other furniture.\nView/framing: single 3/4 front view from a moderately elevated camera around 20 degrees above tabletop level, long-lens minimal distortion, enough surface visible to read the round tabletop and enough low-angle visibility to see the full pedestal and base. Complete table and all feet inside the frame, centered, 10% clear margin, square composition. Do not use a straight overhead view, not a sheet of views.\nStyle: high-quality semi-realistic hand-painted 3D-game furniture reference with clear readable volumes, coherent muted burgundy / ebony wood / old brass materials, matching the original artwork. No photoreal casino glamour or plastic.\nLighting/background: perfectly plain light neutral gray studio background, soft neutral diffuse illumination, no baked dramatic highlights, no floor plane, no cast shadow, no glow, no vignette.\nExclude: all people, chairs, dice, chips, cups, lamps, trays, other tables, duplicate views, grid, labels, lettering, numbers, watermark, floating disconnected parts.",
+      "tripo_prompt": "One complete round gambling table, diameter-to-height proportions approximately 1.60 m to 0.76 m. Flat empty deep burgundy velvet tabletop, thick dark aged wooden rim with restrained antique brass bands and carved accents. One connected central dark wooden pedestal and broad stable three-foot base. Round top must remain flat and circular. Complete underside and support geometry. No chairs, people, dice, chips, markings, floating parts, background or floor plane. Semi-realistic painted game materials.",
+      "target_model_filename": "gambling-table.glb",
+      "intended_diameter_m": 1.6,
+      "intended_height_m": 0.76,
+      "rig": "none; static furniture",
+      "animation_states_required_later": [],
+      "pivot": "base center at ground; flat tabletop height 0.76 m after normalization",
+      "collision_role": "simple static collider and separate interaction zones created in Godot",
+      "license_note": "AI-generated project reference; table support newly derived from the approved tabletop design. Generated mesh provider terms must be recorded with the returned model.",
+      "image_dimensions_px": [
+        1254,
+        1254
+      ],
+      "image_mode": "RGB",
+      "sha256": "52d763042b407c3c63eb89db674668da583c8d861588b787e77c9a32bdfdb782",
+      "bytes": 1922234,
+      "visual_checks": [
+        "one subject",
+        "complete silhouette",
+        "no labels or extra views",
+        "clear model-input pose/view",
+        "matches existing identity or approved furniture style"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+{
+  "ok": true,
+  "single_object_reference_count": 16,
+  "background": "不透明浅灰背景",
+  "model_validation": "未生成3D网格；背面、UV、材质、碰撞与引擎效果待模型阶段检查",
+  "images": [
+    {
+      "id": "01",
+      "file": "01_象牙白六面骰.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1720967,
+      "sha256": "6e0a44a44cdacb0d679661d6595097f2d1b611f28e52b2907db6e183cfbfe593",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "02",
+      "file": "02_暗红筹码_单枚.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1782285,
+      "sha256": "3714c07433f4c036f47c91ecdba7c948718afd17a9f4312e01ea771fb2e3fa83",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "03",
+      "file": "03_黑色筹码_单枚.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1708369,
+      "sha256": "3f756b1ce4a1341d737c91a7eb90dc08e45cc02b5b8170fb2879545837c1386c",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "04",
+      "file": "04_旧金筹码_单枚.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1753017,
+      "sha256": "9423a217b2ad18905bb45b58bf90885e2f4e6d9392cf1a18f66f0179331f4cb6",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "05",
+      "file": "05_黄铜浅托盘.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1828707,
+      "sha256": "1c9ccbf0804691e6625e27ddd23d4f271a20b4f81cbb14d0867c3fbc95652974",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "06",
+      "file": "06_眼之封印骰.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1725474,
+      "sha256": "8db71290623f7e6a866d330f2c779a1c734b6bcd548e7f21c7b9c33c61879b60",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "07",
+      "file": "07_手之封印骰.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1932164,
+      "sha256": "9b60e9728654cb1cb80570e1fee42d600285d0f1e5311c56da917d573d29573c",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "08",
+      "file": "08_心之封印骰.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1763235,
+      "sha256": "0a56bf4caae03038fad610370e30e2b46662b7086f2a3d40aefc79c96c380dcb",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "09",
+      "file": "09_改面骰_黄铜道具.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1979440,
+      "sha256": "b906f3ed8f92c7f336322ce83d00869c38e6c7ec30634ee558042dc235f03047",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "10",
+      "file": "10_窥牌眼_黄铜镜片.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1812417,
+      "sha256": "99aba58fafd6969bfd79129635c55b67019c527711166cb2719ab007c29dd668",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "11",
+      "file": "11_20号黄铜钥匙_完整.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1518606,
+      "sha256": "7d3ad0e83db4b05597d1640fc20dc8fe800ebc96be61f0c75853536f612e3563",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "12",
+      "file": "12_钥匙碎片_环头.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1861904,
+      "sha256": "4dc78e1d4f42cec334c40db31b7efba73a7034441148a9c59c1c1092c11ae36f",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "13",
+      "file": "13_钥匙碎片_中段.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1535488,
+      "sha256": "b8a60fd1c3c6352dbc41b4392cb3a128ee8b2aebbb9f51aeec218a172b0bbc3c",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "14",
+      "file": "14_钥匙碎片_齿部.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1748151,
+      "sha256": "5f7fac06e2d7984377a46b8a8bb4828284887422e5ef9f8a0c91d574ca3b1511",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "15",
+      "file": "15_忘情酒杯.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1714414,
+      "sha256": "52b0672c11671766cc8f44d428661a2819246c8e0a74b82fbbe216882566f432",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    },
+    {
+      "id": "16",
+      "file": "16_新版荷官面具.png",
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB",
+      "bytes": 1682956,
+      "sha256": "c258ebde68ed7925f23c3640c2a31e562376c3413b5af19c372e761a379f0bee",
+      "decode_ok": true,
+      "visual_review": "已查看生成结果：单主体、完整轮廓、灰底、对应身份和符号"
+    }
+  ]
+}

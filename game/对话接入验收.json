@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-08",
+  "godot": "4.7.2.stable.mono.official.ed1daf0bf",
+  "scope": "Playable three-person main path and defined responsibility branches; incomplete branches explicitly stop",
+  "source_nodes": 59,
+  "source_transition_contracts": "all match",
+  "runtime_text_adaptations": [
+    "N00",
+    "N01",
+    "N02"
+  ],
+  "test_results": [
+    {
+      "log": "verification/dialogue_flow_test.log",
+      "checks": 229,
+      "failures": 0,
+      "script_errors": 0
+    },
+    {
+      "log": "verification/dialogue_integration.log",
+      "checks": 97,
+      "failures": 0,
+      "script_errors": 0
+    },
+    {
+      "log": "verification/playtest_dialogue_integration.log",
+      "checks": 47,
+      "failures": 0,
+      "script_errors": 0
+    },
+    {
+      "log": "verification/geometry_dialogue_regression.log",
+      "checks": 59,
+      "failures": 0,
+      "script_errors": 0
+    },
+    {
+      "log": "verification/animation_dialogue_regression.log",
+      "checks": 21,
+      "failures": 0,
+      "script_errors": 0
+    }
+  ],
+  "total_checks": 453,
+  "render_sizes": [
+    "960x600",
+    "1280x800",
+    "1600x900"
+  ],
+  "pending": [
+    "bill exit",
+    "simultaneous final dice destruction",
+    "dual betrayal reward priority",
+    "pool-failure continuation",
+    "formal solo hand source",
+    "change-die range",
+    "tutorial prize amount"
+  ],
+  "sha256": {
+    "game/scripts/dialogue_flow.gd": "dda1fd8baa831bf41a2afae9ba5f6ae1c066edae8b2e90794df7fc1deb3ac8ed",
+    "game/scripts/main.gd": "9750441a3f4b97005212ff81892dcc4531bc055281c497c5a3e412582a4eee8e",
+    "game/scripts/game_ui.gd": "328751a55402d3cf2997d60fb229ac4b6a0e279490142401c6f03e35d6c95659",
+    "game/scripts/table_view.gd": "3b36192d89b24936bf8e9c299132e9c7edd56fc813fa7d078f899ab8f3d819f8",
+    "game/scripts/underground_table.gd": "595a3e977d8fe65854336398bcce5c9c6345c1ee4005458def36965728d8f9ca",
+    "game/data/dialogue_v2.json": "42c532de03050a6c5d196058831e03fc569749924444e3c8eb54f7bdef76b1c2",
+    "game/data/playtest_balance.json": "328671272b1f925ee6427ca153f6b1c713938287f0ec47b151ab56b1e07730fb"
+  }
+}

@@ -1,0 +1,15 @@
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+16:16:41 | INFO: Data are loaded, start creating Blender stuff
+16:16:41 | INFO: Blender create Mesh node meshes[0]
+16:16:43 | INFO: glTF import finished in 2.40s
+BODY 122744 203065
+00:20.453  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\landmarks_front.png'
+00:21.875  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\landmarks_side.png'
+00:23.640  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\landmarks_back.png'
+Info: No new files have been packed
+Info: Saved as "prepared.blend"
+PREPARED_DEALER
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

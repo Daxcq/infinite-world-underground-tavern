@@ -1,0 +1,42 @@
+{
+  "verifiedAt": "2026-11-08",
+  "scope": "HTML fixed-sample design preview only; not Godot gameplay",
+  "engine": "installed Edge via Playwright, headless",
+  "checks": [
+    "Confirm dialog defaults to cancel; cancelling does not commit stakes.",
+    "Repeated stake win awards only one fragment type.",
+    "All-in pool result is 11 + 4 = 15, with no reserve die.",
+    "Empty reserve shows unpriced dummy as unavailable and offers explicit surrender confirmation.",
+    "Three distinct fragment types unlock the escape ending.",
+    "Pool failure displays its actual total; three losses consume eye, hand, heart once, with no fourth loss.",
+    "Keyboard selection, Enter confirmation, Escape cancellation work.",
+    "No horizontal overflow in six key scenes at 1600x900, 1280x800, 960x600, 390x844."
+  ],
+  "layouts": [
+    {
+      "width": 1600,
+      "height": 900,
+      "horizontalOverflow": false,
+      "checkedScenes": 6
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "horizontalOverflow": false,
+      "checkedScenes": 6
+    },
+    {
+      "width": 960,
+      "height": 600,
+      "horizontalOverflow": false,
+      "checkedScenes": 6
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "horizontalOverflow": false,
+      "checkedScenes": 6
+    }
+  ],
+  "runtimeErrors": []
+}

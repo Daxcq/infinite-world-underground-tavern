@@ -1,0 +1,28 @@
+00:00.672  blend            | Read blend: "D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\prepared.blend"
+BlenderMCP addon registered
+AUTHORED idle
+AUTHORED gesture
+AUTHORED seated
+AUTHORED bend_test
+INFO Draco is available, use library at D:\Blender\blender-5.2.1-windows-x64\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at D:\Blender\blender-5.2.1-windows-x64\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+16:30:15 | INFO: Starting glTF 2.0 export
+16:30:15 | INFO: Extracting primitive: meshes[0]
+16:30:16 | INFO: Primitives created: 1
+16:30:17 | INFO: Finished glTF 2.0 export in 2.134404182434082 s
+00:08.734  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\rig_idle.png'
+
+RENDERED idle
+00:11.125  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\rig_gesture.png'
+RENDERED gesture
+00:13.438  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\rig_seated.png'
+RENDERED seated
+00:15.719  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\dealer_rig\rig_bend_test.png'
+RENDERED bend_test
+Info: No new files have been packed
+Info: Saved as "荷官_绑骨与动作样例.blend"
+DEALER_RIG_COMPLETE {"bones": 28, "deform_bones": 27, "vertices": 122744, "triangles": 203065, "weight_sum_min": 0.9999998211860657, "weight_sum_max": 1.000000238418579, "clips": ["idle", "gesture", "seated", "bend_test"], "finger_controls": false, "rig_rest_pose": "original posed mesh"}
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

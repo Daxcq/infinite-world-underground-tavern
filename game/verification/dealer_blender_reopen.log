@@ -1,0 +1,8 @@
+00:00.719  blend            | Read blend: "D:\无限世界地下酒馆和赌局\美术资产\荷官绑骨样例_v1\荷官_绑骨与动作样例.blend"
+BlenderMCP addon registered
+Info: Saved as "荷官_绑骨与动作样例.blend"
+REOPENED_SOURCE_OK {"bones": 28, "vertices": 122744, "weight_min": 0.999999827472493, "weight_max": 1.0000001817243174, "packed_images": 1, "actions": ["bend_test", "gesture", "idle", "seated"], "default_action": "gesture"}
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

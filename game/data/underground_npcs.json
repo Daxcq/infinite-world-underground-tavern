@@ -1,0 +1,9 @@
+[
+  {"id":"calculating","name":"落单的冒险者","kind":"CALCULATING","trait":"谨慎地谈论公平，目光始终留在筹码上","model":"res://assets/characters/motion/adventurer_motion.glb","animated":true},
+  {"id":"anubis","name":"阿努比斯","kind":"GENERIC","trait":"凝视骰面，尚未验证他的承诺","model":"res://assets/npcs/fantasy character 3d model(1).glb"},
+  {"id":"gas_doctor","name":"防毒面具医生","kind":"GENERIC","trait":"呼吸声隔着面具传来，真实出资仍不可见","model":"res://assets/npcs/gas mask doctor 3d model.glb"},
+  {"id":"masked_figure","name":"面具客","kind":"GENERIC","trait":"隐去姓名，等待有人邀请同桌","model":"res://assets/npcs/masked figure 3d model.glb"},
+  {"id":"masked_man","name":"秘骰面具人","kind":"GENERIC","trait":"手中握着红骰，尚未作出任何保证","model":"res://assets/npcs/masked_dealer_rigged.glb","animated":true},
+  {"id":"plague_doctor","name":"疫医","kind":"GENERIC","trait":"沉默地注视托盘，目的尚不明朗","model":"res://assets/npcs/plague doctor 3d model(1).glb"},
+  {"id":"puppet","name":"木偶","kind":"GENERIC","trait":"关节一动不动，等待赌局开始","model":"res://assets/npcs/puppet 3d model(1).glb"}
+]

@@ -1,0 +1,14 @@
+{
+  "profile": "用户于2026-11-08确认的独立试玩配置，非最终平衡",
+  "rescue_gold_amount": 40,
+  "formal_initial_chips": 100,
+  "formal_stake": 120,
+  "dummy_price": 10,
+  "gold_to_chip_ratio": 1,
+  "new_table_minimum": 60,
+  "peek_price": 25,
+  "change_price": 40,
+  "change_range": null,
+  "tutorial_reward_amount": null,
+  "solo_clear_hand_source": null
+}

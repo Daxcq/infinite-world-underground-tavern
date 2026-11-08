@@ -1,0 +1,15 @@
+00:01.297  blend            | Read blend: "D:\无限世界地下酒馆和赌局\美术资产\角色动作_v1\冒险者_行走与坐姿.blend"
+BlenderMCP addon registered
+MESH tripo_node_0359b944-ee57-4c9f-9690-fff976fa995c MODIFIERS [('Armature', 'ARMATURE', True, True)]
+GROUPS [(0, 'BoneRoot'), (1, 'Pelvis'), (2, 'L_Thigh'), (3, 'L_Calf'), (4, 'L_Foot'), (5, 'L_ToeBase'), (6, 'R_Thigh'), (7, 'R_Calf'), (8, 'R_Foot'), (9, 'R_ToeBase')]
+WEIGHTS [(0, [(0, 0.026940738782286644), (49, 3.9603417767430926e-10)]), (1, [(49, 3.5733110840282835e-43), (0, 4.0637655465419695e-44)]), (2, [(49, 3.5733110840282835e-43), (0, 3.363116314379561e-44)])]
+PARENT <bpy_struct, Object("Armature") at 0x000002D67535C120> matrix <Matrix 4x4 (1.0000, 0.0000, 0.0000, 0.0000)
+            (0.0000, 1.0000, 0.0000, 0.0000)
+            (0.0000, 0.0000, 1.0000, 0.0000)
+            (0.0000, 0.0000, 0.0000, 1.0000)>
+ARM <bpy_struct, Object("Armature") at 0x000002D67535C120> True False False
+DEFORM [('BoneRoot', True), ('Hip', True), ('Pelvis', True), ('L_Thigh', True), ('L_Calf', True), ('L_Foot', True), ('L_ToeBase', True), ('R_Thigh', True), ('R_Calf', True), ('R_Foot', True)]
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

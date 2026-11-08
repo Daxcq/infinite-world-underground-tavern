@@ -1,0 +1,50 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+
+PASS: Start screen blocks gameplay
+PASS: Movement disabled before entering
+PASS: Up arrow mapping
+PASS: Left arrow mapping
+PASS: Down arrow mapping
+PASS: Right arrow mapping
+PASS: Shift mapping
+PASS: F11 mapping
+PASS: Physics input actually moves player
+PASS: Diagonal movement has no speed advantage
+PASS: Key release stops movement
+PASS: Bar and stools block player
+PASS: Left wall blocks player
+PASS: Entrance boundary blocks leaving map
+PASS: Chair blocks walking through furniture
+PASS: Bartender approachable from aisle
+PASS: Nearby target has visible prompt
+PASS: Keyboard E opens nearby dialogue
+PASS: Dialogue locks movement
+PASS: Escape cancels dialogue without pausing
+PASS: Cancelling dialogue does not silently complete objective
+PASS: First confirm reveals typewriter text
+PASS: Completed conversation advances objective
+PASS: Controls restored after dialogue
+PASS: Dialogue panel closes
+PASS: Keyboard Escape pauses exploration
+PASS: Keyboard Escape resumes exploration
+PASS: Companion reachable without crossing table
+PASS: Companion conversation completes
+PASS: Seat is reachable from central aisle
+PASS: Declining seat leaves exploration intact
+PASS: Seat transition reaches first-person view
+PASS: Only table world visible when seated
+PASS: Seated player cannot walk
+PASS: Mouse look stays within seated observation limits
+PASS: Pause menu opens and pauses world
+PASS: Resume restores active state
+PASS: Leaving seat restores tavern
+PASS: Returning preserves safe player position
+PASS: Returning preserves progress and controls
+PASS: Interaction prompt returns after leaving seat
+PASS: Repeated seating keeps controls and progress valid
+PASS: Entrance-to-bar route unobstructed
+PASS: Bar-to-companion route unobstructed
+PASS: Companion-to-seat route unobstructed
+PASS: Restart clears progress and restores title
+PASS: Restart cannot leave the scene paused
+RESULT: 47 passed, 0 failed

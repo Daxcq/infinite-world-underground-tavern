@@ -1,0 +1,854 @@
+[gd_scene load_steps=73 format=3]
+
+[ext_resource type="Script" path="res://scripts/table_view.gd" id="controller"]
+
+[ext_resource type="PackedScene" path="res://assets/characters/motion/adventurer_motion.glb" id="1"]
+
+[ext_resource type="PackedScene" path="res://assets/characters/motion/adventurer_motion.glb" id="2"]
+
+[ext_resource type="PackedScene" path="res://assets/models/adventurer 3d model (3).glb" id="3"]
+
+[ext_resource type="PackedScene" path="res://assets/models/adventurer 3d model.glb" id="4"]
+
+[ext_resource type="PackedScene" path="res://assets/models/glass dice 3d model.glb" id="5"]
+
+[ext_resource type="PackedScene" path="res://assets/models/gold die 3d model.glb" id="6"]
+
+[ext_resource type="PackedScene" path="res://assets/models/golden poker chip 3d model.glb" id="7"]
+
+[ext_resource type="PackedScene" path="res://assets/models/heart dice 3d model.glb" id="8"]
+
+[ext_resource type="PackedScene" path="res://assets/models/ornate brass die 3d model.glb" id="9"]
+
+[ext_resource type="PackedScene" path="res://assets/models/ornate key 3d model.glb" id="10"]
+
+[ext_resource type="PackedScene" path="res://assets/models/poker chip 3d model (1).glb" id="11"]
+
+[ext_resource type="PackedScene" path="res://assets/models/poker chip 3d model.glb" id="12"]
+
+[ext_resource type="PackedScene" path="res://assets/models/round metal tray 3d model.glb" id="13"]
+
+[ext_resource type="PackedScene" path="res://assets/models/round table 3d model.glb" id="14"]
+
+[ext_resource type="PackedScene" path="res://assets/models/transparent dice 3d model.glb" id="15"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_0"]
+sky_top_color = Color(0.045,0.065,0.09,1)
+sky_horizon_color = Color(0.38,0.33,0.24,1)
+ground_bottom_color = Color(0.025,0.02,0.015,1)
+ground_horizon_color = Color(0.28,0.24,0.17,1)
+
+[sub_resource type="Sky" id="Sky_1"]
+sky_material = SubResource("ProceduralSkyMaterial_0")
+
+[sub_resource type="Environment" id="Environment_2"]
+background_mode = 1
+background_color = Color(0.035,0.045,0.04,1)
+sky = SubResource("Sky_1")
+ambient_light_source = 3
+ambient_light_color = Color(0.70,0.76,0.82,1)
+ambient_light_energy = 0.42
+reflected_light_source = 2
+tonemap_mode = 2
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_3"]
+albedo_color = Color(0.18823529411764706, 0.1411764705882353, 0.10196078431372549, 1)
+metallic = 0.05
+roughness = 0.72
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_4"]
+albedo_color = Color(0.6549019607843137, 0.5098039215686274, 0.27450980392156865, 1)
+metallic = 0.7
+roughness = 0.34
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5"]
+albedo_color = Color(0.11372549019607843, 0.1607843137254902, 0.14901960784313725, 1)
+metallic = 0
+roughness = 0.93
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6"]
+albedo_color = Color(0.12941176470588237, 0.10980392156862745, 0.09019607843137255, 1)
+metallic = 0
+roughness = 0.93
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7"]
+albedo_color = Color(0.20784313725490197, 0.28627450980392155, 0.34509803921568627, 1)
+metallic = 0.25
+roughness = 0.3
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8"]
+albedo_color = Color(0.9098039215686274, 0.7803921568627451, 0.5411764705882353, 1)
+metallic = 0
+roughness = 0.72
+emission_enabled = true
+emission = Color(0.9,0.55,0.23,1)
+emission_energy_multiplier = 1.8
+
+[sub_resource type="BoxMesh" id="BoxMesh_9"]
+size = Vector3(10.0000000, 0.1200000, 10.0000000)
+material = SubResource("StandardMaterial3D_6")
+
+[sub_resource type="BoxMesh" id="BoxMesh_10"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_11"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_12"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_13"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_14"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_15"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_16"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_17"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_18"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_19"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_20"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_21"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_22"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_23"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_24"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_25"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_26"]
+size = Vector3(0.0120000, 0.0030000, 9.0000000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_27"]
+size = Vector3(8.0000000, 3.8000000, 0.1800000)
+material = SubResource("StandardMaterial3D_5")
+
+[sub_resource type="BoxMesh" id="BoxMesh_28"]
+size = Vector3(0.1800000, 3.8000000, 8.0000000)
+material = SubResource("StandardMaterial3D_5")
+
+[sub_resource type="BoxMesh" id="BoxMesh_29"]
+size = Vector3(0.1800000, 3.8000000, 8.0000000)
+material = SubResource("StandardMaterial3D_5")
+
+[sub_resource type="BoxMesh" id="BoxMesh_30"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_31"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_32"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_33"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_34"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_35"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_36"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_37"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_38"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_39"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_40"]
+size = Vector3(0.0600000, 1.0400000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_41"]
+size = Vector3(8.0000000, 0.0600000, 0.0900000)
+material = SubResource("StandardMaterial3D_4")
+
+[sub_resource type="BoxMesh" id="BoxMesh_42"]
+size = Vector3(1.1000000, 1.4500000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_43"]
+size = Vector3(0.9500000, 1.3000000, 0.0800000)
+material = SubResource("StandardMaterial3D_7")
+
+[sub_resource type="BoxMesh" id="BoxMesh_44"]
+size = Vector3(0.0350000, 1.3000000, 0.0900000)
+material = SubResource("StandardMaterial3D_4")
+
+[sub_resource type="BoxMesh" id="BoxMesh_45"]
+size = Vector3(0.9500000, 0.0350000, 0.0900000)
+material = SubResource("StandardMaterial3D_4")
+
+[sub_resource type="BoxMesh" id="BoxMesh_46"]
+size = Vector3(1.1000000, 1.4500000, 0.0800000)
+material = SubResource("StandardMaterial3D_3")
+
+[sub_resource type="BoxMesh" id="BoxMesh_47"]
+size = Vector3(0.9500000, 1.3000000, 0.0800000)
+material = SubResource("StandardMaterial3D_7")
+
+[sub_resource type="BoxMesh" id="BoxMesh_48"]
+size = Vector3(0.0350000, 1.3000000, 0.0900000)
+material = SubResource("StandardMaterial3D_4")
+
+[sub_resource type="BoxMesh" id="BoxMesh_49"]
+size = Vector3(0.9500000, 0.0350000, 0.0900000)
+material = SubResource("StandardMaterial3D_4")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_50"]
+top_radius = 0.1
+bottom_radius = 0.1
+height = 0.018
+radial_segments = 48
+material = SubResource("StandardMaterial3D_4")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_51"]
+top_radius = 0.035
+bottom_radius = 0.035
+height = 0.25
+radial_segments = 48
+material = SubResource("StandardMaterial3D_4")
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_52"]
+top_radius = 0.08
+bottom_radius = 0.15
+height = 0.15
+radial_segments = 48
+material = SubResource("StandardMaterial3D_8")
+
+[sub_resource type="BoxMesh" id="ChairSeat"]
+material = SubResource("StandardMaterial3D_3")
+size = Vector3(0.48, 0.08, 0.46)
+
+[sub_resource type="BoxMesh" id="ChairLeg"]
+material = SubResource("StandardMaterial3D_3")
+size = Vector3(0.045, 0.44, 0.045)
+
+[sub_resource type="BoxMesh" id="ChairBack"]
+material = SubResource("StandardMaterial3D_3")
+size = Vector3(0.48, 0.48, 0.055)
+
+[node name="TableView" type="Node3D"]
+process_mode = 1
+script = ExtResource("controller")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_2")
+
+[node name="Room" type="Node3D" parent="."]
+
+
+[node name="Floor" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.0000000, -0.0700000, 0.0000000)
+mesh = SubResource("BoxMesh_9")
+
+[node name="FloorSeam0" type="MeshInstance3D" parent="Room"]
+position = Vector3(-3.6000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_10")
+
+[node name="FloorSeam1" type="MeshInstance3D" parent="Room"]
+position = Vector3(-3.1500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_11")
+
+[node name="FloorSeam2" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.7000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_12")
+
+[node name="FloorSeam3" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.2500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_13")
+
+[node name="FloorSeam4" type="MeshInstance3D" parent="Room"]
+position = Vector3(-1.8000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_14")
+
+[node name="FloorSeam5" type="MeshInstance3D" parent="Room"]
+position = Vector3(-1.3500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_15")
+
+[node name="FloorSeam6" type="MeshInstance3D" parent="Room"]
+position = Vector3(-0.9000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_16")
+
+[node name="FloorSeam7" type="MeshInstance3D" parent="Room"]
+position = Vector3(-0.4500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_17")
+
+[node name="FloorSeam8" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.0000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_18")
+
+[node name="FloorSeam9" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.4500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_19")
+
+[node name="FloorSeam10" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.9000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_20")
+
+[node name="FloorSeam11" type="MeshInstance3D" parent="Room"]
+position = Vector3(1.3500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_21")
+
+[node name="FloorSeam12" type="MeshInstance3D" parent="Room"]
+position = Vector3(1.8000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_22")
+
+[node name="FloorSeam13" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.2500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_23")
+
+[node name="FloorSeam14" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.7000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_24")
+
+[node name="FloorSeam15" type="MeshInstance3D" parent="Room"]
+position = Vector3(3.1500000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_25")
+
+[node name="FloorSeam16" type="MeshInstance3D" parent="Room"]
+position = Vector3(3.6000000, -0.0080000, 0.0000000)
+mesh = SubResource("BoxMesh_26")
+
+[node name="BackWall" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.0000000, 1.8000000, -3.5000000)
+mesh = SubResource("BoxMesh_27")
+
+[node name="LeftWall" type="MeshInstance3D" parent="Room"]
+position = Vector3(-4.0000000, 1.8000000, 0.0000000)
+mesh = SubResource("BoxMesh_28")
+
+[node name="RightWall" type="MeshInstance3D" parent="Room"]
+position = Vector3(4.0000000, 1.8000000, 0.0000000)
+mesh = SubResource("BoxMesh_29")
+
+[node name="Wainscot0" type="MeshInstance3D" parent="Room"]
+position = Vector3(-3.5000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_30")
+
+[node name="Wainscot1" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.8000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_31")
+
+[node name="Wainscot2" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.1000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_32")
+
+[node name="Wainscot3" type="MeshInstance3D" parent="Room"]
+position = Vector3(-1.4000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_33")
+
+[node name="Wainscot4" type="MeshInstance3D" parent="Room"]
+position = Vector3(-0.7000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_34")
+
+[node name="Wainscot5" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.0000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_35")
+
+[node name="Wainscot6" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.7000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_36")
+
+[node name="Wainscot7" type="MeshInstance3D" parent="Room"]
+position = Vector3(1.4000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_37")
+
+[node name="Wainscot8" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.1000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_38")
+
+[node name="Wainscot9" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.8000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_39")
+
+[node name="Wainscot10" type="MeshInstance3D" parent="Room"]
+position = Vector3(3.5000000, 0.5200000, -3.3500000)
+mesh = SubResource("BoxMesh_40")
+
+[node name="WallRail" type="MeshInstance3D" parent="Room"]
+position = Vector3(0.0000000, 1.0800000, -3.3000000)
+mesh = SubResource("BoxMesh_41")
+
+[node name="WindowFrame0" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.2000000, 2.0000000, -3.3200000)
+mesh = SubResource("BoxMesh_42")
+
+[node name="WindowGlass0" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.2000000, 2.0000000, -3.2500000)
+mesh = SubResource("BoxMesh_43")
+
+[node name="WindowVertical0" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.2000000, 2.0000000, -3.1900000)
+mesh = SubResource("BoxMesh_44")
+
+[node name="WindowHorizontal0" type="MeshInstance3D" parent="Room"]
+position = Vector3(-2.2000000, 2.0000000, -3.1900000)
+mesh = SubResource("BoxMesh_45")
+
+[node name="WindowFrame1" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.2000000, 2.0000000, -3.3200000)
+mesh = SubResource("BoxMesh_46")
+
+[node name="WindowGlass1" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.2000000, 2.0000000, -3.2500000)
+mesh = SubResource("BoxMesh_47")
+
+[node name="WindowVertical1" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.2000000, 2.0000000, -3.1900000)
+mesh = SubResource("BoxMesh_48")
+
+[node name="WindowHorizontal1" type="MeshInstance3D" parent="Room"]
+position = Vector3(2.2000000, 2.0000000, -3.1900000)
+mesh = SubResource("BoxMesh_49")
+
+[node name="Table" type="Node3D" parent="."]
+
+
+[node name="RoundTable" type="Node3D" parent="Table"]
+position = Vector3(0.0000000, 0.0000000, 0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+
+[node name="Model" parent="Table/RoundTable" instance=ExtResource("14")]
+position = Vector3(-0.0000000, 0.4200000, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(2.2400000, 1.1209122, 2.2400000)
+
+[node name="Props" type="Node3D" parent="."]
+
+
+[node name="MetalTray" type="Node3D" parent="Props"]
+position = Vector3(-0.1000000, 0.8110686, -0.0200000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+
+[node name="Model" parent="Props/MetalTray" instance=ExtResource("13")]
+position = Vector3(-0.0000000, 0.0825302, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.6600000, 0.6600000, 0.6600000)
+
+[node name="BrassDie" type="Node3D" parent="Props"]
+position = Vector3(-0.2300000, 0.8830688, 0.0200000)
+rotation = Vector3(0.0000000, 0.2400000, 0.0000000)
+
+[node name="Model" parent="Props/BrassDie" instance=ExtResource("9")]
+position = Vector3(-0.0000160, 0.0520033, -0.0000240)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.1050000, 0.1050000, 0.1050000)
+
+[node name="GoldDie" type="Node3D" parent="Props"]
+position = Vector3(-0.0400000, 0.8830688, 0.0900000)
+rotation = Vector3(0.0000000, -0.1800000, 0.0000000)
+
+[node name="Model" parent="Props/GoldDie" instance=ExtResource("6")]
+position = Vector3(0.0000064, 0.0522565, -0.0000064)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.1050000, 0.1050000, 0.1050000)
+
+[node name="GlassDie" type="Node3D" parent="Props"]
+position = Vector3(-0.0900000, 0.8830688, -0.1100000)
+rotation = Vector3(0.0000000, 0.4500000, 0.0000000)
+
+[node name="Model" parent="Props/GlassDie" instance=ExtResource("5")]
+position = Vector3(-0.0000096, 0.0520930, -0.0000032)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.1050000, 0.1050000, 0.1050000)
+
+[node name="TransparentDie" type="Node3D" parent="Props"]
+position = Vector3(0.4300000, 0.8110686, -0.1200000)
+rotation = Vector3(0.0000000, -0.3000000, 0.0000000)
+
+[node name="Model" parent="Props/TransparentDie" instance=ExtResource("15")]
+position = Vector3(0.0000053, 0.0530148, 0.0000035)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.1150000, 0.1150000, 0.1150000)
+
+[node name="HeartDie" type="Node3D" parent="Props"]
+position = Vector3(0.4700000, 0.8110686, 0.1800000)
+rotation = Vector3(0.0000000, 0.2500000, 0.0000000)
+
+[node name="Model" parent="Props/HeartDie" instance=ExtResource("8")]
+position = Vector3(-0.0000000, 0.0597290, 0.0000018)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.1200000, 0.1200000, 0.1200000)
+
+[node name="OrnateKey" type="Node3D" parent="Props"]
+position = Vector3(0.4900000, 0.8120686, 0.4800000)
+rotation = Vector3(0.0000000, -0.5500000, 0.0000000)
+
+[node name="Model" parent="Props/OrnateKey" instance=ExtResource("10")]
+position = Vector3(0.0000220, 0.0149359, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 1.5707963)
+scale = Vector3(0.2400000, 0.2400000, 0.2400000)
+
+[node name="Chips" type="Node3D" parent="."]
+
+
+[node name="Pile1Chip1" type="Node3D" parent="Chips"]
+position = Vector3(-0.4700000, 0.8110686, 0.6100000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile1Chip1" instance=ExtResource("12")]
+position = Vector3(-0.0000029, 0.0068834, 0.0000058)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile1Chip2" type="Node3D" parent="Chips"]
+position = Vector3(-0.4700000, 0.8253324, 0.6100000)
+rotation = Vector3(0.0000000, 0.2800000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile1Chip2" instance=ExtResource("12")]
+position = Vector3(-0.0000029, 0.0068834, 0.0000058)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile1Chip3" type="Node3D" parent="Chips"]
+position = Vector3(-0.4700000, 0.8395962, 0.6100000)
+rotation = Vector3(0.0000000, 0.5600000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile1Chip3" instance=ExtResource("12")]
+position = Vector3(-0.0000029, 0.0068834, 0.0000058)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile1Chip4" type="Node3D" parent="Chips"]
+position = Vector3(-0.4700000, 0.8538601, 0.6100000)
+rotation = Vector3(0.0000000, 0.8400000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile1Chip4" instance=ExtResource("12")]
+position = Vector3(-0.0000029, 0.0068834, 0.0000058)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile2Chip1" type="Node3D" parent="Chips"]
+position = Vector3(-0.3000000, 0.8110686, 0.6600000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile2Chip1" instance=ExtResource("11")]
+position = Vector3(-0.0000087, 0.0072226, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile2Chip2" type="Node3D" parent="Chips"]
+position = Vector3(-0.3000000, 0.8260087, 0.6600000)
+rotation = Vector3(0.0000000, 0.2800000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile2Chip2" instance=ExtResource("11")]
+position = Vector3(-0.0000087, 0.0072226, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile2Chip3" type="Node3D" parent="Chips"]
+position = Vector3(-0.3000000, 0.8409487, 0.6600000)
+rotation = Vector3(0.0000000, 0.5600000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile2Chip3" instance=ExtResource("11")]
+position = Vector3(-0.0000087, 0.0072226, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile2Chip4" type="Node3D" parent="Chips"]
+position = Vector3(-0.3000000, 0.8558887, 0.6600000)
+rotation = Vector3(0.0000000, 0.8400000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile2Chip4" instance=ExtResource("11")]
+position = Vector3(-0.0000087, 0.0072226, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile2Chip5" type="Node3D" parent="Chips"]
+position = Vector3(-0.3000000, 0.8708288, 0.6600000)
+rotation = Vector3(0.0000000, 1.1200000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile2Chip5" instance=ExtResource("11")]
+position = Vector3(-0.0000087, 0.0072226, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile3Chip1" type="Node3D" parent="Chips"]
+position = Vector3(-0.1300000, 0.8110686, 0.7000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile3Chip1" instance=ExtResource("7")]
+position = Vector3(-0.0000000, 0.0074806, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile3Chip2" type="Node3D" parent="Chips"]
+position = Vector3(-0.1300000, 0.8265240, 0.7000000)
+rotation = Vector3(0.0000000, 0.2800000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile3Chip2" instance=ExtResource("7")]
+position = Vector3(-0.0000000, 0.0074806, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile3Chip3" type="Node3D" parent="Chips"]
+position = Vector3(-0.1300000, 0.8419794, 0.7000000)
+rotation = Vector3(0.0000000, 0.5600000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile3Chip3" instance=ExtResource("7")]
+position = Vector3(-0.0000000, 0.0074806, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile3Chip4" type="Node3D" parent="Chips"]
+position = Vector3(-0.1300000, 0.8574347, 0.7000000)
+rotation = Vector3(0.0000000, 0.8400000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile3Chip4" instance=ExtResource("7")]
+position = Vector3(-0.0000000, 0.0074806, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile3Chip5" type="Node3D" parent="Chips"]
+position = Vector3(-0.1300000, 0.8728901, 0.7000000)
+rotation = Vector3(0.0000000, 1.1200000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile3Chip5" instance=ExtResource("7")]
+position = Vector3(-0.0000000, 0.0074806, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Pile3Chip6" type="Node3D" parent="Chips"]
+position = Vector3(-0.1300000, 0.8883455, 0.7000000)
+rotation = Vector3(0.0000000, 1.4000000, 0.0000000)
+
+[node name="Model" parent="Chips/Pile3Chip6" instance=ExtResource("7")]
+position = Vector3(-0.0000000, 0.0074806, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="LooseGoldChip" type="Node3D" parent="Chips"]
+position = Vector3(0.1000000, 0.8110686, 0.6900000)
+rotation = Vector3(0.0000000, 0.2000000, 0.0000000)
+
+[node name="Model" parent="Chips/LooseGoldChip" instance=ExtResource("7")]
+position = Vector3(-0.0000000, 0.0074806, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(0.0950000, 0.0950000, 0.0950000)
+
+[node name="Characters" type="Node3D" parent="."]
+
+
+[node name="AdventurerLeft" type="Node3D" parent="Characters"]
+position = Vector3(-0.50, 0, -1.35)
+rotation = Vector3(0, -1.21609, 0)
+
+[node name="Model" parent="Characters/AdventurerLeft" instance=ExtResource("1")]
+position = Vector3(-0.0000000, 0.0000002, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(1.7947244, 1.7947244, 1.7947244)
+
+[node name="AnimationPlayer" parent="Characters/AdventurerLeft/Model" index="1"]
+autoplay = "seated"
+
+[node name="AdventurerRight" type="Node3D" parent="Characters"]
+position = Vector3(1.38, 0, -0.38)
+rotation = Vector3(0, -2.87290, 0)
+
+[node name="Model" parent="Characters/AdventurerRight" instance=ExtResource("2")]
+position = Vector3(-0.0000000, 0.0000002, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(1.7947244, 1.7947244, 1.7947244)
+
+[node name="AnimationPlayer" parent="Characters/AdventurerRight/Model" index="1"]
+autoplay = "seated"
+
+[node name="AdventurerBackLeft" type="Node3D" parent="Characters"]
+position = Vector3(-2.6500000, 0.0000000, -2.3500000)
+rotation = Vector3(0.0000000, -0.7254700, 0.0000000)
+
+[node name="Model" parent="Characters/AdventurerBackLeft" instance=ExtResource("4")]
+position = Vector3(0.0006025, 0.8802465, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(1.7946687, 1.7946687, 1.7946687)
+
+[node name="AdventurerBackRight" type="Node3D" parent="Characters"]
+position = Vector3(2.6500000, 0.0000000, -2.3500000)
+rotation = Vector3(0.0000000, -2.4161226, 0.0000000)
+
+[node name="Model" parent="Characters/AdventurerBackRight" instance=ExtResource("3")]
+position = Vector3(-0.0000000, -0.0000000, -0.0000000)
+rotation = Vector3(0.0000000, 0.0000000, 0.0000000)
+scale = Vector3(1.7947246, 1.7947246, 1.7947246)
+
+[node name="LampBase" type="MeshInstance3D" parent="Room"]
+position = Vector3(-0.6100000, 0.8180686, -0.4200000)
+mesh = SubResource("CylinderMesh_50")
+
+[node name="LampStem" type="MeshInstance3D" parent="Room"]
+position = Vector3(-0.6100000, 0.9390686, -0.4200000)
+mesh = SubResource("CylinderMesh_51")
+
+[node name="LampShade" type="MeshInstance3D" parent="Room"]
+position = Vector3(-0.6100000, 1.1090686, -0.4200000)
+mesh = SubResource("CylinderMesh_52")
+
+[node name="SeatCamera" type="Camera3D" parent="."]
+position = Vector3(0.0000000, 1.3800000, 1.6000000)
+rotation = Vector3(-0.2800000, 0.0000000, 0.0000000)
+fov = 68.0
+near = 0.05
+current = true
+
+[node name="WarmTableLight" type="OmniLight3D" parent="."]
+position = Vector3(-0.6000000, 2.4000000, 0.6500000)
+light_color = Color(1,0.79,0.53,1)
+light_energy = 2.2
+omni_range = 6.0
+shadow_enabled = true
+shadow_bias = 0.025
+shadow_normal_bias = 0.4
+
+[node name="CoolWindowLight" type="OmniLight3D" parent="."]
+position = Vector3(1.7000000, 2.6000000, -2.6000000)
+light_color = Color(0.48,0.67,1,1)
+light_energy = 1.5
+omni_range = 6.0
+
+[node name="SoftFrontLight" type="OmniLight3D" parent="."]
+position = Vector3(0.0000000, 2.4000000, 2.8000000)
+light_color = Color(1,0.90,0.75,1)
+light_energy = 0.65
+omni_range = 6.0
+
+[node name="ChairLeft" type="Node3D" parent="Room"]
+position = Vector3(-0.5, 0, -1.35)
+rotation = Vector3(0, -2.7868863267948965, 0)
+
+[node name="Seat" type="MeshInstance3D" parent="Room/ChairLeft"]
+position = Vector3(0, 0.48, 0)
+mesh = SubResource("ChairSeat")
+
+[node name="Back" type="MeshInstance3D" parent="Room/ChairLeft"]
+position = Vector3(0, 0.76, 0.23)
+mesh = SubResource("ChairBack")
+
+[node name="Leg0" type="MeshInstance3D" parent="Room/ChairLeft"]
+position = Vector3(-0.19, 0.22, -0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg1" type="MeshInstance3D" parent="Room/ChairLeft"]
+position = Vector3(0.19, 0.22, -0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg2" type="MeshInstance3D" parent="Room/ChairLeft"]
+position = Vector3(-0.19, 0.22, 0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg3" type="MeshInstance3D" parent="Room/ChairLeft"]
+position = Vector3(0.19, 0.22, 0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="ChairRight" type="Node3D" parent="Room"]
+position = Vector3(1.38, 0, -0.38)
+rotation = Vector3(0, -4.443696326794896, 0)
+
+[node name="Seat" type="MeshInstance3D" parent="Room/ChairRight"]
+position = Vector3(0, 0.48, 0)
+mesh = SubResource("ChairSeat")
+
+[node name="Back" type="MeshInstance3D" parent="Room/ChairRight"]
+position = Vector3(0, 0.76, 0.23)
+mesh = SubResource("ChairBack")
+
+[node name="Leg0" type="MeshInstance3D" parent="Room/ChairRight"]
+position = Vector3(-0.19, 0.22, -0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg1" type="MeshInstance3D" parent="Room/ChairRight"]
+position = Vector3(0.19, 0.22, -0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg2" type="MeshInstance3D" parent="Room/ChairRight"]
+position = Vector3(-0.19, 0.22, 0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg3" type="MeshInstance3D" parent="Room/ChairRight"]
+position = Vector3(0.19, 0.22, 0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="ChairPlayer" type="Node3D" parent="Room"]
+position = Vector3(0, 0, 1.6)
+rotation = Vector3(0, 0.0, 0)
+
+[node name="Seat" type="MeshInstance3D" parent="Room/ChairPlayer"]
+position = Vector3(0, 0.48, 0)
+mesh = SubResource("ChairSeat")
+
+[node name="Back" type="MeshInstance3D" parent="Room/ChairPlayer"]
+position = Vector3(0, 0.76, 0.23)
+mesh = SubResource("ChairBack")
+
+[node name="Leg0" type="MeshInstance3D" parent="Room/ChairPlayer"]
+position = Vector3(-0.19, 0.22, -0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg1" type="MeshInstance3D" parent="Room/ChairPlayer"]
+position = Vector3(0.19, 0.22, -0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg2" type="MeshInstance3D" parent="Room/ChairPlayer"]
+position = Vector3(-0.19, 0.22, 0.18)
+mesh = SubResource("ChairLeg")
+
+[node name="Leg3" type="MeshInstance3D" parent="Room/ChairPlayer"]
+position = Vector3(0.19, 0.22, 0.18)
+mesh = SubResource("ChairLeg")
+
+[editable path="Characters/AdventurerLeft/Model"]
+
+[editable path="Characters/AdventurerRight/Model"]

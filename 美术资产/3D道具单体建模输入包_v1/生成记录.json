@@ -1,0 +1,233 @@
+{
+  "date": "2026-11-08",
+  "tool": "built-in image_gen",
+  "scope": "16张单件道具图生3D输入参考",
+  "background": "不透明浅灰背景；玻璃是物件材质表现，并非PNG背景透明",
+  "records": [
+    {
+      "id": "01",
+      "file": "01_象牙白六面骰.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/05_赌具道具/骰子筹码赌具_十二格透明图集.png"
+      ],
+      "detail": "Reference image supplies the ivory dice color and worn material only; IGNORE all other props and layout. Subject: exactly ONE cube-shaped six-sided ivory die, softly beveled corners, shallow carved black circular pips. Three-quarter view showing THREE faces: top EXACTLY ONE pip, left face EXACTLY TWO pips arranged diagonally, right face EXACTLY THREE pips in a diagonal. Physically standard casino die; other faces correspond to 4,5,6, opposites sum to seven. Clear cubic proportions and depth, not a thin tile or top-down icon. No digits, no decorative emblems.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nReference image supplies the ivory dice color and worn material only; IGNORE all other props and layout. Subject: exactly ONE cube-shaped six-sided ivory die, softly beveled corners, shallow carved black circular pips. Three-quarter view showing THREE faces: top EXACTLY ONE pip, left face EXACTLY TWO pips arranged diagonally, right face EXACTLY THREE pips in a diagonal. Physically standard casino die; other faces correspond to 4,5,6, opposites sum to seven. Clear cubic proportions and depth, not a thin tile or top-down icon. No digits, no decorative emblems.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-ed077981-1407-41fa-a308-5d8a13a69f44.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\01_象牙白六面骰.png",
+      "usage": "普通骰子基础模型；隐藏面的点数也须按标准骰校准。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "02",
+      "file": "02_暗红筹码_单枚.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/05_赌具道具/骰子筹码赌具_十二格透明图集.png"
+      ],
+      "detail": "Reference image supplies the red chip design only; ignore dice, stacked arrangements, boxes, hourglass. Subject: exactly ONE thin circular dark burgundy casino chip, aged brass metal rim and four evenly spaced brass trapezoid rim inlays, subtle embossed filigree around perimeter, dark red textured center, no denomination or text. Low oblique three-quarter view showing entire circular top face and clearly visible narrow cylindrical side thickness, solid closed underside. No stack, no second chip, no holes, no floating accents.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nReference image supplies the red chip design only; ignore dice, stacked arrangements, boxes, hourglass. Subject: exactly ONE thin circular dark burgundy casino chip, aged brass metal rim and four evenly spaced brass trapezoid rim inlays, subtle embossed filigree around perimeter, dark red textured center, no denomination or text. Low oblique three-quarter view showing entire circular top face and clearly visible narrow cylindrical side thickness, solid closed underside. No stack, no second chip, no holes, no floating accents.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-0c8a1ab8-7775-4198-b4ec-1937c1423a9f.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\02_暗红筹码_单枚.png",
+      "usage": "暗红筹码；可作为三色筹码共用基础网格。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "03",
+      "file": "03_黑色筹码_单枚.png",
+      "refs": [
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\02_暗红筹码_单枚.png"
+      ],
+      "detail": "Input image is the approved single red casino chip. Create exactly the SAME single chip, SAME geometry, thickness, four brass trapezoid inlays, filigree, view, lighting, framing and aged brass trim. Change ONLY the red enamel/resin body and center to deep charcoal black. Keep brass gold. No stack, no lettering, no extra ornaments.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput image is the approved single red casino chip. Create exactly the SAME single chip, SAME geometry, thickness, four brass trapezoid inlays, filigree, view, lighting, framing and aged brass trim. Change ONLY the red enamel/resin body and center to deep charcoal black. Keep brass gold. No stack, no lettering, no extra ornaments.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-76a0e1b1-ce39-4342-a5af-795df18eba16.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\03_黑色筹码_单枚.png",
+      "usage": "黑色材质变体；与暗红筹码共用网格。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "04",
+      "file": "04_旧金筹码_单枚.png",
+      "refs": [
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\02_暗红筹码_单枚.png"
+      ],
+      "detail": "Input image is the approved single red casino chip. Create exactly the SAME single chip, SAME geometry, thickness, four brass trapezoid inlays, filigree, view, lighting, framing and aged brass trim. Change ONLY the red enamel/resin body and center to muted antique gold/ochre, slightly darker and more matte than the polished raised brass trim so details stay readable. No stack, no lettering, no extra ornaments.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput image is the approved single red casino chip. Create exactly the SAME single chip, SAME geometry, thickness, four brass trapezoid inlays, filigree, view, lighting, framing and aged brass trim. Change ONLY the red enamel/resin body and center to muted antique gold/ochre, slightly darker and more matte than the polished raised brass trim so details stay readable. No stack, no lettering, no extra ornaments.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-40cfbf66-519b-479a-b794-eb72161b9f8c.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\04_旧金筹码_单枚.png",
+      "usage": "旧金材质变体；与暗红筹码共用网格。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "05",
+      "file": "05_黄铜浅托盘.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/02_家具摆件/黑金赌桌与三向座椅_透明图集.png"
+      ],
+      "detail": "Input image is shape/material reference ONLY for the round tray in the lower-right corner. Subject exactly ONE empty shallow circular antique-brass dice tray, gently rolled raised rim, broad smooth flat inner floor, modest hammered wear, darkened recesses. Three-quarter view showing the open inside, complete far rim and near exterior thickness. No dice, chips, utensils, cushions, handles or inset compartments, no wood table, no lamp, no chairs. It is a small shallow tray, not a bowl or plate stack.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput image is shape/material reference ONLY for the round tray in the lower-right corner. Subject exactly ONE empty shallow circular antique-brass dice tray, gently rolled raised rim, broad smooth flat inner floor, modest hammered wear, darkened recesses. Three-quarter view showing the open inside, complete far rim and near exterior thickness. No dice, chips, utensils, cushions, handles or inset compartments, no wood table, no lamp, no chairs. It is a small shallow tray, not a bowl or plate stack.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-d819b70d-5a97-41eb-9acc-3ef17d209672.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\05_黄铜浅托盘.png",
+      "usage": "浅托盘；内底保持平整，边沿完整。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "06",
+      "file": "06_眼之封印骰.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/08_演出特效/暗投器官与钥匙_纯透明特效_v2.png"
+      ],
+      "detail": "Input is a style reference for the middle row LEFT sealed eye die only. Exactly ONE transparent clear smoky-glass cube with softly beveled corners and actual cube depth, centered, elevated three-quarter view with three faces visible. Inside its center is ONE SMALL antique-gold stylized EYE relief emblem with a few short attached sun rays, fully enclosed within the glass and clearly separated from the outer surface. Non-gory heraldic symbol, no real eyeball. Subtle sparse circular die pips on side faces. Entire outline is crisp against light gray; glass has gentle edge reflections and subtle internal depth, no strong bloom, no external fog or magical swirls, no plinth. Do not show key, hand, heart, mask or other dice. Outer image background is opaque gray; the physical prop itself is transparent glass.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput is a style reference for the middle row LEFT sealed eye die only. Exactly ONE transparent clear smoky-glass cube with softly beveled corners and actual cube depth, centered, elevated three-quarter view with three faces visible. Inside its center is ONE SMALL antique-gold stylized EYE relief emblem with a few short attached sun rays, fully enclosed within the glass and clearly separated from the outer surface. Non-gory heraldic symbol, no real eyeball. Subtle sparse circular die pips on side faces. Entire outline is crisp against light gray; glass has gentle edge reflections and subtle internal depth, no strong bloom, no external fog or magical swirls, no plinth. Do not show key, hand, heart, mask or other dice. Outer image background is opaque gray; the physical prop itself is transparent glass.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-6ad8715a-10a8-4d37-a485-2b52521a141d.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\06_眼之封印骰.png",
+      "usage": "眼符号封印骰；透明外壳与内部符号分开处理。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "07",
+      "file": "07_手之封印骰.png",
+      "refs": [
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\06_眼之封印骰.png"
+      ],
+      "detail": "Input is the approved EYE sealed glass die. Keep exactly the SAME transparent smoky-glass cube, softly beveled edges, three-quarter camera, side pips, background, neutral lighting and framing. Change ONLY the interior gold eye emblem to ONE antique-gold stylized upright PALM/HAND emblem: five distinct fingers and a short wrist, simple non-gory heraldic relief. The hand symbol must be entirely inside the glass, not a real severed hand, no detached parts, no rays from the eye remaining. No eye, no heart, no external glow, no other props.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput is the approved EYE sealed glass die. Keep exactly the SAME transparent smoky-glass cube, softly beveled edges, three-quarter camera, side pips, background, neutral lighting and framing. Change ONLY the interior gold eye emblem to ONE antique-gold stylized upright PALM/HAND emblem: five distinct fingers and a short wrist, simple non-gory heraldic relief. The hand symbol must be entirely inside the glass, not a real severed hand, no detached parts, no rays from the eye remaining. No eye, no heart, no external glow, no other props.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-ad52892f-8317-4d16-a490-b54890f21968.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\07_手之封印骰.png",
+      "usage": "手符号封印骰；复用相同骰壳。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "08",
+      "file": "08_心之封印骰.png",
+      "refs": [
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\06_眼之封印骰.png"
+      ],
+      "detail": "Input is the approved EYE sealed glass die. Keep exactly the SAME transparent smoky-glass cube, softly beveled edges, three-quarter camera, side pips, background, neutral lighting and framing. Change ONLY the interior gold eye emblem to ONE antique-gold stylized anatomical HEART relief with a few simplified connected vessels, a heraldic sculpture, entirely metal and non-gory. The heart symbol must be fully enclosed inside the glass; remove the eye and sun rays completely. No blood, tissue, realistic organ texture, hand, external glow or other props.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput is the approved EYE sealed glass die. Keep exactly the SAME transparent smoky-glass cube, softly beveled edges, three-quarter camera, side pips, background, neutral lighting and framing. Change ONLY the interior gold eye emblem to ONE antique-gold stylized anatomical HEART relief with a few simplified connected vessels, a heraldic sculpture, entirely metal and non-gory. The heart symbol must be fully enclosed inside the glass; remove the eye and sun rays completely. No blood, tissue, realistic organ texture, hand, external glow or other props.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-4666d8e3-47d5-4176-8902-b9be67fb95a5.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\08_心之封印骰.png",
+      "usage": "心符号封印骰；复用相同骰壳。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "09",
+      "file": "09_改面骰_黄铜道具.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/06_进度与技能图标/命筹钥匙与技能_十二格透明图集.png",
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\01_象牙白六面骰.png"
+      ],
+      "detail": "Image1 is art reference ONLY for the lower-left golden change-face die icon; image2 supplies a physically clear cube and beveled-corner language. Create exactly ONE antique-brass six-sided die artifact, dark round recessed pips, restrained floral edge engraving. Its TOP face is a square inset panel with a visible thin seam and a tiny integrated hinge on one edge; panel stays CLOSED and flush, providing a credible change-face mechanism. Three-quarter view showing top and two sides. No floating replacement faces, detached panels, arrows, orbiting bands, rings, magic effects, stand or extra objects. This is a physical handheld brass die, not a skill icon. Top face has one central pip, left two, right three.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nImage1 is art reference ONLY for the lower-left golden change-face die icon; image2 supplies a physically clear cube and beveled-corner language. Create exactly ONE antique-brass six-sided die artifact, dark round recessed pips, restrained floral edge engraving. Its TOP face is a square inset panel with a visible thin seam and a tiny integrated hinge on one edge; panel stays CLOSED and flush, providing a credible change-face mechanism. Three-quarter view showing top and two sides. No floating replacement faces, detached panels, arrows, orbiting bands, rings, magic effects, stand or extra objects. This is a physical handheld brass die, not a skill icon. Top face has one central pip, left two, right three.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-3f0a60d4-90c5-46b4-9a5c-d81a62059c92.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\09_改面骰_黄铜道具.png",
+      "usage": "改面骰；闭合面板的缝线用于结构参考。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "10",
+      "file": "10_窥牌眼_黄铜镜片.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/06_进度与技能图标/命筹钥匙与技能_十二格透明图集.png"
+      ],
+      "detail": "Input reference ONLY the bottom row second icon, the brass-framed glass eye lens, not the top row organ coin. Create exactly ONE small circular convex glass monocle artifact in an ornate aged-brass frame with restrained integral scrollwork, slightly thick solid rim, subtle shallow EYE etching INSIDE the convex lens, pupil is a quiet smoke-gray engraved motif, not a living eye or eyeball. No skin, no hand, no chain, no neck cord, no stand. Almost front-facing with a modest three-quarter tilt so the curved glass and metal rim thickness are legible. Glass remains transparent with muted reflections; no external light rays or magic. Complete single self-contained object.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput reference ONLY the bottom row second icon, the brass-framed glass eye lens, not the top row organ coin. Create exactly ONE small circular convex glass monocle artifact in an ornate aged-brass frame with restrained integral scrollwork, slightly thick solid rim, subtle shallow EYE etching INSIDE the convex lens, pupil is a quiet smoke-gray engraved motif, not a living eye or eyeball. No skin, no hand, no chain, no neck cord, no stand. Almost front-facing with a modest three-quarter tilt so the curved glass and metal rim thickness are legible. Glass remains transparent with muted reflections; no external light rays or magic. Complete single self-contained object.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-d8940bf2-b665-4f81-8156-3400e2155cbd.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\10_窥牌眼_黄铜镜片.png",
+      "usage": "窥牌眼；镜框与玻璃镜片分开处理。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "11",
+      "file": "11_20号黄铜钥匙_完整.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/06_进度与技能图标/命筹钥匙与技能_十二格透明图集.png"
+      ],
+      "detail": "Reference image supplies ONLY the complete brass key in row2 column4; do not include other icons or fragments. Subject exactly ONE complete antique brass skeleton key, ornate open trefoil bow on LEFT, a small integrated central round medallion engraved with the exact digits '20', a straight cylindrical shaft extending RIGHT, and rectangular stepped key teeth hanging DOWN near the right end. Retain antique floral relief on bow and shaft. Fully connected single object with real metal thickness. Near-front view with a slight elevated three-quarter angle to reveal thickness while keeping bow, shaft and all teeth unobscured. Horizontal key fills image width with margins. No chains, no separate rings, no magic, no fragments, no other text. Construction should be simple enough to later divide into bow, middle shaft and toothed-end fragments.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nReference image supplies ONLY the complete brass key in row2 column4; do not include other icons or fragments. Subject exactly ONE complete antique brass skeleton key, ornate open trefoil bow on LEFT, a small integrated central round medallion engraved with the exact digits '20', a straight cylindrical shaft extending RIGHT, and rectangular stepped key teeth hanging DOWN near the right end. Retain antique floral relief on bow and shaft. Fully connected single object with real metal thickness. Near-front view with a slight elevated three-quarter angle to reveal thickness while keeping bow, shaft and all teeth unobscured. Horizontal key fills image width with margins. No chains, no separate rings, no magic, no fragments, no other text. Construction should be simple enough to later divide into bow, middle shaft and toothed-end fragments.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-cfe8848b-2290-47ba-a248-0efcfab260f7.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\11_20号黄铜钥匙_完整.png",
+      "usage": "完整钥匙基准；优先生成本体，再精确切分三块。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "12",
+      "file": "12_钥匙碎片_环头.png",
+      "refs": [
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\11_20号黄铜钥匙_完整.png"
+      ],
+      "detail": "Input image is the approved COMPLETE key. It is a design and exact-material reference, not to be repeated in full. Create ONLY the specified single segment of THAT SAME KEY, preserving antique-gold color, relief shapes, metal thickness and slight elevated near-front camera. The other two segments must be absent, not ghosted, not shown as a diagram. One isolated fragment, centered and enlarged to show detail. Use simple flat perpendicular cut surfaces where the shaft was separated; no new ornament, no added rings or newly invented key teeth. Subject: ONLY the LEFT BOW/HEAD segment: the complete ornate double-loop trefoil-like bow with its central '20' medallion, floral scrollwork and its short attached neck ending in the FIRST (left) raised collar. Cut the shaft immediately to the RIGHT of that first collar. The full middle floral shaft, right collar and toothed end are REMOVED. This object is the key's head fragment, not a complete key. Keep the exact digits 20 and only those digits.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput image is the approved COMPLETE key. It is a design and exact-material reference, not to be repeated in full. Create ONLY the specified single segment of THAT SAME KEY, preserving antique-gold color, relief shapes, metal thickness and slight elevated near-front camera. The other two segments must be absent, not ghosted, not shown as a diagram. One isolated fragment, centered and enlarged to show detail. Use simple flat perpendicular cut surfaces where the shaft was separated; no new ornament, no added rings or newly invented key teeth. Subject: ONLY the LEFT BOW/HEAD segment: the complete ornate double-loop trefoil-like bow with its central '20' medallion, floral scrollwork and its short attached neck ending in the FIRST (left) raised collar. Cut the shaft immediately to the RIGHT of that first collar. The full middle floral shaft, right collar and toothed end are REMOVED. This object is the key's head fragment, not a complete key. Keep the exact digits 20 and only those digits.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-4e048318-eba6-47d3-8f0a-78fd9ea0fcd0.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\12_钥匙碎片_环头.png",
+      "usage": "钥匙环头碎片；造型参考，拼合尺寸以完整钥匙模型为准。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "13",
+      "file": "13_钥匙碎片_中段.png",
+      "refs": [
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\11_20号黄铜钥匙_完整.png"
+      ],
+      "detail": "Input image is the approved COMPLETE key. It is a design and exact-material reference, not to be repeated in full. Create ONLY the specified single segment of THAT SAME KEY, preserving antique-gold color, relief shapes, metal thickness and slight elevated near-front camera. The other two segments must be absent, not ghosted, not shown as a diagram. One isolated fragment, centered and enlarged to show detail. Use simple flat perpendicular cut surfaces where the shaft was separated; no new ornament, no added rings or newly invented key teeth. Subject: ONLY the CENTRAL STRAIGHT SHAFT segment between the two groups of raised collars in the reference: a short horizontal thick cylindrical brass rod, front relief panel with the exact intertwined vine motifs visible on the source. Two plain cut ends at left and right, narrow seam lips permitted but no major new collars. NO bow, NO medallion, NO digits, NO teeth. It must look like the central shaft cut from this key, not a second miniature key, handle or elaborate scroll.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput image is the approved COMPLETE key. It is a design and exact-material reference, not to be repeated in full. Create ONLY the specified single segment of THAT SAME KEY, preserving antique-gold color, relief shapes, metal thickness and slight elevated near-front camera. The other two segments must be absent, not ghosted, not shown as a diagram. One isolated fragment, centered and enlarged to show detail. Use simple flat perpendicular cut surfaces where the shaft was separated; no new ornament, no added rings or newly invented key teeth. Subject: ONLY the CENTRAL STRAIGHT SHAFT segment between the two groups of raised collars in the reference: a short horizontal thick cylindrical brass rod, front relief panel with the exact intertwined vine motifs visible on the source. Two plain cut ends at left and right, narrow seam lips permitted but no major new collars. NO bow, NO medallion, NO digits, NO teeth. It must look like the central shaft cut from this key, not a second miniature key, handle or elaborate scroll.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-22e2ffe3-f1c4-4244-82a4-75c388854f82.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\13_钥匙碎片_中段.png",
+      "usage": "钥匙中段碎片；造型参考，拼合尺寸以完整钥匙模型为准。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "14",
+      "file": "14_钥匙碎片_齿部.png",
+      "refs": [
+        "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\11_20号黄铜钥匙_完整.png"
+      ],
+      "detail": "Input image is the approved COMPLETE key. It is a design and exact-material reference, not to be repeated in full. Create ONLY the specified single segment of THAT SAME KEY, preserving antique-gold color, relief shapes, metal thickness and slight elevated near-front camera. The other two segments must be absent, not ghosted, not shown as a diagram. One isolated fragment, centered and enlarged to show detail. Use simple flat perpendicular cut surfaces where the shaft was separated; no new ornament, no added rings or newly invented key teeth. Subject: ONLY the RIGHT TOOTHED END segment: the right group of raised collars, the short cylindrical tip extending rightward, and the rectangular stepped brass key-bit hanging DOWN with the same two narrow vertical key cuts making three descending teeth. Left end ends in a flat circular shaft cross-section immediately to LEFT of the right collars. NO bow, NO medallion, NO long middle floral shaft, NO digits, NO extra disconnected bits.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput image is the approved COMPLETE key. It is a design and exact-material reference, not to be repeated in full. Create ONLY the specified single segment of THAT SAME KEY, preserving antique-gold color, relief shapes, metal thickness and slight elevated near-front camera. The other two segments must be absent, not ghosted, not shown as a diagram. One isolated fragment, centered and enlarged to show detail. Use simple flat perpendicular cut surfaces where the shaft was separated; no new ornament, no added rings or newly invented key teeth. Subject: ONLY the RIGHT TOOTHED END segment: the right group of raised collars, the short cylindrical tip extending rightward, and the rectangular stepped brass key-bit hanging DOWN with the same two narrow vertical key cuts making three descending teeth. Left end ends in a flat circular shaft cross-section immediately to LEFT of the right collars. NO bow, NO medallion, NO long middle floral shaft, NO digits, NO extra disconnected bits.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-2f71dba2-c2df-42f8-933d-5cfc4cc3cfdd.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\14_钥匙碎片_齿部.png",
+      "usage": "钥匙齿部碎片；造型参考，拼合尺寸以完整钥匙模型为准。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "15",
+      "file": "15_忘情酒杯.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/首批_v1/09_转场与结局/忘情酒_酒面开门转场.png"
+      ],
+      "detail": "Reference image is for the GLASS AND AMBER DRINK only. Create exactly ONE complete squat old-fashioned whisky tumbler, round open rim, straight slightly tapering transparent walls, subtly faceted lower walls and thick heavy glass bottom, about two-thirds full of clear amber liquor. Three-quarter view slightly above rim so the glass opening, calm liquid surface, side wall and thick bottom are visible simultaneously. The glass must be isolated on the gray background with its complete base visible. No hands, ice, lemon, garnish, bottle, saucer, bar, door reflection, eyes, runes, magic or other objects. Neutral studio reflections, clear separation between glass wall and amber liquid. Preserve the simple utilitarian tavern glass, not a wine goblet.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nReference image is for the GLASS AND AMBER DRINK only. Create exactly ONE complete squat old-fashioned whisky tumbler, round open rim, straight slightly tapering transparent walls, subtly faceted lower walls and thick heavy glass bottom, about two-thirds full of clear amber liquor. Three-quarter view slightly above rim so the glass opening, calm liquid surface, side wall and thick bottom are visible simultaneously. The glass must be isolated on the gray background with its complete base visible. No hands, ice, lemon, garnish, bottle, saucer, bar, door reflection, eyes, runes, magic or other objects. Neutral studio reflections, clear separation between glass wall and amber liquid. Preserve the simple utilitarian tavern glass, not a wine goblet.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-542d2f0a-de50-4e83-96b4-d971ff394096.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\15_忘情酒杯.png",
+      "usage": "忘情酒杯；杯体与酒液分为独立网格和材质。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    },
+    {
+      "id": "16",
+      "file": "16_新版荷官面具.png",
+      "refs": [
+        "D:/无限世界地下酒馆和赌局/美术资产/3D首批建模包_v3/04_荷官_A姿势.png"
+      ],
+      "detail": "Input reference supplies ONLY the approved dealer's white TRAGEDY FACE MASK and round brass spectacles mounted over it. Create exactly ONE standalone hollow wearable porcelain face mask prop, with attached round antique-gold spectacle rims over the empty eye holes. Preserve the deeply furrowed brow, raised central forehead wrinkles, long nose, downturned OPEN mouth and elongated chin from this EXACT reference; it must be recognizable as the same theatrical mask, not an emotionless oval or smiling mask. Almost front view with a small three-quarter yaw to reveal porcelain shell thickness and curved cheek perimeter; both eye holes and full mouth shape visible. Clean slightly aged ivory-white porcelain, no red cracks, blood, grime streaks. Full outline including chin and forehead in frame. NO head, scalp, hair, ears, neck, costume, hands, stand, pedestal, hanging straps, floating eyeglasses or second mask. Spectacle bridge and rims remain attached to the mask as ONE assembled modeling subject.",
+      "prompt": "Use case: stylized-concept. Asset type: single-object image-to-3D modeling input for the existing dark underground tavern game. Create ONE isolated complete physical prop, centered with 15% empty margin, square composition, plain seamless light neutral gray background, soft neutral studio lighting, tiny local shadow only. Crisp realistic hand-painted game material, restrained aged surface detail, readable solid construction. No scene, table, pedestal, people, hands, duplicate views, collage, framing, watermark, captions or floating effects. This is a new modeling reference based on the supplied art, not a sprite-sheet edit.\nInput reference supplies ONLY the approved dealer's white TRAGEDY FACE MASK and round brass spectacles mounted over it. Create exactly ONE standalone hollow wearable porcelain face mask prop, with attached round antique-gold spectacle rims over the empty eye holes. Preserve the deeply furrowed brow, raised central forehead wrinkles, long nose, downturned OPEN mouth and elongated chin from this EXACT reference; it must be recognizable as the same theatrical mask, not an emotionless oval or smiling mask. Almost front view with a small three-quarter yaw to reveal porcelain shell thickness and curved cheek perimeter; both eye holes and full mouth shape visible. Clean slightly aged ivory-white porcelain, no red cracks, blood, grime streaks. Full outline including chin and forehead in frame. NO head, scalp, hair, ears, neck, costume, hands, stand, pedestal, hanging straps, floating eyeglasses or second mask. Spectacle bridge and rims remain attached to the mask as ONE assembled modeling subject.",
+      "source": "C:\\Users\\72417\\.codex\\generated_images\\01a1b9ee-ddfb-7822-b473-bd40602044b7\\exec-eb633c01-d151-4b72-b5c3-c76ccb44ea01.png",
+      "saved": "D:\\无限世界地下酒馆和赌局\\美术资产\\3D道具单体建模输入包_v1\\16_新版荷官面具.png",
+      "usage": "新版荷官的可摘取面具；包含圆金丝眼镜，保留悲剧表情。",
+      "status": "reference_image_only",
+      "license_note": "AI generated from existing project reference images; no external stock asset used."
+    }
+  ]
+}

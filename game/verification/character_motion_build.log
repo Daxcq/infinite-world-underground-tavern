@@ -1,0 +1,79 @@
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+15:51:25 | INFO: Data are loaded, start creating Blender stuff
+15:51:25 | INFO: Blender create Mesh node meshes[0]
+15:51:32 | INFO: glTF import finished in 7.48s
+WORKING_TRIANGLES 196392
+REBIND_UNBOUND_VERTICES 0 OF 128911
+AUTHORED idle
+AUTHORED walk
+AUTHORED seated
+INFO Draco is available, use library at D:\Blender\blender-5.2.1-windows-x64\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at D:\Blender\blender-5.2.1-windows-x64\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+15:52:13 | INFO: Starting glTF 2.0 export
+15:52:13 | INFO: Extracting primitive: meshes[0]
+15:52:14 | INFO: Primitives created: 1
+15:52:15 | INFO: Finished glTF 2.0 export in 1.6518898010253906 s
+00:51.907  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\seated_character.png'
+00:52.266  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_00.png'
+00:52.672  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_01.png'
+00:53.094  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_02.png'
+00:53.547  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_03.png'
+00:54.032  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_04.png'
+00:54.563  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_05.png'
+00:55.110  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_06.png'
+00:55.703  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_07.png'
+00:56.282  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_08.png'
+00:56.766  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_09.png'
+00:57.297  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_10.png'
+00:57.828  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_11.png'
+00:58.313  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\down_12.png'
+
+RENDERED_DIRECTION down
+00:58.766  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_00.png'
+00:59.266  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_01.png'
+00:59.782  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_02.png'
+01:00.313  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_03.png'
+01:00.907  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_04.png'
+01:01.453  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_05.png'
+01:02.000  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_06.png'
+01:02.485  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_07.png'
+01:03.000  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_08.png'
+01:03.485  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_09.png'
+01:03.938  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_10.png'
+01:04.344  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_11.png'
+01:04.750  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\up_12.png'
+RENDERED_DIRECTION up
+01:05.188  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_00.png'
+01:05.750  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_01.png'
+01:06.313  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_02.png'
+01:06.813  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_03.png'
+01:07.313  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_04.png'
+01:07.782  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_05.png'
+01:08.282  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_06.png'
+01:08.797  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_07.png'
+01:09.344  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_08.png'
+01:09.813  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_09.png'
+01:10.219  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_10.png'
+01:10.625  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_11.png'
+01:11.125  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\left_12.png'
+RENDERED_DIRECTION left
+01:11.610  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_00.png'
+01:12.094  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_01.png'
+01:12.563  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_02.png'
+01:13.000  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_03.png'
+01:13.453  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_04.png'
+01:13.907  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_05.png'
+01:14.344  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_06.png'
+01:14.735  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_07.png'
+01:15.141  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_08.png'
+01:15.516  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_09.png'
+01:15.953  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_10.png'
+01:16.360  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_11.png'
+01:16.813  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\assets\characters\motion\right_12.png'
+RENDERED_DIRECTION right
+Info: Saved as "冒险者_行走与坐姿.blend"
+CHARACTER_MOTION_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

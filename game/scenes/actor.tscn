@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=3]
+
+[ext_resource type="Script" path="res://scripts/actor.gd" id="1"]
+[ext_resource type="Texture2D" path="res://assets/characters/player.png" id="2"]
+
+[sub_resource type="CircleShape2D" id="Feet"]
+radius = 14.0
+
+[node name="Actor" type="CharacterBody2D"]
+motion_mode = 1
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1")
+sheet = ExtResource("2")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2")
+scale = Vector2(0.21, 0.21)
+centered = false
+offset = Vector2(-279.4, -462)
+region_enabled = true
+region_rect = Rect2(0, 0, 512, 512)
+
+[node name="FeetCollision" type="CollisionShape2D" parent="."]
+shape = SubResource("Feet")

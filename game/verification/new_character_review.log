@@ -1,0 +1,36 @@
+BlenderMCP addon registered
+BlenderMCP addon unregistered
+16:07:32 | INFO: Data are loaded, start creating Blender stuff
+16:07:32 | INFO: Blender create Mesh node meshes[0]
+16:07:35 | INFO: glTF import finished in 2.54s
+00:21.953  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\01_front.png'
+00:23.062  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\01_back.png'
+REVIEWED mysterious masked man 3d model.glb
+16:07:54 | INFO: Data are loaded, start creating Blender stuff
+16:07:54 | INFO: Blender create Mesh node meshes[0]
+16:07:57 | INFO: glTF import finished in 2.50s
+00:43.453  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\02_front.png'
+00:44.859  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\02_back.png'
+REVIEWED masked figure 3d model.glb
+16:08:16 | INFO: Data are loaded, start creating Blender stuff
+16:08:16 | INFO: Blender create Mesh node meshes[0]
+16:08:19 | INFO: glTF import finished in 2.64s
+01:11.469  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\03_front.png'
+01:13.125  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\03_back.png'
+REVIEWED puppet 3d model(1).glb
+16:08:44 | INFO: Data are loaded, start creating Blender stuff
+16:08:44 | INFO: Blender create Mesh node meshes[0]
+16:08:48 | INFO: glTF import finished in 3.35s
+01:34.828  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\04_front.png'
+01:36.000  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\04_back.png'
+REVIEWED gas mask doctor 3d model.glb
+16:09:07 | INFO: Data are loaded, start creating Blender stuff
+16:09:07 | INFO: Blender create Mesh node meshes[0]
+16:09:09 | INFO: glTF import finished in 2.21s
+01:54.531  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\05_front.png'
+01:55.703  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\new_characters\05_back.png'
+REVIEWED vintage gentleman 3d model.glb
+REVIEW_COMPLETE
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

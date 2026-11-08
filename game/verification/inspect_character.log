@@ -1,0 +1,8 @@
+Godot Engine v4.7.2.stable.mono.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 NVIDIA 595.97 - Compatibility - Using Device: NVIDIA - NVIDIA GeForce RTX 4060 Laptop GPU
+
+WARNING: 'res://assets/models/adventurer 3d model (1).glb': In external resource #0, invalid UID: 'uid://0nhyeu845o1q' - using text path instead: 'res://assets/models/adventurer 3d model (1)_adventurer+3d+model_basecolor.jpg'.
+   at: open (core/io/resource_format_binary.cpp:1025)
+   GDScript backtrace (most recent call first):
+       [0] run (res://verification/inspect_character.gd:32)
+MODEL 00 adventurer 3d model (1).glb BOUNDS [P: (-0.112076, -0.0, -0.291809), S: (0.224152, 0.980652, 0.583618)]

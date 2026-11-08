@@ -1,0 +1,8 @@
+00:00.735  blend            | Read blend: "D:\无限世界地下酒馆和赌局\美术资产\角色动作_v1\冒险者_行走与坐姿.blend"
+BlenderMCP addon registered
+PACKED_IMAGES [('adventurer+3d+model_basecolor.jpg', True)]
+ACTIONS [('idle', 1), ('seated', 1), ('walk', 1)]
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

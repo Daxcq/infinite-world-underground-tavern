@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-08",
+  "scope": "PNG decode, dimensions and file integrity; modeling references only, no 3D mesh generated",
+  "count": 6,
+  "files": [
+    {
+      "file": "01_主角_A姿势.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "sha256": "50ec3910cf456b681ee55d5378229eaeaa1c9e77d658660e3fc4926cf26d1d9b"
+    },
+    {
+      "file": "02_酒保_A姿势.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "sha256": "c92ed0b27238d9399e2a188f9fc6b679b0b2a061ba9ea1082fac6b055e097307"
+    },
+    {
+      "file": "03_算计者同伴_A姿势.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "sha256": "934df8c59f16a27b9d7a9f0c1c5b2e7fffd7b4056e329bcc7cec1a9c52c87e8a"
+    },
+    {
+      "file": "04_荷官_A姿势.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "sha256": "fb66cde59a4c3e1d2cefc56eb4c0a658088a99d110e2d9a2af000505e6c19d5f"
+    },
+    {
+      "file": "05_赌桌.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "mode": "RGB",
+      "sha256": "52d763042b407c3c63eb89db674668da583c8d861588b787e77c9a32bdfdb782"
+    },
+    {
+      "file": "06_配套椅子.png",
+      "size": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "sha256": "d22e4cf82381cc694e34a689ab7369fc0f570e3eed0688da0657dc1793db07ab"
+    }
+  ]
+}

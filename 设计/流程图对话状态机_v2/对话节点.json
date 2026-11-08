@@ -1,0 +1,2871 @@
+{
+  "version": "2.0",
+  "date": "2026-11-08",
+  "entry": "B00",
+  "scope": "design_contract_not_runtime",
+  "confirmations": [
+    "三幕保留；图中共渡后的直接胜利出口接清桌；集齐三类碎片离开",
+    "只处罚实际贡献少者；同贡献双方受罚；玩家受罚才推进眼手心"
+  ],
+  "source": "原始流程图.png",
+  "fragments": [
+    "STAKE",
+    "POOL",
+    "CLEAR"
+  ],
+  "parameters": {
+    "tutorial_initial_gold": 100,
+    "tutorial_initial_rescue_wine": 1,
+    "tutorial_stake": 100,
+    "rescue_gold_amount": null,
+    "formal_stake": null,
+    "formal_initial_chips": null,
+    "gold_to_chip_ratio": null,
+    "new_table_funding": null,
+    "dummy_price": null,
+    "change_range": null,
+    "peek_price": 25,
+    "change_price": 40,
+    "tutorial_reward_amount": null,
+    "solo_clear_hand_source": null
+  },
+  "parameter_notes": {
+    "peek_price": "25沿用旧主方案示例，尚非已平衡数值",
+    "change_price": "40沿用旧主方案示例，尚非已平衡数值"
+  },
+  "nodes": [
+    {
+      "id": "B00",
+      "phase": "SURFACE",
+      "title": "最后一盏灯",
+      "source": "图顶部／开局→进入普通酒馆",
+      "trigger": "NEW_RUN；尚未初始化本次游玩",
+      "kind": "dialogue",
+      "on_enter": [
+        "创建 run_id；清空本次事务记录、碎片集合、器官受罚计数；不重置全局设置"
+      ],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "B00_L01",
+          "speaker": "旁白",
+          "text": "雨落在门外，像无数指甲轻叩棺盖。门里，还有一盏灯。",
+          "when": "true"
+        },
+        {
+          "id": "B00_L02",
+          "speaker": "你",
+          "text": "只歇一会儿。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "START",
+          "target": "B01",
+          "guard": "true",
+          "effects": [],
+          "label": "推门而入",
+          "hint": "进入普通酒馆。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "B01",
+      "phase": "SURFACE",
+      "title": "免费的一杯",
+      "source": "图左／调酒师给免费酒",
+      "trigger": "到吧台范围内；按交互；intro_wine_taken=false",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "B01_L01",
+          "speaker": "酒保",
+          "text": "进来吧。第一杯不收钱。",
+          "when": "true"
+        },
+        {
+          "id": "B01_L02",
+          "speaker": "你",
+          "text": "你们对每个人都这么说？",
+          "when": "true"
+        },
+        {
+          "id": "B01_L03",
+          "speaker": "酒保",
+          "text": "只对第一次进门的人。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "TAKE_WINE",
+          "target": "B02",
+          "guard": "not intro_wine_taken",
+          "effects": [
+            "intro_wine_taken=true"
+          ],
+          "label": "接过酒杯",
+          "hint": "剧情酒；不会增加背包恢复道具。",
+          "status": "specified"
+        },
+        {
+          "event": "ASK_WINE",
+          "target": "B03",
+          "guard": "true",
+          "effects": [],
+          "label": "为什么免费？",
+          "hint": "重听本段，不重复领取。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "B02",
+      "phase": "SURFACE",
+      "title": "杯底没有倒影",
+      "source": "图左／喝下免费酒，邀请进入赌局",
+      "trigger": "已接酒且 intro_wine_drunk=false",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "B02_L01",
+          "speaker": "旁白",
+          "text": "酒液映出烛火，却没有映出你的脸。",
+          "when": "true"
+        },
+        {
+          "id": "B02_L02",
+          "speaker": "酒保",
+          "text": "尝一口。后面有张空桌，正好缺个人。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "DRINK_INTRO",
+          "target": "T00",
+          "guard": "intro_wine_taken and not intro_wine_drunk",
+          "effects": [
+            "intro_wine_drunk=true"
+          ],
+          "label": "饮下这杯酒",
+          "hint": "完成普通入馆剧情，进入教学；此杯不触发地下转场。",
+          "status": "specified"
+        },
+        {
+          "event": "PUT_DOWN",
+          "target": "B02",
+          "guard": "true",
+          "effects": [],
+          "label": "暂且放下",
+          "hint": "本节点等待；可收起对白并继续探索。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "B03",
+      "phase": "SURFACE",
+      "title": "免费的缘由",
+      "source": "图左／免费酒节点的询问对白扩展",
+      "trigger": "ASK_WINE；无资源变化",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "关闭本次追问，不撤销已领取标记"
+      ],
+      "lines": [
+        {
+          "id": "B03_L01",
+          "speaker": "酒保",
+          "text": "路过的人，总比留下的人少。偶尔，我也愿意招待一位过客。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "B01",
+          "guard": "true",
+          "effects": [],
+          "label": "重新看看酒杯",
+          "hint": "回到免费酒选择；不重复领取。",
+          "status": "specified"
+        }
+      ],
+      "note": "只扩展已有节点的追问，不增添玩法。"
+    },
+    {
+      "id": "T00",
+      "phase": "TUTORIAL",
+      "title": "钱与一只小瓶",
+      "source": "图左／初始数值：100金币＋一瓶道具酒",
+      "trigger": "DRINK_INTRO 完成；教学尚未初始化",
+      "kind": "dialogue",
+      "on_enter": [
+        "若 not tutorial_initialized：tutorial_gold=100；rescue_wine_count=1；tutorial_initialized=true"
+      ],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T00_L01",
+          "speaker": "酒保",
+          "text": "一百枚金币，够你学会规矩。小瓶收好，别和杯里的酒弄混。",
+          "when": "true"
+        },
+        {
+          "id": "T00_L02",
+          "speaker": "系统",
+          "text": "教学初始：100 金币；恢复酒 1 瓶。教学不消耗眼、手、心，也不发放钥匙碎片。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "T01",
+          "guard": "tutorial_initialized",
+          "effects": [
+            "不再发放初始物品"
+          ],
+          "label": "收好，走向赌桌",
+          "hint": "只翻页；不再次领取。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T01",
+      "phase": "TUTORIAL",
+      "title": "先让桌子开口",
+      "source": "图左／Round 1：嘴炮与算计，底注100",
+      "trigger": "教学桌准备完成；本金只读",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T01_L01",
+          "speaker": "老板",
+          "text": "底注一百。你们两个若凑不够，桌子就不会认你们。",
+          "when": "true"
+        },
+        {
+          "id": "T01_L02",
+          "speaker": "同桌客人",
+          "text": "我愿意出 {promised_n}。你呢？你的承诺，总得让我听见。",
+          "when": "true"
+        },
+        {
+          "id": "T01_L03",
+          "speaker": "系统",
+          "text": "对方先报承诺，你随后决定真实投入。口头承诺不代表已经付款。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "T01A",
+          "guard": "tutorial_gold>=0",
+          "effects": [
+            "锁定 NPC 教学承诺与真实出资策略"
+          ],
+          "label": "商量出资",
+          "hint": "底注 100；对方真实投入到揭晓时才验证。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T01A",
+      "phase": "TUTORIAL",
+      "title": "先说，再放下",
+      "source": "图左／嘴炮与算计中的筹资协商细分",
+      "trigger": "NPC承诺已经锁定；教学钱包未扣款",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "只保留声明，不提交筹码"
+      ],
+      "lines": [
+        {
+          "id": "T01A_L01",
+          "speaker": "老板",
+          "text": "他已经报了数。你准备答多少？",
+          "when": "true"
+        },
+        {
+          "id": "T01A_L02",
+          "speaker": "系统",
+          "text": "声明你的承诺金额。稍后仍可守约、暗藏筹码，或独自投满底注。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "DECLARE_AMOUNT",
+          "target": "T02",
+          "guard": "declared_amount>=0 and declared_amount<=tutorial_gold",
+          "effects": [
+            "promised_p=declared_amount；不扣款"
+          ],
+          "label": "报出我的承诺",
+          "hint": "下一步才决定实际投入。",
+          "status": "specified"
+        }
+      ],
+      "note": "为已有协商步骤补出输入事件，不增加新玩法或额外下注轮。"
+    },
+    {
+      "id": "T02",
+      "phase": "TUTORIAL",
+      "title": "说出口的数目",
+      "source": "图左／一言为定、暗藏筹码、独狼",
+      "trigger": "NPC 已先报价；筹码仍未提交",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T02_L01",
+          "speaker": "你",
+          "text": "说出口的数目，和放上桌的数目……未必一样。",
+          "when": "true"
+        },
+        {
+          "id": "T02_L02",
+          "speaker": "系统",
+          "text": "先选意图，再在确认页检查实际金额。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "SELECT_HONEST",
+          "target": "T03",
+          "guard": "tutorial_gold>=promised_p",
+          "effects": [
+            "draft_actual_p=promised_p；strategy=HONEST"
+          ],
+          "label": "一言为定",
+          "hint": "按承诺实付；若赢，按图平分教学奖金。",
+          "status": "specified"
+        },
+        {
+          "event": "SELECT_HIDE",
+          "target": "T03",
+          "guard": "tutorial_gold>=hidden_actual_p and hidden_actual_p<promised_p",
+          "effects": [
+            "draft_actual_p=hidden_actual_p；strategy=HIDE"
+          ],
+          "label": "暗藏筹码",
+          "hint": "口头答应，实际少付；若赢，按图独占教学奖金。",
+          "status": "specified"
+        },
+        {
+          "event": "SELECT_SOLO",
+          "target": "T03",
+          "guard": "tutorial_gold>=tutorial_stake",
+          "effects": [
+            "draft_actual_p=tutorial_stake；draft_mode=SOLO"
+          ],
+          "label": "独狼",
+          "hint": "自己付满底注；不足时禁用并写明差额。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T03",
+      "phase": "TUTORIAL",
+      "title": "把承诺放下",
+      "source": "图左／筹资选择→是否达标（确认层）",
+      "trigger": "已选意图，未锁定",
+      "kind": "confirm",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T03_L01",
+          "speaker": "系统",
+          "text": "本次实际投入 {draft_actual_p} 金币。确认后不能用收起对白撤回。",
+          "when": "true"
+        },
+        {
+          "id": "T03_L02",
+          "speaker": "老板",
+          "text": "钱落桌，再说话。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONFIRM_STAKE",
+          "target": "T04",
+          "guard": "not action_locked and tutorial_gold>=draft_actual_p",
+          "effects": [
+            "锁定 action_id 与真实投入；从钱包扣除本次实投；NPC 实投同时提交"
+          ],
+          "label": "确认投入",
+          "hint": "不可重复扣款。",
+          "status": "specified"
+        },
+        {
+          "event": "CANCEL",
+          "target": "T02",
+          "guard": "not action_locked",
+          "effects": [],
+          "label": "再检查一次",
+          "hint": "回到选择；钱包不变。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T04",
+      "phase": "TUTORIAL",
+      "title": "桌面只认数目",
+      "source": "图左／筹资达标／不足",
+      "trigger": "实际出资已同时揭晓；该 action_id 尚未结算",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T04_L01",
+          "speaker": "系统",
+          "text": "玩家实投 {actual_p}；对方实投 {actual_n}；底注 {tutorial_stake}。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "REVEAL_DONE",
+          "target": "T05",
+          "guard": "actual_p+actual_n>=tutorial_stake",
+          "effects": [
+            "标记本次教学出资结算完成"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "REVEAL_DONE",
+          "target": "T06",
+          "guard": "actual_p+actual_n<tutorial_stake",
+          "effects": [
+            "本次实投被没收；不扣器官；结算完成"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T05",
+      "phase": "TUTORIAL",
+      "title": "够了",
+      "source": "图左／达标进入下一轮",
+      "trigger": "筹资达标",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T05_L01",
+          "speaker": "老板",
+          "text": "够了。你们终于让这张桌子听见了。",
+          "when": "true"
+        },
+        {
+          "id": "T05_L02",
+          "speaker": "系统",
+          "text": "教学筹资通过。这里只进入掷骰教学，尚不发放整桌奖金。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "T09",
+          "guard": "true",
+          "effects": [],
+          "label": "看看骰子",
+          "hint": "学习三枚骰子的投入与保留。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T06",
+      "phase": "TUTORIAL",
+      "title": "嘴比口袋阔绰",
+      "source": "图左／不达标、没收本局下注、老板震怒",
+      "trigger": "筹资未达标；本次已扣款",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T06_L01",
+          "speaker": "老板",
+          "text": "你们这帮穷鬼。嘴倒比口袋阔绰。",
+          "when": "true"
+        },
+        {
+          "id": "T06_L02",
+          "speaker": "系统",
+          "text": "底注不足；没收本次实际投入，不额外吞掉尚未下注的余额。教学不扣器官。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "T07",
+          "guard": "tutorial_gold==0 and rescue_wine_count>0",
+          "effects": [],
+          "label": "查看小瓶",
+          "hint": "仅破产且仍有恢复酒时进入此分支。",
+          "status": "specified"
+        },
+        {
+          "event": "CONTINUE",
+          "target": "T09",
+          "guard": "tutorial_gold>0 or rescue_wine_count==0",
+          "effects": [],
+          "label": "继续看骰子",
+          "hint": "按原图进入第二轮教学。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T07",
+      "phase": "TUTORIAL",
+      "title": "瓶中剩下一点运气",
+      "source": "图左／破产后道具酒恢复一定筹码",
+      "trigger": "tutorial_gold==0 and rescue_wine_count>0",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T07_L01",
+          "speaker": "同桌客人",
+          "text": "你还有那只瓶子。有人把最后一点运气装在里面。",
+          "when": "true"
+        },
+        {
+          "id": "T07_L02",
+          "speaker": "系统",
+          "text": "喝下恢复酒可恢复 {rescue_gold_amount} 金币。该道具只限教学；具体数值待定。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "USE_RESCUE",
+          "target": "T08",
+          "guard": "rescue_wine_count>0 and rescue_gold_amount is configured",
+          "effects": [
+            "消耗恢复酒一次；增加配置数量金币；按 action_id 去重"
+          ],
+          "label": "喝下小瓶中的酒",
+          "hint": "先确定恢复数值再允许真实执行。",
+          "status": "specified"
+        },
+        {
+          "event": "SKIP_RESCUE",
+          "target": "T09",
+          "guard": "true",
+          "effects": [],
+          "label": "收好，不喝",
+          "hint": "保留道具，继续掷骰教学。",
+          "status": "specified"
+        }
+      ],
+      "note": "Q03：单次100本金／100底注／只收实投时，这条破产分支通常不可达；不更改扣款规则强行触发。"
+    },
+    {
+      "id": "T08",
+      "phase": "TUTORIAL",
+      "title": "硬币重新作响",
+      "source": "图左／恢复后进入Round 2",
+      "trigger": "恢复事务成功",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T08_L01",
+          "speaker": "旁白",
+          "text": "酒没有温度。口袋里，却重新响起了金属的轻响。",
+          "when": "true"
+        },
+        {
+          "id": "T08_L02",
+          "speaker": "系统",
+          "text": "恢复金币已按本次配置结算，恢复酒剩余 {rescue_wine_count} 瓶。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "T09",
+          "guard": "true",
+          "effects": [],
+          "label": "把瓶子放下",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T09",
+      "phase": "TUTORIAL",
+      "title": "把骰子藏进掌心",
+      "source": "图左／Round 2：桌上三骰、老板掷三枚、NPC沟通",
+      "trigger": "教学掷骰开始；本幕尚未掷骰",
+      "kind": "dialogue",
+      "on_enter": [
+        "若未掷骰：生成并保存本次三骰；正式点数为投骰结果，预览可用固定样例"
+      ],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T09_L01",
+          "speaker": "老板",
+          "text": "三枚骰子。我的放在灯下，你们的留在手里。",
+          "when": "true"
+        },
+        {
+          "id": "T09_L02",
+          "speaker": "同桌客人",
+          "text": "我替你凑一点。只是……别什么都指望我。",
+          "when": "true"
+        },
+        {
+          "id": "T09_L03",
+          "speaker": "系统",
+          "text": "你的骰子 {dice_p_text}；老板明骰总点数 {dealer_total}。NPC 供述不是已验证的投入。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "T10",
+          "guard": "dice_rolled",
+          "effects": [
+            "骰子只生成一次；锁定 NPC 本轮真实投入"
+          ],
+          "label": "选择投入",
+          "hint": "不因反复打开对话重新投骰。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T10",
+      "phase": "TUTORIAL",
+      "title": "留在手里的东西",
+      "source": "图左／全押、留一手、反向背刺",
+      "trigger": "自己三骰可见；未提交",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T10_L01",
+          "speaker": "系统",
+          "text": "选中的骰子投入池中；其余留在托盘。相同点数的骰子也分别按 ID 记录。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "ALL_IN",
+          "target": "T11",
+          "guard": "dice_p.size==3",
+          "effects": [
+            "draft_selected=三枚骰子ID"
+          ],
+          "label": "全押",
+          "hint": "三枚全投。",
+          "status": "specified"
+        },
+        {
+          "event": "KEEP_ONE",
+          "target": "T11",
+          "guard": "dice_p.size==3",
+          "effects": [
+            "draft_selected=玩家选择的两枚ID"
+          ],
+          "label": "留一手",
+          "hint": "保留一枚；选择过程不能自动提交。",
+          "status": "specified"
+        },
+        {
+          "event": "KEEP_TWO",
+          "target": "T11",
+          "guard": "dice_p.size==3",
+          "effects": [
+            "draft_selected=最小点数的一枚ID；并列时让玩家选ID"
+          ],
+          "label": "反向背刺",
+          "hint": "只投一枚，藏起两枚。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T11",
+      "phase": "TUTORIAL",
+      "title": "不再收回",
+      "source": "图左／投入后比较（确认层）",
+      "trigger": "至少选中一枚骰子",
+      "kind": "confirm",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T11_L01",
+          "speaker": "系统",
+          "text": "投入 {selected_total} 点；保留 {reserve_text}。对方真实投入尚未揭晓。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONFIRM_DICE",
+          "target": "T12",
+          "guard": "selected_ids_valid and not action_locked",
+          "effects": [
+            "锁定投入和 action_id；双方同时揭晓"
+          ],
+          "label": "确认投入",
+          "hint": "确定后不可撤回。",
+          "status": "specified"
+        },
+        {
+          "event": "CANCEL",
+          "target": "T10",
+          "guard": "not action_locked",
+          "effects": [],
+          "label": "调整骰子",
+          "hint": "仅修改草稿。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T12",
+      "phase": "TUTORIAL",
+      "title": "灯下的总和",
+      "source": "图左／总点数≥老板胜利、<老板失败",
+      "trigger": "双方真实点数已揭晓",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T12_L01",
+          "speaker": "系统",
+          "text": "池中总点数 {pool_total}；老板总点数 {dealer_total}。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "REVEAL_DONE",
+          "target": "T13",
+          "guard": "pool_total>=dealer_total",
+          "effects": [
+            "教学胜利；奖金按已选筹资策略结算一次"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "REVEAL_DONE",
+          "target": "I00",
+          "guard": "pool_total<dealer_total",
+          "effects": [
+            "没收教学剩余筹码；descent_reason=TUTORIAL_LOSS；不消耗器官"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T13",
+      "phase": "TUTORIAL",
+      "title": "新手的好运",
+      "source": "图左／胜利后继续玩／不玩了",
+      "trigger": "教学第二轮胜利",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T13_L01",
+          "speaker": "老板",
+          "text": "新手运气不错。别急着站起来，真正的桌子还没见过你。",
+          "when": "true"
+        },
+        {
+          "id": "T13_L02",
+          "speaker": "系统",
+          "text": "教学结束。你可以提出继续，或尝试离开；这两个选择有不同的后续对白。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "PLAY_MORE",
+          "target": "T14",
+          "guard": "true",
+          "effects": [
+            "descent_reason=VOLUNTARY"
+          ],
+          "label": "继续玩",
+          "hint": "老板拿出另一杯发幽光的酒。",
+          "status": "specified"
+        },
+        {
+          "event": "TRY_LEAVE",
+          "target": "T15",
+          "guard": "true",
+          "effects": [],
+          "label": "不玩了",
+          "hint": "酒保会拦下你谈账。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T14",
+      "phase": "DESCENT",
+      "title": "幽光的那一杯",
+      "source": "图左／继续玩→老板端深渊特调",
+      "trigger": "选择继续玩；不是恢复酒",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T14_L01",
+          "speaker": "老板",
+          "text": "喝了这杯深渊特调，真正的牌局在下面。",
+          "when": "true"
+        },
+        {
+          "id": "T14_L02",
+          "speaker": "旁白",
+          "text": "杯口泛着微光。那不是火，像有人在水底睁开了眼睛。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "DRINK_DESCENT",
+          "target": "I00",
+          "guard": "not descent_done",
+          "effects": [
+            "descent_reason=VOLUNTARY"
+          ],
+          "label": "饮下深渊特调",
+          "hint": "推进地下转场。",
+          "status": "specified"
+        },
+        {
+          "event": "WAIT",
+          "target": "T14",
+          "guard": "true",
+          "effects": [],
+          "label": "先看清这杯酒",
+          "hint": "留在当前节点，不触发转场。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "T15",
+      "phase": "TUTORIAL",
+      "title": "免费的一杯，也有账",
+      "source": "图左／不玩了→酒保拦下收费",
+      "trigger": "教学胜利后尝试离开",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "T15_L01",
+          "speaker": "酒保",
+          "text": "门当然在那儿。只是你的账，还留在这里。",
+          "when": "true"
+        },
+        {
+          "id": "T15_L02",
+          "speaker": "你",
+          "text": "你说第一杯不收钱。",
+          "when": "true"
+        },
+        {
+          "id": "T15_L03",
+          "speaker": "酒保",
+          "text": "酒不收。座位收。你身上还有什么，能押给我看？",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "ASK_BILL",
+          "target": "Q01",
+          "guard": "true",
+          "effects": [],
+          "label": "把账单拿来",
+          "hint": "原图未定义费用、支付与离开接线；进入设计待定节点。",
+          "status": "pending"
+        }
+      ],
+      "note": "不把“无抵押物”扩写成永久债务系统。"
+    },
+    {
+      "id": "I00",
+      "phase": "DESCENT",
+      "title": "先下沉的是倒影",
+      "source": "图中／喝酒进入地下＋教学失败强制入地下",
+      "trigger": "自愿饮酒，或教学失败转场事件",
+      "kind": "cinematic",
+      "on_enter": [
+        "锁定转场输入；按 descent_reason 只显示对应一条老板台词；强制线不播放玩家主动喝酒动作"
+      ],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "I00_L01",
+          "speaker": "老板",
+          "text": "杯子放下。下面那张桌子，不喜欢久等。",
+          "when": "descent_reason==VOLUNTARY"
+        },
+        {
+          "id": "I00_L02",
+          "speaker": "老板",
+          "text": "钱输完了？别急。楼下收别的。",
+          "when": "descent_reason==TUTORIAL_LOSS"
+        },
+        {
+          "id": "I00_L03",
+          "speaker": "旁白",
+          "text": "杯中的门先向内开启。半拍之后，脚下的地板才想起该怎样裂开。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "TRANSITION_DONE",
+          "target": "I01",
+          "guard": "not descent_done",
+          "effects": [
+            "descent_done=true；phase=DESCENT；场景切地下"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "I01",
+      "phase": "DESCENT",
+      "title": "口袋里的牙齿",
+      "source": "图中／金币变牙齿筹码、视线模糊、心悸",
+      "trigger": "转场已完成；本次叙事尚未显示",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "I01_L01",
+          "speaker": "旁白",
+          "text": "你的金币在口袋里发烫。指尖碰到的，却是一排冰冷的齿尖。",
+          "when": "true"
+        },
+        {
+          "id": "I01_L02",
+          "speaker": "旁白",
+          "text": "你想数清它们。心跳却先替你数了三下。",
+          "when": "true"
+        },
+        {
+          "id": "I01_L03",
+          "speaker": "系统",
+          "text": "进入地下。幻觉是当前场景状态；不凭这段演出额外扣器官或理智。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "I02",
+          "guard": "descent_done",
+          "effects": [
+            "普通金币的映射等待配置；保留来源记录"
+          ],
+          "label": "抬头看向赌桌",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "I02",
+      "phase": "TABLE_SETUP",
+      "title": "那些不再离席的人",
+      "source": "图中／幻觉世界可走剧情介绍输家结果",
+      "trigger": "地下探索可交互；剧情只触发一次",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "I02_L01",
+          "speaker": "旁白",
+          "text": "壁龛里的面具都朝向赌桌。最靠近你的那张，还留着呼吸声。",
+          "when": "true"
+        },
+        {
+          "id": "I02_L02",
+          "speaker": "同伴",
+          "text": "别问他们等了多久。先确认你还有什么能输。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "N00",
+          "guard": "true",
+          "effects": [],
+          "label": "走向空位",
+          "hint": "进入正式赌局的角色观察。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "N00",
+      "phase": "TABLE_SETUP",
+      "title": "三个人，一张桌子",
+      "source": "图右上／正式赌局",
+      "trigger": "靠近正式赌桌，未提交入局",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "N00_L01",
+          "speaker": "荷官",
+          "text": "一席给我，一席给你。余下那席，留给你暂时愿意相信的人。",
+          "when": "true"
+        },
+        {
+          "id": "N00_L02",
+          "speaker": "系统",
+          "text": "从桌边人物中选择一位，再查看角色卡。酒保负责宣注、掷骰与结算。查看不会替你入局。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "INSPECT_NPC",
+          "target": "N01",
+          "guard": "npc_available",
+          "effects": [
+            "npc_card_seen=true"
+          ],
+          "label": "查看桌边人物",
+          "hint": "只展示已公开特征。",
+          "status": "specified"
+        },
+        {
+          "event": "INSPECT_DEALER",
+          "target": "N02",
+          "guard": "true",
+          "effects": [
+            "dealer_card_seen=true"
+          ],
+          "label": "查看荷官",
+          "hint": "查看姓名栏、公开职能与偏好。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "N01",
+      "phase": "TABLE_SETUP",
+      "title": "另一位归客",
+      "source": "图右上／鼠标移到NPC头上看部分信息",
+      "trigger": "悬停／聚焦NPC；或主动打开卡片",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "N01_L01",
+          "speaker": "角色卡",
+          "text": "称呼：{candidate_name}。公开倾向：{npc_public_trait}。目的：离开酒馆。",
+          "when": "true"
+        },
+        {
+          "id": "N01_L02",
+          "speaker": "同伴",
+          "text": "想知道我靠不靠谱？等筹码落桌，再决定。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "SELECT_NPC",
+          "target": "N02",
+          "guard": "npc_available",
+          "effects": [
+            "npc_id=当前客人；mode=TRIO"
+          ],
+          "label": "选他同桌",
+          "hint": "选择不会承诺你们整局合作。",
+          "status": "specified"
+        },
+        {
+          "event": "CLOSE_CARD",
+          "target": "N00",
+          "guard": "true",
+          "effects": [],
+          "label": "先不选",
+          "hint": "关闭卡片；不推进组桌。",
+          "status": "specified"
+        }
+      ],
+      "note": "守誓者／算计者／惊鹊者的隐藏策略不在卡片公开；不显示其真实骰点或撒谎概率。"
+    },
+    {
+      "id": "N02",
+      "phase": "TABLE_SETUP",
+      "title": "没有写名字的卡",
+      "source": "图右上／荷官角色卡：姓名技能偏好",
+      "trigger": "悬停／聚焦荷官；独立卡片覆盖层",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "N02_L01",
+          "speaker": "角色卡",
+          "text": "称呼：酒保／荷官。公开职能：宣注、明骰、结算。偏好：准确的数目。姓名：未公开。",
+          "when": "true"
+        },
+        {
+          "id": "N02_L02",
+          "speaker": "荷官",
+          "text": "卡片不会替你赢。它只是告诉你，谁负责收账。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "N03",
+          "guard": "true",
+          "effects": [
+            "dealer_card_seen=true"
+          ],
+          "label": "决定怎样入席",
+          "hint": "筹码足够才开放独狼。",
+          "status": "specified"
+        },
+        {
+          "event": "CLOSE_CARD",
+          "target": "N00",
+          "guard": "true",
+          "effects": [],
+          "label": "合上卡片",
+          "hint": "不改资源与策略。",
+          "status": "specified"
+        }
+      ],
+      "note": "原图提到技能，但未定义具体效果；“公开职能”只是现有规则职责，不新增技能。"
+    },
+    {
+      "id": "N03",
+      "phase": "TABLE_SETUP",
+      "title": "这一次，以身作保",
+      "source": "图右／三人局或筹码足够二人局",
+      "trigger": "角色观察结束；待选择模式与提交",
+      "kind": "confirm",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "N03_L01",
+          "speaker": "荷官",
+          "text": "合注、共渡、清桌，各履一契。三类碎片齐了，门才认得你。",
+          "when": "true"
+        },
+        {
+          "id": "N03_L02",
+          "speaker": "荷官",
+          "text": "缺数时，出得少的人付。一样少，就一起付。轮到你，先眼，再手，最后是心。",
+          "when": "true"
+        },
+        {
+          "id": "N03_L03",
+          "speaker": "系统",
+          "text": "仅责任者受罚；玩家受罚才推进眼→手→心。独狼失败由自己承担；碎片跨桌保留，同类不重复。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONFIRM_TRIO",
+          "target": "F10",
+          "guard": "npc_id is selected and formal_values_configured",
+          "effects": [
+            "锁定入局；mode=TRIO；创建 table_id"
+          ],
+          "label": "与他落座",
+          "hint": "初始筹码、底注先由已确认配置提供。",
+          "status": "specified"
+        },
+        {
+          "event": "CONFIRM_SOLO",
+          "target": "F10",
+          "guard": "formal_values_configured and player_chips>=formal_stake",
+          "effects": [
+            "mode=SOLO；不创建NPC贡献记录"
+          ],
+          "label": "独自入局",
+          "hint": "自己付满底注，责任只算自己。",
+          "status": "specified"
+        },
+        {
+          "event": "BACK",
+          "target": "N00",
+          "guard": "not formal_locked",
+          "effects": [],
+          "label": "再观察片刻",
+          "hint": "正式确认前可返回。",
+          "status": "specified"
+        }
+      ],
+      "note": "formal_values_configured 包括本模式合法的起手配置；独狼第三幕对手为荷官，其手牌来源尚待定义，不擅自复制玩家或凭空生成三骰。"
+    },
+    {
+      "id": "F10",
+      "phase": "STAKE",
+      "title": "第一契：合注",
+      "source": "图右／Round1：荷官定底注、NPC先报数",
+      "trigger": "TABLE_READY；本桌出资尚未开始",
+      "kind": "dialogue",
+      "on_enter": [
+        "创建 round_id 与 action_id；重置本幕草稿，不清空 key_types 或 lost_organs"
+      ],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F10_L01",
+          "speaker": "荷官",
+          "text": "本桌底注 {formal_stake}。先谈承诺，再亮钱。",
+          "when": "true"
+        },
+        {
+          "id": "F10_L02",
+          "speaker": "同伴",
+          "text": "我愿出 {promised_n}。你愿意把多少，放到我看不见的地方？",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "F10_L03",
+          "speaker": "系统",
+          "text": "同伴声称 {promised_n}，真实投入未验证。你持有 {player_chips}。",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "F10_SOLO",
+          "speaker": "系统",
+          "text": "独狼：底注 {formal_stake} 全由你投入；没有同伴承诺或贡献。",
+          "when": "mode==SOLO"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CLAIM_READY",
+          "target": "F10A",
+          "guard": "npc_claim_locked or mode==SOLO",
+          "effects": [
+            "NPC 真实实投已预先锁定；SOLO跳过NPC台词"
+          ],
+          "label": "决定出资",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F10A",
+      "phase": "STAKE",
+      "title": "轮到你报数",
+      "source": "图右／NPC先报出愿意投入的筹码，玩家后报出",
+      "trigger": "NPC承诺已显示；玩家还未报价",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "保留已声明承诺；不扣筹码"
+      ],
+      "lines": [
+        {
+          "id": "F10A_L01",
+          "speaker": "荷官",
+          "text": "他的承诺已经落字。现在，轮到你。",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "F10A_L02",
+          "speaker": "系统",
+          "text": "声明愿意投入的金额；本步骤只记承诺，真实出资在下一步选择。",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "F10A_L03",
+          "speaker": "系统",
+          "text": "独狼承诺额为整桌底注，直接进入真实出资确认。",
+          "when": "mode==SOLO"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "DECLARE_AMOUNT",
+          "target": "F11",
+          "guard": "mode==TRIO and declared_amount>=0 and declared_amount<=player_chips",
+          "effects": [
+            "promised_p=declared_amount；只记承诺，不扣款"
+          ],
+          "label": "报出我的承诺",
+          "hint": "声明金额不是实际付款。",
+          "status": "specified"
+        },
+        {
+          "event": "SOLO_READY",
+          "target": "F12",
+          "guard": "mode==SOLO and player_chips>=formal_stake",
+          "effects": [
+            "promised_p=formal_stake；draft_actual_p=formal_stake"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": "实际游戏这里使用金额选择器，输入确认后进入意图选择；预览只审阅节点契约。"
+    },
+    {
+      "id": "F11",
+      "phase": "STAKE",
+      "title": "一言为定，或一言为饵",
+      "source": "图右／合作、背刺、独狼三项",
+      "trigger": "承诺已显示，实际筹码尚未提交",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F11_L01",
+          "speaker": "同伴",
+          "text": "只要总数够了，谁又会在意每一枚从哪只手里来？",
+          "when": "mode==TRIO"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "SELECT_HONEST",
+          "target": "F12",
+          "guard": "mode==TRIO and can_afford_promised",
+          "effects": [
+            "draft_actual_p=promised_p；strategy=HONEST"
+          ],
+          "label": "一言为定",
+          "hint": "按约实投；最终收益按真实出资分配，出资高者优先选道具。",
+          "status": "specified"
+        },
+        {
+          "event": "SELECT_HIDE",
+          "target": "F12",
+          "guard": "mode==TRIO and not betray_locked and can_afford_hidden and 0<=hidden_actual_p<promised_p",
+          "effects": [
+            "draft_actual_p=hidden_actual_p；strategy=HIDE"
+          ],
+          "label": "暗藏筹码",
+          "hint": "口头合作、实际少出；若桌局最终赢，按图由背刺者夺取收益，风险不改变过底注条件。",
+          "status": "specified"
+        },
+        {
+          "event": "SELECT_SOLO",
+          "target": "F12",
+          "guard": "player_chips>=formal_stake and not formal_stake_submitted",
+          "effects": [
+            "draft_mode=SOLO；draft_actual_p=formal_stake"
+          ],
+          "label": "独狼",
+          "hint": "驱逐同伴，由你独付底注；提交后本桌不再切回三人。",
+          "status": "specified"
+        }
+      ],
+      "note": "正式背刺胜后独占与旧v1“只保留差额”不同，此处按新图保留；多人都背刺时分配优先级须定数值前补充。 Q06：双方都选择背刺时，图未定义独占优先级；正式桌局收益分配必须等待补充，不能允许两方重复独占同一奖池。"
+    },
+    {
+      "id": "F12",
+      "phase": "STAKE",
+      "title": "暗槽在等你的手",
+      "source": "图右／出资判定前确认层",
+      "trigger": "有效出资草稿，未提交",
+      "kind": "confirm",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F12_L01",
+          "speaker": "系统",
+          "text": "承诺 {promised_p}；实际投入 {draft_actual_p}；提交后余额 {draft_balance}。对方实际出资仍未揭晓。",
+          "when": "true"
+        },
+        {
+          "id": "F12_L02",
+          "speaker": "荷官",
+          "text": "放下的东西，我会替你记得。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONFIRM_STAKE",
+          "target": "F13",
+          "guard": "draft_affordable and not action_locked",
+          "effects": [
+            "原子锁定双方实投并扣钱包；计算公共出资；缓存揭晓事实"
+          ],
+          "label": "确认投入",
+          "hint": "只结算一次。",
+          "status": "specified"
+        },
+        {
+          "event": "CANCEL",
+          "target": "F11",
+          "guard": "not action_locked",
+          "effects": [],
+          "label": "再检查一次",
+          "hint": "保留草稿，不扣钱。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F13",
+      "phase": "STAKE",
+      "title": "承诺退到桌下",
+      "source": "图右／出资≥底注／<底注",
+      "trigger": "真实投入已锁定并揭晓",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F13_L01",
+          "speaker": "系统",
+          "text": "实际出资：你 {actual_p}，同伴 {actual_n}。总额 {stake_total}；所需 {formal_stake}。",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "F13_SOLO",
+          "speaker": "系统",
+          "text": "你的实际投入 {actual_p}；所需底注 {formal_stake}。",
+          "when": "mode==SOLO"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "REVEAL_DONE",
+          "target": "F14",
+          "guard": "stake_total>=formal_stake",
+          "effects": [
+            "荷官匹配不少于本桌总出资；组公共奖池；add_unique(STAKE)"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "REVEAL_DONE",
+          "target": "F15",
+          "guard": "stake_total<formal_stake",
+          "effects": [
+            "没收本次已投筹码；failed_rounds+=1；怒意事件+1；不先扣器官"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F14",
+      "phase": "STAKE",
+      "title": "第一枚契齿",
+      "source": "图右／达标、荷官匹配、游戏开始",
+      "trigger": "合注成功事务已完成",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F14_L01",
+          "speaker": "荷官",
+          "text": "{stake_total}。够了。",
+          "when": "true"
+        },
+        {
+          "id": "F14_L02",
+          "speaker": "系统",
+          "text": "合注通过。首次获得合注碎片；已有该类则不重复发放。公共奖池 {public_pot}。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "F20",
+          "guard": "true",
+          "effects": [],
+          "label": "等荷官掷骰",
+          "hint": "进入共渡；不提前发共渡碎片。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F15",
+      "phase": "SETTLEMENT",
+      "title": "数目少了，解释不必了",
+      "source": "图右／不足、怒气、罚没、诅咒背刺者、驱逐",
+      "trigger": "合注失败，实投罚没已记录",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F15_L01",
+          "speaker": "荷官",
+          "text": "少了 {stake_shortfall}。这张桌子，不收解释。",
+          "when": "true"
+        },
+        {
+          "id": "F15_L02",
+          "speaker": "系统",
+          "text": "底注未达标。将按实际出资比较责任，并对责任者施加下一桌明牌限制；不根据口头承诺扣器官。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "P00",
+          "guard": "true",
+          "effects": [
+            "failure_origin=STAKE；责任比较值=actual_p,actual_n"
+          ],
+          "label": "查看责任与代价",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F20",
+      "phase": "POOL",
+      "title": "第二契：共渡",
+      "source": "图右／Round2：主角NPC暗投3枚、荷官明投3枚",
+      "trigger": "合注已通过；本幕未掷骰",
+      "kind": "dialogue",
+      "on_enter": [
+        "只生成本幕骰子一次；NPC实际投入在玩家提交前锁定；按角色各自的明牌状态显示",
+        "SOLO只生成玩家与荷官的骰子；不存在虚构NPC；pool_total=玩家点数。"
+      ],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F20_L01",
+          "speaker": "荷官",
+          "text": "我的三枚放在灯下。你们的三枚，留在各自的黑暗里。",
+          "when": "true"
+        },
+        {
+          "id": "F20_L02",
+          "speaker": "系统",
+          "text": "荷官总点数 {dealer_total}；你的三骰 {dice_p_text}。若受明牌诅咒，你的三骰会公开。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "ROLL_DONE",
+          "target": "F21",
+          "guard": "dice_rolled",
+          "effects": [
+            "消费本次已生效的下一桌明牌标志；不提前清空未到幕的标志"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F21",
+      "phase": "POOL",
+      "title": "“我们”这两个字",
+      "source": "图右／NPC文字供述，可能说出两个实际只出一个",
+      "trigger": "骰点已生成，玩家未提交",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F21_L01",
+          "speaker": "同伴",
+          "text": "我手里有大的。我出两枚，你也多出一点——我们一起过。",
+          "when": "mode==TRIO and npc_kind==GENERIC"
+        },
+        {
+          "id": "F21_L02",
+          "speaker": "系统",
+          "text": "对方声称将出两枚，真实性未验证。角色性格改变供述与决策倾向，不改变基础判定。",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "F21_OATH",
+          "speaker": "同伴",
+          "text": "我答应出这两枚，就不会临时收回。",
+          "when": "mode==TRIO and npc_kind==OATH"
+        },
+        {
+          "id": "F21_CALCULATING",
+          "speaker": "同伴",
+          "text": "你先把大的放下，剩下的交给我。",
+          "when": "mode==TRIO and npc_kind==CALCULATING"
+        },
+        {
+          "id": "F21_SKITTISH",
+          "speaker": "同伴",
+          "text": "我会出……我会出的，你别现在松手。",
+          "when": "mode==TRIO and npc_kind==SKITTISH"
+        },
+        {
+          "id": "F21_SOLO",
+          "speaker": "荷官",
+          "text": "没有同伴替你凑数。看看你自己的手。",
+          "when": "mode==SOLO"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "F22",
+          "guard": "true",
+          "effects": [],
+          "label": "看看自己的骰子",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": "守誓者变体：“我答应出这两枚，就不会临时收回。”；算计者：“你先把大的放下，剩下的交给我。”；惊鹊者：“我会出……我会出的，你别现在松手。”；只选与当前NPC匹配的一句。"
+    },
+    {
+      "id": "F22",
+      "phase": "POOL",
+      "title": "把哪一部分交给他",
+      "source": "图右／倾囊相助、留一手、反向背刺",
+      "trigger": "可编辑的 selected_dice 草稿；尚未提交",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F22_L01",
+          "speaker": "系统",
+          "text": "投入点数不少于荷官才通过。留下的骰子会成为清桌手牌，并按面值换算私藏筹码。倾囊也不保证必胜。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "ALL_IN",
+          "target": "F23",
+          "guard": "dice_p.size==3",
+          "effects": [
+            "选择全部三骰ID"
+          ],
+          "label": "倾囊相助",
+          "hint": "全投；若通过，清桌时没有保留骰。",
+          "status": "specified"
+        },
+        {
+          "event": "KEEP_ONE",
+          "target": "F23",
+          "guard": "dice_p.size==3",
+          "effects": [
+            "选择两枚ID；保留一枚ID"
+          ],
+          "label": "留一手",
+          "hint": "自选两枚投入，一枚留待清桌。",
+          "status": "specified"
+        },
+        {
+          "event": "KEEP_TWO",
+          "target": "F23",
+          "guard": "dice_p.size==3 and not betray_locked",
+          "effects": [
+            "选择最小一枚ID"
+          ],
+          "label": "反向背刺",
+          "hint": "只投最小点，保留两枚大点；可能导致总额不足。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F23",
+      "phase": "POOL",
+      "title": "请看清你的空掌",
+      "source": "图右／暗投比较前确认层",
+      "trigger": "选中的骰子ID有效，点数摘要已计算",
+      "kind": "confirm",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F23_L01",
+          "speaker": "系统",
+          "text": "投入 {selected_total} 点；保留 {reserve_text}。NPC 的真实贡献仍然未知。",
+          "when": "true"
+        },
+        {
+          "id": "F23_L02",
+          "speaker": "荷官",
+          "text": "骰子离手，就不再听你的。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONFIRM_DICE",
+          "target": "F24",
+          "guard": "selection_valid and not action_locked",
+          "effects": [
+            "锁定双方投入；按 action_id 同时揭晓；不得事后改NPC贡献"
+          ],
+          "label": "确认投入",
+          "hint": "不可撤回，结果由真实点数判断。",
+          "status": "specified"
+        },
+        {
+          "event": "CANCEL",
+          "target": "F22",
+          "guard": "not action_locked",
+          "effects": [],
+          "label": "调整骰子",
+          "hint": "只回到草稿，不重新掷骰。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F24",
+      "phase": "POOL",
+      "title": "这一次，只数落下的",
+      "source": "图右／池子总点≥荷官通过，否则扣少投者",
+      "trigger": "本幕真实贡献揭晓完成",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F24_L01",
+          "speaker": "系统",
+          "text": "你的实际投入 {pool_contrib_p}；对方实际投入 {pool_contrib_n}；荷官 {dealer_total}。",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "F24_SOLO",
+          "speaker": "系统",
+          "text": "你的实际投入 {pool_contrib_p}；荷官 {dealer_total}。本桌没有NPC贡献。",
+          "when": "mode==SOLO"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "REVEAL_DONE",
+          "target": "F25",
+          "guard": "pool_total>=dealer_total",
+          "effects": [
+            "add_unique(POOL)；保留骰成为手牌；按面值换私藏一次"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "REVEAL_DONE",
+          "target": "P00",
+          "guard": "pool_total<dealer_total",
+          "effects": [
+            "failure_origin=POOL；清空本轮保留骰且不发收益；failed_rounds+=1；责任值=真实点数"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "F25",
+      "phase": "POOL",
+      "title": "一起活到这里",
+      "source": "图右下／通过后保留点数变下轮筹码；本轮确认接清桌",
+      "trigger": "共渡通过与私藏结算已完成",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "F25_L01",
+          "speaker": "荷官",
+          "text": "{pool_total}。够你们一起活到这里。",
+          "when": "true"
+        },
+        {
+          "id": "F25_L02",
+          "speaker": "同伴",
+          "text": "先别道谢。下一局，我们得各自走。",
+          "when": "true"
+        },
+        {
+          "id": "F25_L03",
+          "speaker": "系统",
+          "text": "共渡碎片已记录；同类不重复。保留骰 {reserve_text}；私藏筹码增加 {reserve_total}。接下来是清桌，不直接通关。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "C00",
+          "guard": "true",
+          "effects": [],
+          "label": "检查最后的手牌",
+          "hint": "图中直接胜利出口已按本轮回复衔接第三幕。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "P00",
+      "phase": "SETTLEMENT",
+      "title": "谁的手更空",
+      "source": "图右／实际出得少者付代价＋本轮确认同贡献双方受罚",
+      "trigger": "正式失败已成立，贡献已冻结",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "P00_L01",
+          "speaker": "荷官",
+          "text": "我不问谁先许诺。只看谁留下得更多。",
+          "when": "true"
+        },
+        {
+          "id": "P00_L02",
+          "speaker": "系统",
+          "text": "仅在失败后比较真实贡献；胜局不因此追加惩罚。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "ASSIGN_RESPONSIBILITY",
+          "target": "P01",
+          "guard": "mode==SOLO or failure_origin==CLEAR",
+          "effects": [
+            "responsible_party=PLAYER"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "ASSIGN_RESPONSIBILITY",
+          "target": "P01",
+          "guard": "mode==TRIO and failure_origin!=CLEAR and contribution_p<contribution_n",
+          "effects": [
+            "responsible_party=PLAYER"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "ASSIGN_RESPONSIBILITY",
+          "target": "P01",
+          "guard": "mode==TRIO and failure_origin!=CLEAR and contribution_p>contribution_n",
+          "effects": [
+            "responsible_party=NPC"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "ASSIGN_RESPONSIBILITY",
+          "target": "P01",
+          "guard": "mode==TRIO and failure_origin!=CLEAR and contribution_p==contribution_n",
+          "effects": [
+            "responsible_party=BOTH"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "P01",
+      "phase": "SETTLEMENT",
+      "title": "账簿上的那只手",
+      "source": "图右／扣血、没收道具或筹码、明牌诅咒",
+      "trigger": "责任者已确定；本次失败尚未付代价",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "P01_L01",
+          "speaker": "系统",
+          "text": "责任者：{responsible_party_text}。你的器官赌注只有在责任包含你时才支付。",
+          "when": "true"
+        },
+        {
+          "id": "P01_L02",
+          "speaker": "荷官",
+          "text": "判到谁，就由谁伸手。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "APPLY_PENALTY",
+          "target": "P02",
+          "guard": "responsible_party==NPC",
+          "effects": [
+            "原子应用NPC附加惩罚；玩家器官数不变；标记 action 已结算"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "APPLY_PENALTY",
+          "target": "P03",
+          "guard": "responsible_party in [PLAYER,BOTH] and player_penalties<2",
+          "effects": [
+            "原子支付下一器官；player_penalties+=1；若BOTH同时罚NPC；结算去重"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "APPLY_PENALTY",
+          "target": "P04",
+          "guard": "responsible_party in [PLAYER,BOTH] and player_penalties==2",
+          "effects": [
+            "支付心；player_penalties=3；若BOTH同时罚NPC；结束本次游玩"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": "合注NPC处罚：没收其本桌私藏、下一桌共渡明牌，按图驱逐当前桌；共渡NPC处罚沿用基础方案没收本轮私藏与保留骰。清桌败方就是玩家，不用上幕贡献比较。"
+    },
+    {
+      "id": "P02",
+      "phase": "SETTLEMENT",
+      "title": "这次，不是你的名字",
+      "source": "图右／NPC贡献较低者受罚",
+      "trigger": "NPC 单独惩罚事务已完成",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "P02_L01",
+          "speaker": "荷官",
+          "text": "是你，客人。另一只手，暂且收回去。",
+          "when": "true"
+        },
+        {
+          "id": "P02_L02",
+          "speaker": "同伴",
+          "text": "我……只是想留一点。",
+          "when": "true"
+        },
+        {
+          "id": "P02_L03",
+          "speaker": "系统",
+          "text": "NPC 受罚。你的眼、手、心均不因本次责任判定再损失；既有受损状态不会恢复。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "N03",
+          "guard": "failure_origin==STAKE",
+          "effects": [
+            "结束当前桌；保留碎片、器官、下一桌诅咒"
+          ],
+          "label": "重新组桌",
+          "hint": "原图合注失败驱逐后回到组桌。",
+          "status": "specified"
+        },
+        {
+          "event": "CONTINUE",
+          "target": "N03",
+          "guard": "failure_origin==POOL",
+          "effects": [
+            "建议：结束当前桌并保留全局状态"
+          ],
+          "label": "准备下一桌",
+          "hint": "图中未画出支付得起后的接线，此边明确为建议。",
+          "status": "proposal"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "P03",
+      "phase": "SETTLEMENT",
+      "title": "仍可伸出的那只手",
+      "source": "图右／玩家支付代价＋已确认眼手心",
+      "trigger": "玩家已支付眼或手；未到第三次",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "P03_L01",
+          "speaker": "荷官",
+          "text": "第一笔，收眼。想看清他，就把头转过去。",
+          "when": "paid_organ==EYE"
+        },
+        {
+          "id": "P03_L02",
+          "speaker": "荷官",
+          "text": "第二笔，收手。剩下的东西，请一件一件拿。",
+          "when": "paid_organ==HAND"
+        },
+        {
+          "id": "P03_L03",
+          "speaker": "系统",
+          "text": "实际本次支付 {paid_organ}。已得碎片保留。失眼不遮字幕；失手先放回托盘，再拿另一件物品。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONTINUE",
+          "target": "N03",
+          "guard": "failure_origin in [STAKE,CLEAR]",
+          "effects": [],
+          "label": "记住代价，重新组桌",
+          "hint": "保留碎片与受损状态。",
+          "status": "specified"
+        },
+        {
+          "event": "CONTINUE",
+          "target": "N03",
+          "guard": "failure_origin==POOL",
+          "effects": [],
+          "label": "记住代价，准备下一桌",
+          "hint": "此边为图中未接出的可支付分支建议。",
+          "status": "proposal"
+        }
+      ],
+      "note": "按 paid_organ 只显示对应的一句荷官台词；BOTH 时结算摘要同时列 NPC 的处罚，不再扣第二次。"
+    },
+    {
+      "id": "P04",
+      "phase": "SETTLEMENT",
+      "title": "最后一笔",
+      "source": "图右下／不足以换→游戏失败→永远留下",
+      "trigger": "玩家第三次应支付器官；事务已付心",
+      "kind": "cinematic",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "P04_L01",
+          "speaker": "荷官",
+          "text": "最后一笔，不必伸手了。",
+          "when": "true"
+        },
+        {
+          "id": "P04_L02",
+          "speaker": "旁白",
+          "text": "透明骰子落下，里面那一点红光不再跳动。对面的人，终于站了起来。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CINEMATIC_DONE",
+          "target": "E02",
+          "guard": "player_penalties==3",
+          "effects": [
+            "禁用再开桌；转移至荷官视角"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C00",
+      "phase": "CLEAR",
+      "title": "第三契：清桌",
+      "source": "图外补充／本轮明确保留清桌",
+      "trigger": "共渡通过，保留骰已合法结算",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C00_L01",
+          "speaker": "同伴",
+          "text": "“我们”到这里为止。接下来的门，只认钥匙。",
+          "when": "mode==TRIO"
+        },
+        {
+          "id": "C00_L02",
+          "speaker": "荷官",
+          "text": "先看托盘。没有骰子的人，不能拿承诺出牌。",
+          "when": "true"
+        },
+        {
+          "id": "C00_SOLO",
+          "speaker": "荷官",
+          "text": "第三契，没有人替你挡在桌边。这一次，由我与你清桌。",
+          "when": "mode==SOLO"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "PREPARE",
+          "target": "C01",
+          "guard": "reserve_dice.size>0",
+          "effects": [],
+          "label": "查看道具",
+          "hint": "本幕前准备，最多持一件。",
+          "status": "specified"
+        },
+        {
+          "event": "NO_DICE",
+          "target": "C02",
+          "guard": "reserve_dice.size==0",
+          "effects": [],
+          "label": "我没有保留骰",
+          "hint": "给出哑骰或认负入口。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C01",
+      "phase": "CLEAR",
+      "title": "最后一件凭借",
+      "source": "图外补充／清桌筹码与道具",
+      "trigger": "有保留骰；本次准备尚未结束",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C01_L01",
+          "speaker": "荷官",
+          "text": "窥牌眼，{peek_price}。改面骰，{change_price}。一人，只准留一件。",
+          "when": "true"
+        },
+        {
+          "id": "C01_L02",
+          "speaker": "系统",
+          "text": "窥牌眼只看本轮已锁定的暗骰；改面骰只改自己的一枚。价格与效果范围先由已确认配置提供。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "BUY_PEEK",
+          "target": "C01",
+          "guard": "held_tool==NONE and private_chips>=peek_price",
+          "effects": [
+            "购买窥牌眼一次；扣款动作去重"
+          ],
+          "label": "买窥牌眼",
+          "hint": "筹码不足或已有道具时禁用并解释原因。",
+          "status": "specified"
+        },
+        {
+          "event": "BUY_CHANGE",
+          "target": "C01",
+          "guard": "held_tool==NONE and private_chips>=change_price and change_range_configured",
+          "effects": [
+            "购买改面骰一次"
+          ],
+          "label": "买改面骰",
+          "hint": "改点范围未确认时不允许真实执行。",
+          "status": "specified"
+        },
+        {
+          "event": "FINISH_PREP",
+          "target": "C03",
+          "guard": "reserve_dice.size>0",
+          "effects": [],
+          "label": "不再添注，准备出骰",
+          "hint": "结束准备，不强迫购买。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C02",
+      "phase": "CLEAR",
+      "title": "空掌不能亮牌",
+      "source": "图外补充／全力合作后没有手牌",
+      "trigger": "reserve_dice.size==0",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C02_L01",
+          "speaker": "荷官",
+          "text": "你把一切都放进了上一局。好意，不能替你掷骰。",
+          "when": "true"
+        },
+        {
+          "id": "C02_L02",
+          "speaker": "系统",
+          "text": "可按已确认价格买一枚 1 点哑骰；若放弃清桌，则你成为本幕败方并支付下一器官。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "BUY_DUMMY",
+          "target": "C03",
+          "guard": "dummy_price is configured and private_chips>=dummy_price",
+          "effects": [
+            "支付哑骰价格一次；生成唯一ID的1点手牌"
+          ],
+          "label": "买一枚哑骰",
+          "hint": "未定价时只在设计稿保留，不执行假扣款。",
+          "status": "specified"
+        },
+        {
+          "event": "CONFIRM_SURRENDER",
+          "target": "P00",
+          "guard": "confirmed_surrender",
+          "effects": [
+            "failure_origin=CLEAR；failed_rounds+=1；玩家为败方"
+          ],
+          "label": "确认认负",
+          "hint": "必须再次确认下一个器官后果，默认焦点取消。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C03",
+      "phase": "CLEAR",
+      "title": "最后一次暗置",
+      "source": "图外补充／清桌暗出骰",
+      "trigger": "清桌对决进行中；双方均有骰",
+      "kind": "dialogue",
+      "on_enter": [
+        "对手ID：TRIO为同伴，SOLO为荷官；若本轮尚未锁定对手，锁定其出骰；不因查看道具重选。"
+      ],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C03_L01",
+          "speaker": "荷官",
+          "text": "大的留下，小的归我。同点，两枚同收。",
+          "when": "true"
+        },
+        {
+          "id": "C03_L02",
+          "speaker": "系统",
+          "text": "选一枚手牌暗置。先锁定对手的出骰，使用窥牌眼后仍可决定你的出骰；不反向改变对手。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "SELECT_DIE",
+          "target": "C04",
+          "guard": "die_id in player_hand",
+          "effects": [
+            "draft_die_id=chosen_id"
+          ],
+          "label": "暗置选中的骰子",
+          "hint": "先显示点数和道具使用摘要；不自动亮骰。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C04",
+      "phase": "CLEAR",
+      "title": "白点，黑暗",
+      "source": "图外补充／清桌亮骰前确认",
+      "trigger": "已选合法手牌；单手操作条件满足",
+      "kind": "confirm",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C04_L01",
+          "speaker": "系统",
+          "text": "准备亮出 {chosen_face} 点骰。已用道具：{tool_summary}。",
+          "when": "true"
+        },
+        {
+          "id": "C04_L02",
+          "speaker": "荷官",
+          "text": "还有一次，把手收回去的机会。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CONFIRM_CLEAR",
+          "target": "C05",
+          "guard": "die_still_owned and not action_locked and hand_order_valid",
+          "effects": [
+            "锁定 action_id；同时亮出双方所选骰"
+          ],
+          "label": "确认亮骰",
+          "hint": "锁定后不再改点。",
+          "status": "specified"
+        },
+        {
+          "event": "CANCEL",
+          "target": "C03",
+          "guard": "not action_locked",
+          "effects": [],
+          "label": "重新选择",
+          "hint": "返回原手牌，不随机重掷。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C05",
+      "phase": "CLEAR",
+      "title": "两枚骰子的判词",
+      "source": "图外补充／清桌大点保留、小点销毁、同点同毁",
+      "trigger": "双方骰面已揭晓",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C05_L01",
+          "speaker": "系统",
+          "text": "你的点数 {face_p}；对方点数 {face_n}。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "REVEAL_DONE",
+          "target": "C06",
+          "guard": "face_p>face_n",
+          "effects": [
+            "保留我方骰；销毁对方骰；按已确认额度转移现有筹码，不转负数"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "REVEAL_DONE",
+          "target": "C06",
+          "guard": "face_p<face_n",
+          "effects": [
+            "销毁我方骰；保留对方骰；转移现有筹码"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "REVEAL_DONE",
+          "target": "C06",
+          "guard": "face_p==face_n",
+          "effects": [
+            "双方所选骰同时销毁；不转移筹码"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C06",
+      "phase": "CLEAR",
+      "title": "托盘里的余数",
+      "source": "图外补充／清桌逐轮结束判断",
+      "trigger": "本轮销毁与筹码转移已提交",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C06_L01",
+          "speaker": "荷官",
+          "text": "看看托盘。还有谁，能够继续。",
+          "when": "true"
+        },
+        {
+          "id": "C06_L02",
+          "speaker": "系统",
+          "text": "你剩 {hand_count_p} 枚；对方剩 {hand_count_n} 枚。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "ROUND_DONE",
+          "target": "C03",
+          "guard": "hand_count_p>0 and hand_count_n>0",
+          "effects": [
+            "创建下次出骰action_id；清除本轮草稿"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "ROUND_DONE",
+          "target": "C07",
+          "guard": "hand_count_p>0 and hand_count_n==0",
+          "effects": [
+            "add_unique(CLEAR)；清桌胜方为玩家"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "ROUND_DONE",
+          "target": "P00",
+          "guard": "hand_count_p==0 and hand_count_n>0",
+          "effects": [
+            "failure_origin=CLEAR；failed_rounds+=1；玩家为败方"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "ROUND_DONE",
+          "target": "Q02",
+          "guard": "hand_count_p==0 and hand_count_n==0",
+          "effects": [],
+          "label": "",
+          "hint": "",
+          "status": "pending"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "C07",
+      "phase": "CLEAR",
+      "title": "此席空了",
+      "source": "图外补充／清桌胜利取得第三类碎片",
+      "trigger": "玩家清桌胜利已结算",
+      "kind": "decision",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "C07_L01",
+          "speaker": "荷官",
+          "text": "清桌。此局胜负已定。",
+          "when": "true"
+        },
+        {
+          "id": "C07_L02",
+          "speaker": "系统",
+          "text": "清桌碎片已记录；同类不重复授予。检查三类是否齐全。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "CHECK_KEYS",
+          "target": "E00",
+          "guard": "key_types=={STAKE,POOL,CLEAR}",
+          "effects": [
+            "合成20号钥匙一次"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        },
+        {
+          "event": "CHECK_KEYS",
+          "target": "N03",
+          "guard": "key_types!={STAKE,POOL,CLEAR}",
+          "effects": [
+            "保留已有碎片；回组桌补缺"
+          ],
+          "label": "",
+          "hint": "",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "E00",
+      "phase": "END",
+      "title": "钥匙记得你的名字",
+      "source": "图右下胜利出口＋三类确认",
+      "trigger": "三类碎片齐全，合钥完成",
+      "kind": "dialogue",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "E00_L01",
+          "speaker": "旁白",
+          "text": "三片黄铜在寂静里合拢。钥匙上没有姓名，只有一个数字：20。",
+          "when": "true"
+        },
+        {
+          "id": "E00_L02",
+          "speaker": "荷官",
+          "text": "这次，门是给你开的。",
+          "when": "true"
+        }
+      ],
+      "transitions": [
+        {
+          "event": "OPEN_DOOR",
+          "target": "E01",
+          "guard": "key_types=={STAKE,POOL,CLEAR}",
+          "effects": [
+            "恢复身体；回现实酒馆；冻结本轮结算"
+          ],
+          "label": "推开门",
+          "hint": "结束本世界赌局。",
+          "status": "specified"
+        }
+      ],
+      "note": ""
+    },
+    {
+      "id": "E01",
+      "phase": "END",
+      "title": "未饮之酒",
+      "source": "图右下／胜利逃出生天",
+      "trigger": "玩家使用钥匙离开",
+      "kind": "terminal",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "E01_L01",
+          "speaker": "酒保",
+          "text": "酒还没凉。你要走了吗？",
+          "when": "true"
+        },
+        {
+          "id": "E01_L02",
+          "speaker": "你",
+          "text": "这次，不喝了。",
+          "when": "true"
+        },
+        {
+          "id": "E01_L03",
+          "speaker": "旁白",
+          "text": "你走进雨里。倒影没有留下。",
+          "when": "true"
+        }
+      ],
+      "transitions": [],
+      "note": "只提供返回标题／重新开始的UI事件，不存在继续押注事件。"
+    },
+    {
+      "id": "E02",
+      "phase": "END",
+      "title": "空缺已经补上",
+      "source": "图右下／失败永远留下＋荷官接班",
+      "trigger": "player_penalties==3；心之演出完成",
+      "kind": "terminal",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "E02_L01",
+          "speaker": "旁白",
+          "text": "上一位荷官走进雨里。面具留下，带着你的呼吸。",
+          "when": "true"
+        },
+        {
+          "id": "E02_L02",
+          "speaker": "你",
+          "text": "欢迎来到地下酒馆。赢下三局，你就可以离开。",
+          "when": "true"
+        },
+        {
+          "id": "E02_L03",
+          "speaker": "旁白",
+          "text": "有人推开了门。你的手，先于你伸向了骰子。",
+          "when": "true"
+        }
+      ],
+      "transitions": [],
+      "note": ""
+    },
+    {
+      "id": "Q01",
+      "phase": "TUTORIAL",
+      "title": "待决定：拦账后的出口",
+      "source": "图左／不玩了收费节点下方箭头未接通",
+      "trigger": "玩家要求账单；未定义费用与后续线路",
+      "kind": "pending",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "Q01_L01",
+          "speaker": "设计说明",
+          "text": "此处不是正式玩家台词。需要确定酒费、如何支付、无抵押后的跳转，不能自动把玩家送地下或放出酒馆。",
+          "when": "true"
+        }
+      ],
+      "transitions": [],
+      "note": "保留原图缺口；其余主线可完成，不宣称这一支已闭合。"
+    },
+    {
+      "id": "Q02",
+      "phase": "CLEAR",
+      "title": "待裁定：最后两骰同毁",
+      "source": "图外补充／旧规则未定的最终同点",
+      "trigger": "hand_count_p==0 and hand_count_n==0",
+      "kind": "pending",
+      "on_enter": [],
+      "on_exit": [
+        "停止本节点逐字显示；解绑其临时输入；保留已提交的事务"
+      ],
+      "lines": [
+        {
+          "id": "Q02_L01",
+          "speaker": "设计说明",
+          "text": "此处不是正式玩家台词。双方最后一枚同点、同时销毁后，尚未确定算平局、失败或另行裁定；预览不伪造判词。",
+          "when": "true"
+        }
+      ],
+      "transitions": [],
+      "note": ""
+    }
+  ]
+}

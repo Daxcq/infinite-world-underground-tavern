@@ -1,0 +1,24 @@
+00:00.750  blend            | Read blend: "D:\无限世界地下酒馆和赌局\美术资产\角色动作_v1\冒险者_行走与坐姿.blend"
+BlenderMCP addon registered
+TABLE_PENETRATION drink 1 0 MIN []
+TABLE_PENETRATION drink 31 0 MIN []
+TABLE_PENETRATION drink 61 0 MIN []
+TABLE_PENETRATION drink 91 0 MIN []
+TABLE_PENETRATION drink 121 0 MIN []
+AUTHORED_CONTACT drink {"first": {"Pelvis": [0.02896, 0.01031, 0.62288], "Head": [0.03721, 0.01031, 1.19421], "L_Forearm": [0.19654, 0.25586, 0.90811], "R_Forearm": [0.187, -0.26231, 0.8982], "L_Hand": [0.4, 0.16, 0.96], "R_Hand": [0.37, -0.13, 0.94], "L_Foot": [0.44873, 0.15629, 0.14753], "R_Foot": [0.44873, -0.14253, 0.14753]}, "peak": {"Pelvis": [0.02896, 0.01031, 0.62288], "Head": [0.03721, 0.01031, 1.19421], "L_Forearm": [0.19654, 0.25586, 0.90811], "R_Forearm": [0.2089, -0.26883, 0.98733], "L_Hand": [0.4, 0.16, 0.96], "R_Hand": [0.22, -0.075, 1.11], "L_Foot": [0.44873, 0.15629, 0.14753], "R_Foot": [0.44873, -0.14253, 0.14753]}, "last": {"Pelvis": [0.02896, 0.01031, 0.62288], "Head": [0.03721, 0.01031, 1.19421], "L_Forearm": [0.19654, 0.25586, 0.90811], "R_Forearm": [0.187, -0.26231, 0.8982], "L_Hand": [0.4, 0.16, 0.96], "R_Hand": [0.37, -0.13, 0.94], "L_Foot": [0.44873, 0.15629, 0.14753], "R_Foot": [0.44873, -0.14253, 0.14753]}, "mesh_samples": 121, "max_table_penetrating_vertices": 0}
+TABLE_PENETRATION sleep 1 0 MIN []
+AUTHORED_CONTACT sleep {"first": {"Pelvis": [0.02896, 0.01031, 0.62288], "Head": [0.40226, 0.01031, 1.168], "L_Forearm": [0.4589, 0.1776, 0.925], "R_Forearm": [0.46224, -0.18184, 0.935], "L_Hand": [0.53, -0.035, 0.98], "R_Hand": [0.47, 0.045, 0.97], "L_Foot": [0.44873, 0.15629, 0.14753], "R_Foot": [0.44873, -0.14253, 0.14753]}, "peak": {"Pelvis": [0.02896, 0.01031, 0.62288], "Head": [0.40226, 0.01031, 1.168], "L_Forearm": [0.4589, 0.1776, 0.925], "R_Forearm": [0.46224, -0.18184, 0.935], "L_Hand": [0.53, -0.035, 0.98], "R_Hand": [0.47, 0.045, 0.97], "L_Foot": [0.44873, 0.15629, 0.14753], "R_Foot": [0.44873, -0.14253, 0.14753]}, "last": {"Pelvis": [0.02896, 0.01031, 0.62288], "Head": [0.40226, 0.01031, 1.168], "L_Forearm": [0.4589, 0.1776, 0.925], "R_Forearm": [0.46224, -0.18184, 0.935], "L_Hand": [0.53, -0.035, 0.98], "R_Hand": [0.47, 0.045, 0.97], "L_Foot": [0.44873, 0.15629, 0.14753], "R_Foot": [0.44873, -0.14253, 0.14753]}, "mesh_samples": 1, "max_table_penetrating_vertices": 0}
+INFO Draco is available, use library at D:\Blender\blender-5.2.1-windows-x64\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_draco_bridge.dll
+INFO MeshOptimizer is available, use library at D:\Blender\blender-5.2.1-windows-x64\5.2\scripts\addons_core\io_scene_gltf2\bf_intern_meshopt_bridge.dll
+16:38:43 | INFO: Starting glTF 2.0 export
+16:38:43 | INFO: Extracting primitive: PixelRPGBody
+16:38:43 | INFO: Primitives created: 9
+16:38:45 | INFO: Finished glTF 2.0 export in 1.3581016063690186 s
+
+Info: No new files have been packed
+Info: Saved as "像素角色_接触动作.blend"
+TAVERN_CONTACT_COMPLETE
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

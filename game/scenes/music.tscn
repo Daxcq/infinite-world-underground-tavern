@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="AudioStream" path="res://assets/audio/rusted_heartbeat.ogg" id="1"]
+
+[node name="Music" type="AudioStreamPlayer"]
+process_mode = 3
+stream = ExtResource("1")
+autoplay = true
+bus = &"Music"

@@ -1,0 +1,214 @@
+{
+  "project": "无限世界·第二十号世界·地下酒馆赌局",
+  "batch": "首批_v1",
+  "created_at": "2026-11-08",
+  "generator": "内置 image_gen",
+  "references": [
+    "视觉基准/初始场景_俯视2D_RPG含NPC_v6.png",
+    "视觉基准/虚幻世界_三人赌局_RPG地图美术_v4.png"
+  ],
+  "selected_count": 17,
+  "candidate_count": 3,
+  "assets": [
+    {
+      "category": "01_场景背景",
+      "name": "现实酒馆_无人物底图",
+      "file": "01_场景背景/现实酒馆_无人物底图.png",
+      "status": "selected",
+      "transparent_background_requested": false,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/01_现实酒馆_无人物底图.md"
+    },
+    {
+      "category": "01_场景背景",
+      "name": "虚幻赌局_无人物无桌椅底图",
+      "file": "01_场景背景/虚幻赌局_无人物无桌椅底图.png",
+      "status": "selected",
+      "transparent_background_requested": false,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/02_虚幻赌局_无人物无桌椅底图.md"
+    },
+    {
+      "category": "02_家具摆件",
+      "name": "酒馆家具_透明图集",
+      "file": "02_家具摆件/酒馆家具_透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/03_酒馆家具_透明图集.md"
+    },
+    {
+      "category": "02_家具摆件",
+      "name": "黑金赌桌与三向座椅_透明图集",
+      "file": "02_家具摆件/黑金赌桌与三向座椅_透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/04_黑金赌桌与三向座椅_透明图集.md"
+    },
+    {
+      "category": "03_核心角色",
+      "name": "主角_六姿态透明图集",
+      "file": "03_核心角色/主角_六姿态透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "静态全身姿态参考，非连续动画帧",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/05_主角_六姿态透明图集.md"
+    },
+    {
+      "category": "03_核心角色",
+      "name": "算计者NPC_六姿态透明图集",
+      "file": "03_核心角色/算计者NPC_六姿态透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "静态全身姿态参考，非连续动画帧",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/06_算计者NPC_六姿态透明图集.md"
+    },
+    {
+      "category": "03_核心角色",
+      "name": "面具荷官_六姿态透明图集",
+      "file": "03_核心角色/面具荷官_六姿态透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "半身姿态，供桌边遮挡和对话近景",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/07_面具荷官_六姿态透明图集.md"
+    },
+    {
+      "category": "03_核心角色",
+      "name": "面具荷官_全身六姿态透明图集",
+      "file": "03_核心角色/面具荷官_全身六姿态透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "静态全身姿态参考，非连续动画帧",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/07_面具荷官_全身六姿态透明图集.md"
+    },
+    {
+      "category": "04_环境NPC",
+      "name": "现实酒客_六人透明图集",
+      "file": "04_环境NPC/现实酒客_六人透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "上身叠加素材，供放置在桌后",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/08_现实酒客_六人透明图集.md"
+    },
+    {
+      "category": "04_环境NPC",
+      "name": "权贵观众_八人透明图集",
+      "file": "04_环境NPC/权贵观众_八人透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/09_权贵观众_八人透明图集.md"
+    },
+    {
+      "category": "05_赌具道具",
+      "name": "骰子筹码赌具_十二格透明图集",
+      "file": "05_赌具道具/骰子筹码赌具_十二格透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/10_骰子筹码赌具_十二格透明图集.md"
+    },
+    {
+      "category": "06_进度与技能图标",
+      "name": "命筹钥匙与技能_十二格透明图集",
+      "file": "06_进度与技能图标/命筹钥匙与技能_十二格透明图集.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/11_命筹钥匙与技能_十二格透明图集.md"
+    },
+    {
+      "category": "07_界面组件",
+      "name": "黑金暗红UI_透明组件图集",
+      "file": "07_界面组件/黑金暗红UI_透明组件图集.png",
+      "status": "candidate",
+      "transparent_background_requested": true,
+      "use": "初稿，仅供对照，采用同类最新修订版",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/12_黑金暗红UI_透明组件图集.md"
+    },
+    {
+      "category": "07_界面组件",
+      "name": "黑金暗红UI_空白组件图集_v2",
+      "file": "07_界面组件/黑金暗红UI_空白组件图集_v2.png",
+      "status": "candidate",
+      "transparent_background_requested": true,
+      "use": "初稿，仅供对照，采用同类最新修订版",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/12_黑金暗红UI_空白组件图集_v2.md"
+    },
+    {
+      "category": "08_演出特效",
+      "name": "暗投器官与钥匙_九格透明特效",
+      "file": "08_演出特效/暗投器官与钥匙_九格透明特效.png",
+      "status": "candidate",
+      "transparent_background_requested": true,
+      "use": "初稿，仅供对照，采用同类最新修订版",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/13_暗投器官与钥匙_九格透明特效.md"
+    },
+    {
+      "category": "09_转场与结局",
+      "name": "忘情酒_酒面开门转场",
+      "file": "09_转场与结局/忘情酒_酒面开门转场.png",
+      "status": "selected",
+      "transparent_background_requested": false,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/14_忘情酒_酒面开门转场.md"
+    },
+    {
+      "category": "09_转场与结局",
+      "name": "通关_雨夜开门",
+      "file": "09_转场与结局/通关_雨夜开门.png",
+      "status": "selected",
+      "transparent_background_requested": false,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/15_通关_雨夜开门.md"
+    },
+    {
+      "category": "09_转场与结局",
+      "name": "失败_面具接班",
+      "file": "09_转场与结局/失败_面具接班.png",
+      "status": "selected",
+      "transparent_background_requested": false,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/16_失败_面具接班.md"
+    },
+    {
+      "category": "07_界面组件",
+      "name": "黑金暗红UI_纯透明组件图集_v3",
+      "file": "07_界面组件/黑金暗红UI_纯透明组件图集_v3.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/12_黑金暗红UI_纯透明组件图集_v3.md"
+    },
+    {
+      "category": "08_演出特效",
+      "name": "暗投器官与钥匙_纯透明特效_v2",
+      "file": "08_演出特效/暗投器官与钥匙_纯透明特效_v2.png",
+      "status": "selected",
+      "transparent_background_requested": true,
+      "use": "按类别的静态素材",
+      "engine_integration_verified": false,
+      "prompt_file": "提示词/13_暗投器官与钥匙_纯透明特效_v2.md"
+    }
+  ]
+}

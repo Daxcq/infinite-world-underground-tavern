@@ -1,0 +1,32 @@
+[
+  {
+    "log": "dialogue_flow_test.log",
+    "expected": 229,
+    "errors": []
+  },
+  {
+    "log": "dialogue_integration.log",
+    "expected": 95,
+    "errors": []
+  },
+  {
+    "log": "playtest_dialogue_integration.log",
+    "expected": 47,
+    "errors": [
+      "SCRIPT ERROR: Parse Error: Cannot find member \"REFLECTED_SOURCE_AMBIENT\" in base \"Environment\".",
+      "SCRIPT ERROR: Compile Error: Failed to compile depended scripts.",
+      "SCRIPT ERROR: Compile Error: Failed to compile depended scripts.",
+      "ERROR: Failed to load script \"res://scripts/main.gd\" with error \"Compilation failed\"."
+    ]
+  },
+  {
+    "log": "geometry_dialogue_regression.log",
+    "expected": 59,
+    "errors": []
+  },
+  {
+    "log": "animation_dialogue_regression.log",
+    "expected": 21,
+    "errors": []
+  }
+]

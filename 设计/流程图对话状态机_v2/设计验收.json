@@ -1,0 +1,93 @@
+{
+  "date": "2026-11-08",
+  "scope": "设计拓扑与独立规则参考模型；不是Godot运行测试",
+  "nodes": 59,
+  "dialogue_lines": 128,
+  "transitions": 101,
+  "phase_counts": {
+    "SURFACE": 4,
+    "TUTORIAL": 17,
+    "DESCENT": 3,
+    "TABLE_SETUP": 5,
+    "STAKE": 6,
+    "SETTLEMENT": 6,
+    "POOL": 6,
+    "CLEAR": 9,
+    "END": 3
+  },
+  "reachable_nodes": 59,
+  "topology": "passed",
+  "rule_reference_model": "passed",
+  "checked_boundaries": [
+    "底注相等通过",
+    "共渡相等通过",
+    "少投／多投／相等责任",
+    "独狼无虚构NPC",
+    "清桌败方责任",
+    "NPC单罚不扣玩家器官",
+    "同贡献双方一次受罚",
+    "重复action不重复扣除",
+    "第三次付心无第四次",
+    "三类碎片集合去重",
+    "相同骰点按ID区分"
+  ],
+  "pending_nodes": [
+    "Q01",
+    "Q02"
+  ],
+  "proposal_edges": [
+    {
+      "from": "P02",
+      "to": "N03",
+      "guard": "failure_origin==POOL"
+    },
+    {
+      "from": "P03",
+      "to": "N03",
+      "guard": "failure_origin==POOL"
+    }
+  ],
+  "browser_verification": {
+    "browser": "installed Edge via Playwright",
+    "runtime_errors": [],
+    "layouts": [
+      {
+        "width": 1700,
+        "height": 1080,
+        "nodes_checked": 59,
+        "horizontal_overflow": false
+      },
+      {
+        "width": 1280,
+        "height": 800,
+        "nodes_checked": 59,
+        "horizontal_overflow": false
+      },
+      {
+        "width": 960,
+        "height": 600,
+        "nodes_checked": 59,
+        "horizontal_overflow": false
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "nodes_checked": 59,
+        "horizontal_overflow": false
+      }
+    ],
+    "checks": [
+      "59个节点均可渲染",
+      "选项跳转与返回历史",
+      "键盘Enter翻页",
+      "F24比较边明确指向通过/追责",
+      "Q01未接线无自动出口",
+      "流程图文字未越出节点",
+      "流程图节点可用键盘打开",
+      "C00独狼分支不显示同伴台词；C03对手按模式为NPC或荷官",
+      "跨分区使用A续接标记，拦账分支不连接地下主线"
+    ],
+    "post_edit_runtime_errors": []
+  },
+  "godot_runtime": "已接入F5主流程；实际运行范围与验收见 game/对话接入说明.md、game/验收记录.md"
+}

@@ -1,0 +1,313 @@
+{
+  "created_on": "2026-11-08",
+  "generation_tool": "built-in image_gen",
+  "source_commit": "2800406915603ca3c6d2800dcbb35bb7507ddfbc",
+  "scope": "Three new full-body modeling references and three corresponding static 2D RPG six-pose atlases. No 3D meshes or Godot scenes generated.",
+  "status": "PNG and copy integrity checked; RPG alpha and six pose regions checked; visual identity reviewed; no Godot runtime or generated-mesh validation",
+  "visual_target": "User-approved newly uploaded character concepts, unified charcoal-black cloth / aged gold / restrained burgundy / ivory faces and shirts. Bartender is human; masked character is dealer; Anubis is a separate jackal-headed character. RPG assets keep the map's high-angle projection.",
+  "base_state_policy": "Remove held props, smoke, magic and blood for clean reusable base characters. Keep new source mask geometry. Foreground alpha is requested for RPG only; neutral studio background for Tripo inputs.",
+  "assets": [
+    {
+      "id": "bartender_full",
+      "role": "酒保",
+      "file": "01_Tripo单体参考/01_酒保_A姿势_单体建模参考.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-179a9b5f-c93d-423d-8d93-b581e10cf30c.png",
+      "references": [
+        "美术概念/酒保立绘1.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: single full-body reference image for image-to-3D character modeling.\nOutput exactly ONE complete character, a single straight-on front view, neutral A-pose with both arms symmetrically 30 degrees from the torso, elbows straight, both empty hands fully visible, fingers separated, straight legs slightly apart, feet forward. Near-orthographic eye-level view, portrait 2:3, full head to shoe soles visible, 8 percent clear margins. Anatomically coherent, no limbs touching torso. Reconstruct the lower body coherently from the reference costume.\nStyle lock: restrained semi-realistic hand-painted sculptural game concept, Gothic tavern dark tailored cloth, muted old gold, small wine-red accents, fine visible cloth construction with moderate detail, readable volumes. Plain light neutral gray studio background, balanced soft illumination, no cast shadows or floor, no dramatic lighting baked into costume.\nExclude props, cups, dice, scales, smoke, floating chains or symbols, environment, stands, diagrams, multiple views, text, labels and watermarks. This is a clean non-bloody base state.\nInput image 1 is the identity and costume source of the HUMAN BARTENDER. Preserve exactly his tall slim adult male build, narrow long pale face, prominent straight nose, combed-back BLACK hair with neat side part, round gold-wire spectacles with transparent lenses and visible human eyes, faint knowing smile. He has NO mask. Preserve the charcoal-black subtle brocade three-piece suit: structured jacket, buttoned waistcoat, ivory pleated dress shirt, BLACK BOW TIE, small burgundy pocket square, dark pinstriped trousers and black leather shoes. Derive complete slim trousers and shoes from the reference's lower-body clothing. Simplify the pocket-watch chain as small close-fitting trim, never a floating accessory. Keep both hands bare, thin and naturally proportioned, with all fingers. Remove the wineglass and painted tavern setting. Do not turn him into a masked dealer, do not change the bow tie to a long necktie. The new neutral full-body image must clearly be the SAME person and costume as the input, not the older brown-haired waistcoat character.",
+      "tripo_prompt_zh": "一个完整成年男性酒保，正面全身 A 姿势。严格保留参考图的黑色后梳头发、窄长真人面孔、圆形金丝眼镜、黑领结、米白衬衫、炭黑提花礼服与马甲、暗纹长裤和黑皮鞋。双手空置、手指分开，双腿分开，背面和脚底结构完整。无面具，无酒杯、场景、底座或额外人物。手绘写实游戏材质。",
+      "identity_lock": "黑发、真人窄长脸、圆形金丝眼镜、黑领结、深色提花长礼服、暗红口袋巾",
+      "transparent_background": false,
+      "target_model_filename": "bartender-v2.glb",
+      "status": "model_input_reference_only",
+      "pivot_and_collision": "To be normalized and authored on returned 3D mesh in Blender/Godot, not established by this raster image",
+      "license_note": "Generated project reference derived from user-provided repository concepts. Source concepts preserved. Any future Tripo output has its own recorded provenance and terms.",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "technical_checks": {
+        "png_decode": "passed",
+        "visual_identity_and_pose": "reviewed",
+        "source_copy_identical": true
+      },
+      "sha256": "c92ed0b27238d9399e2a188f9fc6b679b0b2a061ba9ea1082fac6b055e097307",
+      "bytes": 1571535
+    },
+    {
+      "id": "bartender_rpg",
+      "role": "酒保",
+      "file": "02_RPG六姿态/01_酒保_六姿态透明图集.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-493dcc7f-9c2a-4d0d-b9c5-0552dc9083e4.png",
+      "references": [
+        "美术资产/角色统一版_v2/01_Tripo单体参考/01_酒保_A姿势_单体建模参考.png",
+        "美术资产/首批_v1/03_核心角色/面具荷官_全身六姿态透明图集.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: a hand-painted 2D RPG character pose atlas on a genuinely transparent background.\nOutput one landscape sheet with EXACTLY SIX separate full-body versions of the SAME character, arranged as 3 columns by 2 rows with generous fully transparent gutters. No other subjects. Six poses are separate static states, NOT sequential walking animation frames. No visible grid lines or captions.\nInput image 1 is the sole character identity/costume reference and has the approved new full-body design. Preserve that face or mask, hairstyle/head silhouette, spectacles, collar/tie type, costume layers, colors, coat length, shoes and attached ornaments across all six poses. Input image 2 is ONLY the existing game's 2D sprite projection, painted edge/detail-density and scale reference. Do NOT copy its brown hair, old mask, cream-shirt-waistcoat design or identity.\nProjection: fixed orthographic high-angle top-down RPG map camera, looking downward about 40 degrees above horizontal, so tops of heads and shoulders are visible. Not eye-level portraits or front-view concept figures. Natural adult body proportions, simplified detail for small game-scale readability; not chibi or pixel art. Every pose uses exactly the same camera and body scale; seated poses may be naturally shorter. Include every hand, foot and ear/head tip. All six figures wholly within their own cells with wide transparent padding.\nArt direction: restrained semi-realistic 2D hand-painted game sprites, muted charcoal cloth and old gold, subtle warm side light, crisp readable silhouettes and consistent soft shading. No photoreal pasted cutouts. Entire image background must be alpha=0, no glow, brown vignette, ground, floor, plates, contact-shadow disks or fake checkerboard.\nExclude chairs, tables, glasses held in hands, dice, chips, scales, magic, smoke, blood, text, labels, watermarks, extra figures or cropped limbs. Two empty hands per figure.\nCharacter lock: the human bartender, black slicked-back hair, thin long pale unmasked face, gold round spectacles with visible human eyes, black bow tie, ivory dress shirt, charcoal-black subtle brocade long jacket and waistcoat, burgundy pocket square, slim pinstriped trousers and black leather shoes. Never add a face mask. Keep his long black coat consistent with input image 1.\nSix cells, read left-to-right:\nRow 1: standing front facing screen-bottom; standing back facing screen-top; seated relaxed facing screen-bottom with hands resting near thighs and feet visible.\nRow 2: standing greeting with one open hand; standing extending one empty hand as if offering a drink WITHOUT any cup; standing stern expression with arms lowered.\nOnly pose changes; identity, clothing and proportions stay the same.",
+      "identity_lock": "黑发、真人窄长脸、圆形金丝眼镜、黑领结、深色提花长礼服、暗红口袋巾",
+      "transparent_background": true,
+      "poses": [
+        "正向站立",
+        "背向站立",
+        "坐姿待机",
+        "站姿招呼",
+        "站姿伸手递物手势（空手）",
+        "站姿严肃"
+      ],
+      "status": "static_pose_sheet; not_aligned_animation_frames; not_sliced; Godot_runtime_not_verified",
+      "pivot_and_collision": "Set per sliced pose in engine; no pivots or collision embedded",
+      "license_note": "AI-generated static RPG derivative of the corresponding new full-body reference.",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "technical_checks": {
+        "png_decode": "passed",
+        "visual_identity_and_pose": "reviewed",
+        "source_copy_identical": true,
+        "true_transparency": "passed",
+        "transparent_percent": 76.04,
+        "six_regions_have_visible_figures": [
+          {
+            "row": 1,
+            "column": 1,
+            "visible_pixels_alpha_over_127": 51925
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "visible_pixels_alpha_over_127": 53257
+          },
+          {
+            "row": 1,
+            "column": 3,
+            "visible_pixels_alpha_over_127": 58812
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "visible_pixels_alpha_over_127": 53695
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "visible_pixels_alpha_over_127": 52675
+          },
+          {
+            "row": 2,
+            "column": 3,
+            "visible_pixels_alpha_over_127": 55215
+          }
+        ],
+        "cell_grid_is_for_validation_only_not_verified_slice_coordinates": true
+      },
+      "sha256": "5acc747dda0e9802f88c2e48c45156c8879cd31c1a614d1e84c4d46996a99f45",
+      "bytes": 1731019
+    },
+    {
+      "id": "dealer_full",
+      "role": "新版荷官",
+      "file": "01_Tripo单体参考/02_新版荷官_A姿势_单体建模参考.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-5de52019-7528-42d4-af7e-535cf07730c1.png",
+      "references": [
+        "美术概念/面具立绘-微笑版.png",
+        "美术资产/角色统一版_v2/01_Tripo单体参考/01_酒保_A姿势_单体建模参考.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: single full-body reference image for image-to-3D character modeling.\nOutput exactly ONE complete character, a single straight-on front view, neutral A-pose with both arms symmetrically 30 degrees from the torso, elbows straight, both empty hands fully visible, fingers separated, straight legs slightly apart, feet forward. Near-orthographic eye-level view, portrait 2:3, full head to shoe soles visible, 8 percent clear margins. Anatomically coherent, no limbs touching torso. Reconstruct the lower body coherently from the reference costume.\nStyle lock: restrained semi-realistic hand-painted sculptural game concept, Gothic tavern dark tailored cloth, muted old gold, small wine-red accents, fine visible cloth construction with moderate detail, readable volumes. Plain light neutral gray studio background, balanced soft illumination, no cast shadows or floor, no dramatic lighting baked into costume.\nExclude props, cups, dice, scales, smoke, floating chains or symbols, environment, stands, diagrams, multiple views, text, labels and watermarks. This is a clean non-bloody base state.\nInput image 1 is the identity/costume reference for the NEW MASKED DEALER, a different role from the human bartender. Ignore its filename or label; preserve what the image actually shows. Preserve the combed-back BLACK hair, gold round-wire spectacles worn OVER an ivory full-face theatrical mask, dark empty eye apertures, sculpted furrowed brows and downturned open mouth. This is a rigid sad theatrical mask as in the reference, not a smiling face, not the old plain expressionless oval mask. Clean all red/blood stains from the mask and hands for the base version, keeping ivory ceramic material and the actual sculpted shape. Preserve the charcoal-black tailored brocade jacket and waistcoat, ivory pleated shirt, black BOW TIE, restrained burgundy pocket square, dark pinstriped full-length trousers and black leather shoes. Slim long adult male proportions, two ordinary bare human hands. Remove the glass and background and the source watermark. The entire costume must remain consistent with the new original reference, not the earlier brown-haired dealer model. Input image 2, if provided, is only the approved clean full-body bartender reference for material finish, neutral studio light and garment continuity. It must not replace the mask with a human face.",
+      "tripo_prompt_zh": "一个完整成年男性荷官，正面全身 A 姿势。保留黑色后梳头发、戴在白瓷戏剧面具外的圆形金丝眼镜、空眼孔、皱眉和向下张开的嘴部雕刻，面具为干净无血迹的基础状态。保留黑领结、米白衬衫、炭黑提花长礼服与马甲、暗纹长裤和黑皮鞋。双手空置、手指和双腿分开，补齐背面与鞋底。不要变成真人脸、旧版棕发马甲荷官或无表情椭圆面具。无酒杯、场景与底座。",
+      "identity_lock": "黑发、圆形金丝眼镜、白色悲剧面具、黑领结、深色提花长礼服、暗红口袋巾",
+      "transparent_background": false,
+      "target_model_filename": "dealer-v2.glb",
+      "status": "model_input_reference_only",
+      "pivot_and_collision": "To be normalized and authored on returned 3D mesh in Blender/Godot, not established by this raster image",
+      "license_note": "Generated project reference derived from user-provided repository concepts. Source concepts preserved. Any future Tripo output has its own recorded provenance and terms.",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "technical_checks": {
+        "png_decode": "passed",
+        "visual_identity_and_pose": "reviewed",
+        "source_copy_identical": true
+      },
+      "sha256": "fb66cde59a4c3e1d2cefc56eb4c0a658088a99d110e2d9a2af000505e6c19d5f",
+      "bytes": 1568440
+    },
+    {
+      "id": "dealer_rpg",
+      "role": "新版荷官",
+      "file": "02_RPG六姿态/02_新版荷官_六姿态透明图集.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-dc2f4077-e275-4f00-a706-14ab6c030ad0.png",
+      "references": [
+        "美术资产/角色统一版_v2/01_Tripo单体参考/02_新版荷官_A姿势_单体建模参考.png",
+        "美术资产/角色统一版_v2/02_RPG六姿态/01_酒保_六姿态透明图集.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: a hand-painted 2D RPG character pose atlas on a genuinely transparent background.\nOutput one landscape sheet with EXACTLY SIX separate full-body versions of the SAME character, arranged as 3 columns by 2 rows with generous fully transparent gutters. No other subjects. Six poses are separate static states, NOT sequential walking animation frames. No visible grid lines or captions.\nInput image 1 is the sole character identity/costume reference and has the approved new full-body design. Preserve that face or mask, hairstyle/head silhouette, spectacles, collar/tie type, costume layers, colors, coat length, shoes and attached ornaments across all six poses. Input image 2 is ONLY the approved new bartender RPG sheet for high-angle projection, painted edges, detail density and frame layout. Do NOT copy that character's unmasked human face or identity.\nProjection: fixed orthographic high-angle top-down RPG map camera, looking downward about 40 degrees above horizontal, so tops of heads and shoulders are visible. Not eye-level portraits or front-view concept figures. Natural adult body proportions, simplified detail for small game-scale readability; not chibi or pixel art. Every pose uses exactly the same camera and body scale; seated poses may be naturally shorter. Include every hand, foot and ear/head tip. All six figures wholly within their own cells with wide transparent padding.\nArt direction: restrained semi-realistic 2D hand-painted game sprites, muted charcoal cloth and old gold, subtle warm side light, crisp readable silhouettes and consistent soft shading. No photoreal pasted cutouts. Entire image background must be alpha=0, no glow, brown vignette, ground, floor, plates, contact-shadow disks or fake checkerboard.\nExclude chairs, tables, glasses held in hands, dice, chips, scales, magic, smoke, blood, text, labels, watermarks, extra figures or cropped limbs. Two empty hands per figure.\nCharacter lock: the NEW MASKED DEALER from input image 1. BLACK slicked-back hair, GOLD ROUND SPECTACLES over a WHITE rigid theatrical full-face mask with hollow dark eye holes, sculpted furrowed brow and DOWNTURNED OPEN MOUTH. Keep this SAME mask sculpt in every front-facing pose, with no blood stains. Black bow tie, ivory shirt, charcoal-black subtle brocade long coat and waistcoat, burgundy pocket square, pinstripe trousers and black leather shoes. Bare human hands, NO old brown hair and no plain smooth oval mask. Clean non-bloody baseline.\nSix cells left-to-right:\nRow 1: standing front facing screen-bottom; standing back facing screen-top; seated idle facing screen-bottom, hands near thighs, full feet visible.\nRow 2: seated speaking with one open hand; seated extending one empty hand forward over an imaginary tabletop, no object; seated stern/angry posture leaning slightly forward, hands lower, while keeping the same rigid mask shape.\nAll seats, tabletops and props are absent. The front and back versions must share the exact same long coat and hair.",
+      "identity_lock": "黑发、圆形金丝眼镜、白色悲剧面具、黑领结、深色提花长礼服、暗红口袋巾",
+      "transparent_background": true,
+      "poses": [
+        "正向站立",
+        "背向站立",
+        "坐姿待机",
+        "坐姿交谈",
+        "坐姿出骰手势（空手）",
+        "坐姿前倾严肃"
+      ],
+      "status": "static_pose_sheet; not_aligned_animation_frames; not_sliced; Godot_runtime_not_verified",
+      "pivot_and_collision": "Set per sliced pose in engine; no pivots or collision embedded",
+      "license_note": "AI-generated static RPG derivative of the corresponding new full-body reference.",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "technical_checks": {
+        "png_decode": "passed",
+        "visual_identity_and_pose": "reviewed",
+        "source_copy_identical": true,
+        "true_transparency": "passed",
+        "transparent_percent": 68.23,
+        "six_regions_have_visible_figures": [
+          {
+            "row": 1,
+            "column": 1,
+            "visible_pixels_alpha_over_127": 64980
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "visible_pixels_alpha_over_127": 67182
+          },
+          {
+            "row": 1,
+            "column": 3,
+            "visible_pixels_alpha_over_127": 75653
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "visible_pixels_alpha_over_127": 77597
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "visible_pixels_alpha_over_127": 76046
+          },
+          {
+            "row": 2,
+            "column": 3,
+            "visible_pixels_alpha_over_127": 77936
+          }
+        ],
+        "cell_grid_is_for_validation_only_not_verified_slice_coordinates": true
+      },
+      "sha256": "e1c5d1b69c0a14ebda71fe953e908f84278a49f8a692c6fc53e8c543dc2add12",
+      "bytes": 1915161
+    },
+    {
+      "id": "anubis_full",
+      "role": "阿努比斯",
+      "file": "01_Tripo单体参考/03_阿努比斯_A姿势_单体建模参考.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-c172b1fe-32d8-43e5-9d79-638717742fc2.png",
+      "references": [
+        "美术概念/阿努比斯秘骰赌徒.png",
+        "美术资产/角色统一版_v2/01_Tripo单体参考/01_酒保_A姿势_单体建模参考.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: single full-body reference image for image-to-3D character modeling.\nOutput exactly ONE complete character, a single straight-on front view, neutral A-pose with both arms symmetrically 30 degrees from the torso, elbows straight, both empty hands fully visible, fingers separated, straight legs slightly apart, feet forward. Near-orthographic eye-level view, portrait 2:3, full head to shoe soles visible, 8 percent clear margins. Anatomically coherent, no limbs touching torso. Reconstruct the lower body coherently from the reference costume.\nStyle lock: restrained semi-realistic hand-painted sculptural game concept, Gothic tavern dark tailored cloth, muted old gold, small wine-red accents, fine visible cloth construction with moderate detail, readable volumes. Plain light neutral gray studio background, balanced soft illumination, no cast shadows or floor, no dramatic lighting baked into costume.\nExclude props, cups, dice, scales, smoke, floating chains or symbols, environment, stands, diagrams, multiple views, text, labels and watermarks. This is a clean non-bloody base state.\nInput image 1 is the sole identity and costume reference for ANUBIS THE DICE GAMBLER. Preserve the very tall upright pointed jackal ears, elongated ivory bone-like jackal face with a long narrow canine muzzle, subtle cyan-green eyes, BLACK head cloth attached behind the ears, small close-fitting aged-gold ear ornaments, charcoal-black brocade long suit coat with wine-red lapel lining, black waistcoat, ivory shirt and black LONG NECKTIE, small burgundy pocket square, restrained aged-gold Egyptian ankh pendant and breast ornaments. This is a clothed humanoid fantasy jackal character, not a normal human face and not a naked animal. Keep the skull-like face non-gory. Complete his lower body as dark tailored pinstriped trousers and black leather boots, two ordinary humanoid legs, coherent slim/tall proportions. His dark articulated five-fingered claw-tipped hands must be empty and clearly separate from the torso. Remove floating red dice, all smoke and magic, the scale, and floating hanging chains. Simplify gold ornament to a few attached motifs so body geometry is clear. The long coat is naturally attached with an open front and split hem; no huge billowing detached cloak or tail. Keep both ears, both claw hands and both boots entirely inside the frame. Input image 2, if provided, is only a style/lighting reference from the new human bartender, never a new subject or identity.",
+      "tripo_prompt_zh": "一个完整阿努比斯人形赌徒，正面全身 A 姿势。保留直立长耳、细长象牙色犬首、青绿眼、连在头后的黑色金边头巾、黑色长领带、米白衬衫、黑金提花长礼服、暗红翻领与内衬、少量贴附金色埃及饰件。两条人形长腿、黑色暗纹长裤和皮鞋，双手为分离清楚的深色五指爪手。衣摆开口以便后续屈膝坐姿。无骰子、天平、烟雾、魔法、漂浮锁链、场景或底座。全耳、手、脚及背面完整。",
+      "identity_lock": "直立长耳、象牙色犬首、青绿眼、黑色头巾、黑领带、黑金暗红长礼服、深色爪手",
+      "transparent_background": false,
+      "target_model_filename": "anubis-v2.glb",
+      "status": "model_input_reference_only",
+      "pivot_and_collision": "To be normalized and authored on returned 3D mesh in Blender/Godot, not established by this raster image",
+      "license_note": "Generated project reference derived from user-provided repository concepts. Source concepts preserved. Any future Tripo output has its own recorded provenance and terms.",
+      "dimensions_px": [
+        1024,
+        1536
+      ],
+      "mode": "RGB",
+      "technical_checks": {
+        "png_decode": "passed",
+        "visual_identity_and_pose": "reviewed",
+        "source_copy_identical": true
+      },
+      "sha256": "e067e96ba38092dd31c77491c2fd0df2e10d780b957a9187382e140483c31eaf",
+      "bytes": 1557769
+    },
+    {
+      "id": "anubis_rpg",
+      "role": "阿努比斯",
+      "file": "02_RPG六姿态/03_阿努比斯_六姿态透明图集.png",
+      "source_generated_image": "C:/Users/72417/.codex/generated_images/01a1b943-21f7-7870-bf79-02e2341271c8/exec-baa155e0-1962-4730-a951-1492ccb7c0e6.png",
+      "references": [
+        "美术资产/角色统一版_v2/01_Tripo单体参考/03_阿努比斯_A姿势_单体建模参考.png",
+        "美术资产/角色统一版_v2/02_RPG六姿态/01_酒保_六姿态透明图集.png"
+      ],
+      "generation_prompt": "Use case: identity-preserve.\nAsset type: a hand-painted 2D RPG character pose atlas on a genuinely transparent background.\nOutput one landscape sheet with EXACTLY SIX separate full-body versions of the SAME character, arranged as 3 columns by 2 rows with generous fully transparent gutters. No other subjects. Six poses are separate static states, NOT sequential walking animation frames. No visible grid lines or captions.\nInput image 1 is the sole character identity/costume reference and has the approved new full-body design. Preserve that face or mask, hairstyle/head silhouette, spectacles, collar/tie type, costume layers, colors, coat length, shoes and attached ornaments across all six poses. Input image 2 is ONLY the approved new bartender RPG sheet for high-angle projection, painted edges, detail density and frame layout. Do NOT copy that character's unmasked human face or identity.\nProjection: fixed orthographic high-angle top-down RPG map camera, looking downward about 40 degrees above horizontal, so tops of heads and shoulders are visible. Not eye-level portraits or front-view concept figures. Natural adult body proportions, simplified detail for small game-scale readability; not chibi or pixel art. Every pose uses exactly the same camera and body scale; seated poses may be naturally shorter. Include every hand, foot and ear/head tip. All six figures wholly within their own cells with wide transparent padding.\nArt direction: restrained semi-realistic 2D hand-painted game sprites, muted charcoal cloth and old gold, subtle warm side light, crisp readable silhouettes and consistent soft shading. No photoreal pasted cutouts. Entire image background must be alpha=0, no glow, brown vignette, ground, floor, plates, contact-shadow disks or fake checkerboard.\nExclude chairs, tables, glasses held in hands, dice, chips, scales, magic, smoke, blood, text, labels, watermarks, extra figures or cropped limbs. Two empty hands per figure.\nCharacter lock: ANUBIS from input image 1. Upright elongated JACKAL EARS and long narrow ivory skull-like canine face, subtle cyan-green eyes, attached black head cloth with old gold trim and small attached ear ornaments. BLACK long necktie (not a bow tie), ivory shirt, charcoal brocade long coat and waistcoat, muted burgundy lapels and pocket square, simple attached aged-gold Egyptian ankh motifs, dark pinstriped trousers, black shoes. Two dark five-fingered claw hands. Same ears and head cloth visible in all views. No human face, no gigantic flaring cloak. No smoke, dice, scale or magic.\nSix cells left-to-right:\nRow 1: standing front facing screen-bottom; standing back facing screen-top with back of ears and head cloth visible; seated idle facing screen-bottom, hands near thighs, feet visible.\nRow 2: seated speaking with one open claw hand; seated extending one empty hand to offer a die WITHOUT drawing a die; seated angry leaning forward with slightly spread claw hands. Keep eyes cyan-green, no changed orange glow, keep same suit and same head sculpt.\nNo chairs or props. Make every very tall ear and every shoe fit comfortably within its cell; no clipped tips.",
+      "identity_lock": "直立长耳、象牙色犬首、青绿眼、黑色头巾、黑领带、黑金暗红长礼服、深色爪手",
+      "transparent_background": true,
+      "poses": [
+        "正向站立",
+        "背向站立",
+        "坐姿待机",
+        "坐姿交谈",
+        "坐姿出骰手势（空手）",
+        "坐姿前倾愤怒"
+      ],
+      "status": "static_pose_sheet; not_aligned_animation_frames; not_sliced; Godot_runtime_not_verified",
+      "pivot_and_collision": "Set per sliced pose in engine; no pivots or collision embedded",
+      "license_note": "AI-generated static RPG derivative of the corresponding new full-body reference.",
+      "dimensions_px": [
+        1536,
+        1024
+      ],
+      "mode": "RGBA",
+      "technical_checks": {
+        "png_decode": "passed",
+        "visual_identity_and_pose": "reviewed",
+        "source_copy_identical": true,
+        "true_transparency": "passed",
+        "transparent_percent": 74.95,
+        "six_regions_have_visible_figures": [
+          {
+            "row": 1,
+            "column": 1,
+            "visible_pixels_alpha_over_127": 51576
+          },
+          {
+            "row": 1,
+            "column": 2,
+            "visible_pixels_alpha_over_127": 52155
+          },
+          {
+            "row": 1,
+            "column": 3,
+            "visible_pixels_alpha_over_127": 58335
+          },
+          {
+            "row": 2,
+            "column": 1,
+            "visible_pixels_alpha_over_127": 61455
+          },
+          {
+            "row": 2,
+            "column": 2,
+            "visible_pixels_alpha_over_127": 59333
+          },
+          {
+            "row": 2,
+            "column": 3,
+            "visible_pixels_alpha_over_127": 66135
+          }
+        ],
+        "cell_grid_is_for_validation_only_not_verified_slice_coordinates": true
+      },
+      "sha256": "9e6e545e82e0a86710e123831c7ee5c814dc6b55b5a89c85ffe0c5bcb732677f",
+      "bytes": 1775274
+    }
+  ]
+}

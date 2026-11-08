@@ -1,0 +1,13 @@
+00:00.813  blend            | Read blend: "D:\无限世界地下酒馆和赌局\美术资产\角色动作_v1\冒险者_行走与坐姿.blend"
+00:01.672  render           | Saved: 'D:\无限世界地下酒馆和赌局\game\verification\seated_check.png'
+BlenderMCP addon registered
+POSE_MODE POSE ACTION <bpy_struct, Action("seated") at 0x00000175F5B82EA0> SLOT <bpy_struct, ActionSlot("OBArmature") at 0x00000175F290EAE0> USE_NLA True
+LTHIGH (0.020733624696731567, 0.055546484887599945, 0.3102578818798065) (0.24546334147453308, 0.08251411467790604, 0.30014508962631226)
+TRACK idle True
+TRACK walk True
+TRACK seated True
+AFTER (0.020733624696731567, 0.055546484887599945, 0.3102578818798065) (0.24546334147453308, 0.08251411467790604, 0.30014508962631226)
+BlenderMCP addon unregistered
+Blender 5.2.1 LTS (hash 9e2066aef7ef built 2026-08-25 02:38:20)
+
+Blender quit

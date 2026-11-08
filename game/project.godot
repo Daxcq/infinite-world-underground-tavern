@@ -1,0 +1,44 @@
+; Open with Godot 4.7.2. This project uses GDScript and the Compatibility renderer.
+config_version=5
+
+[application]
+config/name="第二十号酒馆 · 雨夜来客"
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/description="俯视探索、第一人称赌桌与v2对话状态机三幕试玩"
+
+[autoload]
+Music="*res://scenes/music.tscn"
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=800
+window/size/window_width_override=1152
+window/size/window_height_override=720
+window/size/min_width=960
+window/size/min_height=600
+window/stretch/mode="canvas_items"
+window/stretch/aspect="keep"
+
+[input]
+move_left={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":65),Object(InputEventKey,"physical_keycode":4194319)]}
+move_right={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":68),Object(InputEventKey,"physical_keycode":4194321)]}
+move_up={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":87),Object(InputEventKey,"physical_keycode":4194320)]}
+move_down={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":83),Object(InputEventKey,"physical_keycode":4194322)]}
+interact={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":69)]}
+sprint={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":4194325)]}
+pause={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":4194305)]}
+fullscreen={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":4194342)]}
+look_left={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":65),Object(InputEventKey,"physical_keycode":4194319)]}
+look_right={"deadzone":0.2,"events":[Object(InputEventKey,"physical_keycode":68),Object(InputEventKey,"physical_keycode":4194321)]}
+
+[layer_names]
+2d_physics/layer_1="Environment"
+2d_physics/layer_2="Player"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+environment/defaults/default_clear_color=Color(0.025,0.025,0.025,1)
+anti_aliasing/quality/msaa_3d=2
