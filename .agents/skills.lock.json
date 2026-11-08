@@ -1,0 +1,712 @@
+{
+  "format_version": 1,
+  "scope": "project",
+  "installed_on": "2026-11-08",
+  "destination": ".agents/skills",
+  "sources": [
+    {
+      "repository": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "commit": "19d93f97c9c1ea0f8b306e77aa81e0d3e352d3e9",
+      "licenses": [
+        ".agents/skill-sources/awesome-gamedev-agent-skills/LICENSE",
+        ".agents/skill-sources/awesome-gamedev-agent-skills/NOTICE"
+      ],
+      "skills": [
+        {
+          "name": "router",
+          "source_path": "router",
+          "installed_path": ".agents/skills/router"
+        },
+        {
+          "name": "ai-behavior-trees-utility-ai",
+          "source_path": "skills/disciplines/ai-behavior-trees-utility-ai",
+          "installed_path": ".agents/skills/ai-behavior-trees-utility-ai"
+        },
+        {
+          "name": "audio-design",
+          "source_path": "skills/disciplines/audio-design",
+          "installed_path": ".agents/skills/audio-design"
+        },
+        {
+          "name": "camera-systems",
+          "source_path": "skills/disciplines/camera-systems",
+          "installed_path": ".agents/skills/camera-systems"
+        },
+        {
+          "name": "create-game-assets",
+          "source_path": "skills/disciplines/create-game-assets",
+          "installed_path": ".agents/skills/create-game-assets"
+        },
+        {
+          "name": "dialogue-systems",
+          "source_path": "skills/disciplines/dialogue-systems",
+          "installed_path": ".agents/skills/dialogue-systems"
+        },
+        {
+          "name": "game-ai",
+          "source_path": "skills/disciplines/game-ai",
+          "installed_path": ".agents/skills/game-ai"
+        },
+        {
+          "name": "game-feel",
+          "source_path": "skills/disciplines/game-feel",
+          "installed_path": ".agents/skills/game-feel"
+        },
+        {
+          "name": "game-ui-ux",
+          "source_path": "skills/disciplines/game-ui-ux",
+          "installed_path": ".agents/skills/game-ui-ux"
+        },
+        {
+          "name": "input-systems",
+          "source_path": "skills/disciplines/input-systems",
+          "installed_path": ".agents/skills/input-systems"
+        },
+        {
+          "name": "level-design",
+          "source_path": "skills/disciplines/level-design",
+          "installed_path": ".agents/skills/level-design"
+        },
+        {
+          "name": "performance-optimization",
+          "source_path": "skills/disciplines/performance-optimization",
+          "installed_path": ".agents/skills/performance-optimization"
+        },
+        {
+          "name": "physics-tuning",
+          "source_path": "skills/disciplines/physics-tuning",
+          "installed_path": ".agents/skills/physics-tuning"
+        },
+        {
+          "name": "procedural-gen",
+          "source_path": "skills/disciplines/procedural-gen",
+          "installed_path": ".agents/skills/procedural-gen"
+        },
+        {
+          "name": "save-systems",
+          "source_path": "skills/disciplines/save-systems",
+          "installed_path": ".agents/skills/save-systems"
+        },
+        {
+          "name": "shader-programming",
+          "source_path": "skills/disciplines/shader-programming",
+          "installed_path": ".agents/skills/shader-programming"
+        },
+        {
+          "name": "ebitengine-game",
+          "source_path": "skills/ebitengine/ebitengine-game",
+          "installed_path": ".agents/skills/ebitengine-game"
+        },
+        {
+          "name": "card-game",
+          "source_path": "skills/genres/card-game",
+          "installed_path": ".agents/skills/card-game"
+        },
+        {
+          "name": "fps-shooter",
+          "source_path": "skills/genres/fps-shooter",
+          "installed_path": ".agents/skills/fps-shooter"
+        },
+        {
+          "name": "platformer",
+          "source_path": "skills/genres/platformer",
+          "installed_path": ".agents/skills/platformer"
+        },
+        {
+          "name": "puzzle",
+          "source_path": "skills/genres/puzzle",
+          "installed_path": ".agents/skills/puzzle"
+        },
+        {
+          "name": "roguelike",
+          "source_path": "skills/genres/roguelike",
+          "installed_path": ".agents/skills/roguelike"
+        },
+        {
+          "name": "rpg",
+          "source_path": "skills/genres/rpg",
+          "installed_path": ".agents/skills/rpg"
+        },
+        {
+          "name": "survival-crafting",
+          "source_path": "skills/genres/survival-crafting",
+          "installed_path": ".agents/skills/survival-crafting"
+        },
+        {
+          "name": "tower-defense",
+          "source_path": "skills/genres/tower-defense",
+          "installed_path": ".agents/skills/tower-defense"
+        },
+        {
+          "name": "visual-novel",
+          "source_path": "skills/genres/visual-novel",
+          "installed_path": ".agents/skills/visual-novel"
+        },
+        {
+          "name": "godot-2d-movement",
+          "source_path": "skills/godot/godot-2d-movement",
+          "installed_path": ".agents/skills/godot-2d-movement"
+        },
+        {
+          "name": "godot-3d-essentials",
+          "source_path": "skills/godot/godot-3d-essentials",
+          "installed_path": ".agents/skills/godot-3d-essentials"
+        },
+        {
+          "name": "godot-animation",
+          "source_path": "skills/godot/godot-animation",
+          "installed_path": ".agents/skills/godot-animation"
+        },
+        {
+          "name": "godot-audio",
+          "source_path": "skills/godot/godot-audio",
+          "installed_path": ".agents/skills/godot-audio"
+        },
+        {
+          "name": "godot-csharp",
+          "source_path": "skills/godot/godot-csharp",
+          "installed_path": ".agents/skills/godot-csharp"
+        },
+        {
+          "name": "godot-export",
+          "source_path": "skills/godot/godot-export",
+          "installed_path": ".agents/skills/godot-export"
+        },
+        {
+          "name": "godot-gdscript",
+          "source_path": "skills/godot/godot-gdscript",
+          "installed_path": ".agents/skills/godot-gdscript"
+        },
+        {
+          "name": "godot-gdscript-headless-testing",
+          "source_path": "skills/godot/godot-gdscript-headless-testing",
+          "installed_path": ".agents/skills/godot-gdscript-headless-testing"
+        },
+        {
+          "name": "godot-multiplayer",
+          "source_path": "skills/godot/godot-multiplayer",
+          "installed_path": ".agents/skills/godot-multiplayer"
+        },
+        {
+          "name": "godot-nodes-scenes",
+          "source_path": "skills/godot/godot-nodes-scenes",
+          "installed_path": ".agents/skills/godot-nodes-scenes"
+        },
+        {
+          "name": "godot-physics",
+          "source_path": "skills/godot/godot-physics",
+          "installed_path": ".agents/skills/godot-physics"
+        },
+        {
+          "name": "godot-resources",
+          "source_path": "skills/godot/godot-resources",
+          "installed_path": ".agents/skills/godot-resources"
+        },
+        {
+          "name": "godot-shaders",
+          "source_path": "skills/godot/godot-shaders",
+          "installed_path": ".agents/skills/godot-shaders"
+        },
+        {
+          "name": "godot-signals-groups",
+          "source_path": "skills/godot/godot-signals-groups",
+          "installed_path": ".agents/skills/godot-signals-groups"
+        },
+        {
+          "name": "godot-tilemap",
+          "source_path": "skills/godot/godot-tilemap",
+          "installed_path": ".agents/skills/godot-tilemap"
+        },
+        {
+          "name": "godot-ui-control",
+          "source_path": "skills/godot/godot-ui-control",
+          "installed_path": ".agents/skills/godot-ui-control"
+        },
+        {
+          "name": "bevy-ecs",
+          "source_path": "skills/other-engines/bevy-ecs",
+          "installed_path": ".agents/skills/bevy-ecs"
+        },
+        {
+          "name": "defold-core",
+          "source_path": "skills/other-engines/defold-core",
+          "installed_path": ".agents/skills/defold-core"
+        },
+        {
+          "name": "love2d-core",
+          "source_path": "skills/other-engines/love2d-core",
+          "installed_path": ".agents/skills/love2d-core"
+        },
+        {
+          "name": "pygame-core",
+          "source_path": "skills/other-engines/pygame-core",
+          "installed_path": ".agents/skills/pygame-core"
+        },
+        {
+          "name": "roblox-characters",
+          "source_path": "skills/other-engines/roblox-characters",
+          "installed_path": ".agents/skills/roblox-characters"
+        },
+        {
+          "name": "roblox-datastores",
+          "source_path": "skills/other-engines/roblox-datastores",
+          "installed_path": ".agents/skills/roblox-datastores"
+        },
+        {
+          "name": "roblox-luau",
+          "source_path": "skills/other-engines/roblox-luau",
+          "installed_path": ".agents/skills/roblox-luau"
+        },
+        {
+          "name": "roblox-networking",
+          "source_path": "skills/other-engines/roblox-networking",
+          "installed_path": ".agents/skills/roblox-networking"
+        },
+        {
+          "name": "roblox-physics",
+          "source_path": "skills/other-engines/roblox-physics",
+          "installed_path": ".agents/skills/roblox-physics"
+        },
+        {
+          "name": "roblox-simulator-economy",
+          "source_path": "skills/other-engines/roblox-simulator-economy",
+          "installed_path": ".agents/skills/roblox-simulator-economy"
+        },
+        {
+          "name": "roblox-studio-workflow",
+          "source_path": "skills/other-engines/roblox-studio-workflow",
+          "installed_path": ".agents/skills/roblox-studio-workflow"
+        },
+        {
+          "name": "roblox-ui",
+          "source_path": "skills/other-engines/roblox-ui",
+          "installed_path": ".agents/skills/roblox-ui"
+        },
+        {
+          "name": "unity-animation",
+          "source_path": "skills/unity/unity-animation",
+          "installed_path": ".agents/skills/unity-animation"
+        },
+        {
+          "name": "unity-build-pipeline",
+          "source_path": "skills/unity/unity-build-pipeline",
+          "installed_path": ".agents/skills/unity-build-pipeline"
+        },
+        {
+          "name": "unity-csharp-scripting",
+          "source_path": "skills/unity/unity-csharp-scripting",
+          "installed_path": ".agents/skills/unity-csharp-scripting"
+        },
+        {
+          "name": "unity-input-system",
+          "source_path": "skills/unity/unity-input-system",
+          "installed_path": ".agents/skills/unity-input-system"
+        },
+        {
+          "name": "unity-navmesh",
+          "source_path": "skills/unity/unity-navmesh",
+          "installed_path": ".agents/skills/unity-navmesh"
+        },
+        {
+          "name": "unity-physics",
+          "source_path": "skills/unity/unity-physics",
+          "installed_path": ".agents/skills/unity-physics"
+        },
+        {
+          "name": "unity-scriptableobjects",
+          "source_path": "skills/unity/unity-scriptableobjects",
+          "installed_path": ".agents/skills/unity-scriptableobjects"
+        },
+        {
+          "name": "unity-tilemap-2d",
+          "source_path": "skills/unity/unity-tilemap-2d",
+          "installed_path": ".agents/skills/unity-tilemap-2d"
+        },
+        {
+          "name": "unreal-behavior-trees",
+          "source_path": "skills/unreal/unreal-behavior-trees",
+          "installed_path": ".agents/skills/unreal-behavior-trees"
+        },
+        {
+          "name": "unreal-blueprints",
+          "source_path": "skills/unreal/unreal-blueprints",
+          "installed_path": ".agents/skills/unreal-blueprints"
+        },
+        {
+          "name": "unreal-cpp-gameplay",
+          "source_path": "skills/unreal/unreal-cpp-gameplay",
+          "installed_path": ".agents/skills/unreal-cpp-gameplay"
+        },
+        {
+          "name": "unreal-enhanced-input",
+          "source_path": "skills/unreal/unreal-enhanced-input",
+          "installed_path": ".agents/skills/unreal-enhanced-input"
+        },
+        {
+          "name": "unreal-niagara",
+          "source_path": "skills/unreal/unreal-niagara",
+          "installed_path": ".agents/skills/unreal-niagara"
+        },
+        {
+          "name": "unreal-packaging",
+          "source_path": "skills/unreal/unreal-packaging",
+          "installed_path": ".agents/skills/unreal-packaging"
+        },
+        {
+          "name": "phaser-arcade-physics",
+          "source_path": "skills/web-engines/phaser-arcade-physics",
+          "installed_path": ".agents/skills/phaser-arcade-physics"
+        },
+        {
+          "name": "phaser-core",
+          "source_path": "skills/web-engines/phaser-core",
+          "installed_path": ".agents/skills/phaser-core"
+        },
+        {
+          "name": "pixijs-rendering",
+          "source_path": "skills/web-engines/pixijs-rendering",
+          "installed_path": ".agents/skills/pixijs-rendering"
+        },
+        {
+          "name": "threejs-gltf-loading",
+          "source_path": "skills/web-engines/threejs-gltf-loading",
+          "installed_path": ".agents/skills/threejs-gltf-loading"
+        },
+        {
+          "name": "threejs-materials-lighting",
+          "source_path": "skills/web-engines/threejs-materials-lighting",
+          "installed_path": ".agents/skills/threejs-materials-lighting"
+        },
+        {
+          "name": "threejs-scene-setup",
+          "source_path": "skills/web-engines/threejs-scene-setup",
+          "installed_path": ".agents/skills/threejs-scene-setup"
+        },
+        {
+          "name": "game-jam",
+          "source_path": "skills/workflows/game-jam",
+          "installed_path": ".agents/skills/game-jam"
+        },
+        {
+          "name": "itch-publish",
+          "source_path": "skills/workflows/itch-publish",
+          "installed_path": ".agents/skills/itch-publish"
+        },
+        {
+          "name": "prototype-fast",
+          "source_path": "skills/workflows/prototype-fast",
+          "installed_path": ".agents/skills/prototype-fast"
+        },
+        {
+          "name": "steam-publish",
+          "source_path": "skills/workflows/steam-publish",
+          "installed_path": ".agents/skills/steam-publish"
+        }
+      ]
+    },
+    {
+      "repository": "https://github.com/jame581/GodotPrompter",
+      "commit": "d7b26cdb5fae14d4ef7b713c5bf259395e75c3c6",
+      "licenses": [
+        ".agents/skill-sources/GodotPrompter/LICENSE"
+      ],
+      "skills": [
+        {
+          "name": "2d-essentials",
+          "source_path": "skills/2d-essentials",
+          "installed_path": ".agents/skills/2d-essentials"
+        },
+        {
+          "name": "3d-essentials",
+          "source_path": "skills/3d-essentials",
+          "installed_path": ".agents/skills/3d-essentials"
+        },
+        {
+          "name": "ability-system",
+          "source_path": "skills/ability-system",
+          "installed_path": ".agents/skills/ability-system"
+        },
+        {
+          "name": "addon-development",
+          "source_path": "skills/addon-development",
+          "installed_path": ".agents/skills/addon-development"
+        },
+        {
+          "name": "ai-navigation",
+          "source_path": "skills/ai-navigation",
+          "installed_path": ".agents/skills/ai-navigation"
+        },
+        {
+          "name": "animation-system",
+          "source_path": "skills/animation-system",
+          "installed_path": ".agents/skills/animation-system"
+        },
+        {
+          "name": "assets-pipeline",
+          "source_path": "skills/assets-pipeline",
+          "installed_path": ".agents/skills/assets-pipeline"
+        },
+        {
+          "name": "audio-system",
+          "source_path": "skills/audio-system",
+          "installed_path": ".agents/skills/audio-system"
+        },
+        {
+          "name": "beehave",
+          "source_path": "skills/beehave",
+          "installed_path": ".agents/skills/beehave"
+        },
+        {
+          "name": "camera-system",
+          "source_path": "skills/camera-system",
+          "installed_path": ".agents/skills/camera-system"
+        },
+        {
+          "name": "component-system",
+          "source_path": "skills/component-system",
+          "installed_path": ".agents/skills/component-system"
+        },
+        {
+          "name": "csharp-godot",
+          "source_path": "skills/csharp-godot",
+          "installed_path": ".agents/skills/csharp-godot"
+        },
+        {
+          "name": "csharp-signals",
+          "source_path": "skills/csharp-signals",
+          "installed_path": ".agents/skills/csharp-signals"
+        },
+        {
+          "name": "dedicated-server",
+          "source_path": "skills/dedicated-server",
+          "installed_path": ".agents/skills/dedicated-server"
+        },
+        {
+          "name": "dependency-injection",
+          "source_path": "skills/dependency-injection",
+          "installed_path": ".agents/skills/dependency-injection"
+        },
+        {
+          "name": "dialogue-manager",
+          "source_path": "skills/dialogue-manager",
+          "installed_path": ".agents/skills/dialogue-manager"
+        },
+        {
+          "name": "dialogue-system",
+          "source_path": "skills/dialogue-system",
+          "installed_path": ".agents/skills/dialogue-system"
+        },
+        {
+          "name": "event-bus",
+          "source_path": "skills/event-bus",
+          "installed_path": ".agents/skills/event-bus"
+        },
+        {
+          "name": "export-pipeline",
+          "source_path": "skills/export-pipeline",
+          "installed_path": ".agents/skills/export-pipeline"
+        },
+        {
+          "name": "gdextension",
+          "source_path": "skills/gdextension",
+          "installed_path": ".agents/skills/gdextension"
+        },
+        {
+          "name": "gdscript-advanced",
+          "source_path": "skills/gdscript-advanced",
+          "installed_path": ".agents/skills/gdscript-advanced"
+        },
+        {
+          "name": "gdscript-patterns",
+          "source_path": "skills/gdscript-patterns",
+          "installed_path": ".agents/skills/gdscript-patterns"
+        },
+        {
+          "name": "godot-brainstorming",
+          "source_path": "skills/godot-brainstorming",
+          "installed_path": ".agents/skills/godot-brainstorming"
+        },
+        {
+          "name": "godot-code-review",
+          "source_path": "skills/godot-code-review",
+          "installed_path": ".agents/skills/godot-code-review"
+        },
+        {
+          "name": "godot-debugging",
+          "source_path": "skills/godot-debugging",
+          "installed_path": ".agents/skills/godot-debugging"
+        },
+        {
+          "name": "godot-grill",
+          "source_path": "skills/godot-grill",
+          "installed_path": ".agents/skills/godot-grill"
+        },
+        {
+          "name": "godot-mentor",
+          "source_path": "skills/godot-mentor",
+          "installed_path": ".agents/skills/godot-mentor"
+        },
+        {
+          "name": "godot-optimization",
+          "source_path": "skills/godot-optimization",
+          "installed_path": ".agents/skills/godot-optimization"
+        },
+        {
+          "name": "godot-project-setup",
+          "source_path": "skills/godot-project-setup",
+          "installed_path": ".agents/skills/godot-project-setup"
+        },
+        {
+          "name": "godot-testing",
+          "source_path": "skills/godot-testing",
+          "installed_path": ".agents/skills/godot-testing"
+        },
+        {
+          "name": "godot-ui",
+          "source_path": "skills/godot-ui",
+          "installed_path": ".agents/skills/godot-ui"
+        },
+        {
+          "name": "hud-system",
+          "source_path": "skills/hud-system",
+          "installed_path": ".agents/skills/hud-system"
+        },
+        {
+          "name": "input-handling",
+          "source_path": "skills/input-handling",
+          "installed_path": ".agents/skills/input-handling"
+        },
+        {
+          "name": "inventory-system",
+          "source_path": "skills/inventory-system",
+          "installed_path": ".agents/skills/inventory-system"
+        },
+        {
+          "name": "limboai",
+          "source_path": "skills/limboai",
+          "installed_path": ".agents/skills/limboai"
+        },
+        {
+          "name": "localization",
+          "source_path": "skills/localization",
+          "installed_path": ".agents/skills/localization"
+        },
+        {
+          "name": "math-essentials",
+          "source_path": "skills/math-essentials",
+          "installed_path": ".agents/skills/math-essentials"
+        },
+        {
+          "name": "mobile-development",
+          "source_path": "skills/mobile-development",
+          "installed_path": ".agents/skills/mobile-development"
+        },
+        {
+          "name": "multiplayer-basics",
+          "source_path": "skills/multiplayer-basics",
+          "installed_path": ".agents/skills/multiplayer-basics"
+        },
+        {
+          "name": "multiplayer-sync",
+          "source_path": "skills/multiplayer-sync",
+          "installed_path": ".agents/skills/multiplayer-sync"
+        },
+        {
+          "name": "multithreading",
+          "source_path": "skills/multithreading",
+          "installed_path": ".agents/skills/multithreading"
+        },
+        {
+          "name": "particles-vfx",
+          "source_path": "skills/particles-vfx",
+          "installed_path": ".agents/skills/particles-vfx"
+        },
+        {
+          "name": "phantom-camera",
+          "source_path": "skills/phantom-camera",
+          "installed_path": ".agents/skills/phantom-camera"
+        },
+        {
+          "name": "physics-system",
+          "source_path": "skills/physics-system",
+          "installed_path": ".agents/skills/physics-system"
+        },
+        {
+          "name": "player-controller",
+          "source_path": "skills/player-controller",
+          "installed_path": ".agents/skills/player-controller"
+        },
+        {
+          "name": "popochiu",
+          "source_path": "skills/popochiu",
+          "installed_path": ".agents/skills/popochiu"
+        },
+        {
+          "name": "procedural-generation",
+          "source_path": "skills/procedural-generation",
+          "installed_path": ".agents/skills/procedural-generation"
+        },
+        {
+          "name": "rendering-pipeline",
+          "source_path": "skills/rendering-pipeline",
+          "installed_path": ".agents/skills/rendering-pipeline"
+        },
+        {
+          "name": "resource-pattern",
+          "source_path": "skills/resource-pattern",
+          "installed_path": ".agents/skills/resource-pattern"
+        },
+        {
+          "name": "responsive-ui",
+          "source_path": "skills/responsive-ui",
+          "installed_path": ".agents/skills/responsive-ui"
+        },
+        {
+          "name": "save-load",
+          "source_path": "skills/save-load",
+          "installed_path": ".agents/skills/save-load"
+        },
+        {
+          "name": "scene-organization",
+          "source_path": "skills/scene-organization",
+          "installed_path": ".agents/skills/scene-organization"
+        },
+        {
+          "name": "shader-basics",
+          "source_path": "skills/shader-basics",
+          "installed_path": ".agents/skills/shader-basics"
+        },
+        {
+          "name": "state-machine",
+          "source_path": "skills/state-machine",
+          "installed_path": ".agents/skills/state-machine"
+        },
+        {
+          "name": "tween-animation",
+          "source_path": "skills/tween-animation",
+          "installed_path": ".agents/skills/tween-animation"
+        },
+        {
+          "name": "using-godot-prompter",
+          "source_path": "skills/using-godot-prompter",
+          "installed_path": ".agents/skills/using-godot-prompter"
+        },
+        {
+          "name": "web-export",
+          "source_path": "skills/web-export",
+          "installed_path": ".agents/skills/web-export"
+        },
+        {
+          "name": "web-services",
+          "source_path": "skills/web-services",
+          "installed_path": ".agents/skills/web-services"
+        },
+        {
+          "name": "xr-development",
+          "source_path": "skills/xr-development",
+          "installed_path": ".agents/skills/xr-development"
+        }
+      ]
+    }
+  ]
+}
