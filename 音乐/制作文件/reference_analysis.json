@@ -1,0 +1,247 @@
+[
+  {
+    "start_s": 0,
+    "rms_db": -14.4,
+    "bpm_candidate": 89.1,
+    "centroid_hz": 191,
+    "bass_fraction": 0.73
+  },
+  {
+    "start_s": 30,
+    "rms_db": -12.7,
+    "bpm_candidate": 89.1,
+    "centroid_hz": 117,
+    "bass_fraction": 0.91
+  },
+  {
+    "start_s": 60,
+    "rms_db": -13.2,
+    "bpm_candidate": 89.1,
+    "centroid_hz": 169,
+    "bass_fraction": 0.74
+  },
+  {
+    "start_s": 90,
+    "rms_db": -12.1,
+    "bpm_candidate": 136.0,
+    "centroid_hz": 151,
+    "bass_fraction": 0.8
+  },
+  {
+    "start_s": 120,
+    "rms_db": -14.6,
+    "bpm_candidate": 71.8,
+    "centroid_hz": 517,
+    "bass_fraction": 0.52
+  },
+  {
+    "start_s": 150,
+    "rms_db": -10.7,
+    "bpm_candidate": 71.8,
+    "centroid_hz": 351,
+    "bass_fraction": 0.41
+  },
+  {
+    "start_s": 180,
+    "rms_db": -10.8,
+    "bpm_candidate": 71.8,
+    "centroid_hz": 449,
+    "bass_fraction": 0.34
+  },
+  {
+    "start_s": 210,
+    "rms_db": -12.4,
+    "bpm_candidate": 71.8,
+    "centroid_hz": 342,
+    "bass_fraction": 0.52
+  },
+  {
+    "start_s": 240,
+    "rms_db": -10.5,
+    "bpm_candidate": 71.8,
+    "centroid_hz": 323,
+    "bass_fraction": 0.47
+  },
+  {
+    "start_s": 270,
+    "rms_db": -7.4,
+    "bpm_candidate": 71.8,
+    "centroid_hz": 155,
+    "bass_fraction": 0.89
+  },
+  {
+    "start_s": 300,
+    "rms_db": -8.6,
+    "bpm_candidate": 143.6,
+    "centroid_hz": 138,
+    "bass_fraction": 0.9
+  },
+  {
+    "start_s": 330,
+    "rms_db": -10.1,
+    "bpm_candidate": 143.6,
+    "centroid_hz": 230,
+    "bass_fraction": 0.84
+  },
+  {
+    "start_s": 360,
+    "rms_db": -8.0,
+    "bpm_candidate": 71.8,
+    "centroid_hz": 205,
+    "bass_fraction": 0.87
+  },
+  {
+    "start_s": 390,
+    "rms_db": -13.0,
+    "bpm_candidate": 143.6,
+    "centroid_hz": 205,
+    "bass_fraction": 0.88
+  },
+  {
+    "start_s": 420,
+    "rms_db": -12.0,
+    "bpm_candidate": 172.3,
+    "centroid_hz": 357,
+    "bass_fraction": 0.74
+  },
+  {
+    "start_s": 450,
+    "rms_db": -8.4,
+    "bpm_candidate": 129.2,
+    "centroid_hz": 345,
+    "bass_fraction": 0.78
+  },
+  {
+    "start_s": 480,
+    "rms_db": -7.9,
+    "bpm_candidate": 129.2,
+    "centroid_hz": 288,
+    "bass_fraction": 0.77
+  },
+  {
+    "start_s": 510,
+    "rms_db": -13.9,
+    "bpm_candidate": 129.2,
+    "centroid_hz": 829,
+    "bass_fraction": 0.34
+  },
+  {
+    "start_s": 540,
+    "rms_db": -7.0,
+    "bpm_candidate": 129.2,
+    "centroid_hz": 249,
+    "bass_fraction": 0.81
+  },
+  {
+    "start_s": 570,
+    "rms_db": -7.3,
+    "bpm_candidate": 129.2,
+    "centroid_hz": 163,
+    "bass_fraction": 0.86
+  },
+  {
+    "start_s": 600,
+    "rms_db": -9.6,
+    "bpm_candidate": 129.2,
+    "centroid_hz": 347,
+    "bass_fraction": 0.7
+  },
+  {
+    "start_s": 630,
+    "rms_db": -43.7,
+    "bpm_candidate": 117.5,
+    "centroid_hz": 2488,
+    "bass_fraction": 0.05
+  },
+  {
+    "start_s": 660,
+    "rms_db": -10.7,
+    "bpm_candidate": 123.0,
+    "centroid_hz": 73,
+    "bass_fraction": 0.96
+  },
+  {
+    "start_s": 690,
+    "rms_db": -10.3,
+    "bpm_candidate": 129.2,
+    "centroid_hz": 75,
+    "bass_fraction": 0.95
+  },
+  {
+    "start_s": 720,
+    "rms_db": -15.0,
+    "bpm_candidate": 143.6,
+    "centroid_hz": 132,
+    "bass_fraction": 0.85
+  },
+  {
+    "start_s": 750,
+    "rms_db": -11.8,
+    "bpm_candidate": 123.0,
+    "centroid_hz": 84,
+    "bass_fraction": 0.94
+  },
+  {
+    "start_s": 780,
+    "rms_db": -12.9,
+    "bpm_candidate": 172.3,
+    "centroid_hz": 79,
+    "bass_fraction": 0.96
+  },
+  {
+    "start_s": 810,
+    "rms_db": -30.2,
+    "bpm_candidate": 184.6,
+    "centroid_hz": 582,
+    "bass_fraction": 0.13
+  },
+  {
+    "start_s": 840,
+    "rms_db": -30.1,
+    "bpm_candidate": 172.3,
+    "centroid_hz": 609,
+    "bass_fraction": 0.11
+  },
+  {
+    "start_s": 870,
+    "rms_db": -62.4,
+    "bpm_candidate": 184.6,
+    "centroid_hz": 445,
+    "bass_fraction": 0.06
+  },
+  {
+    "start_s": 900,
+    "rms_db": -14.7,
+    "bpm_candidate": 184.6,
+    "centroid_hz": 232,
+    "bass_fraction": 0.69
+  },
+  {
+    "start_s": 930,
+    "rms_db": -13.9,
+    "bpm_candidate": 184.6,
+    "centroid_hz": 162,
+    "bass_fraction": 0.81
+  },
+  {
+    "start_s": 960,
+    "rms_db": -14.7,
+    "bpm_candidate": 95.7,
+    "centroid_hz": 123,
+    "bass_fraction": 0.94
+  },
+  {
+    "start_s": 990,
+    "rms_db": -15.1,
+    "bpm_candidate": 184.6,
+    "centroid_hz": 274,
+    "bass_fraction": 0.85
+  },
+  {
+    "start_s": 1020,
+    "rms_db": -14.3,
+    "bpm_candidate": 184.6,
+    "centroid_hz": 290,
+    "bass_fraction": 0.83
+  }
+]

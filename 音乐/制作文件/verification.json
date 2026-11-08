@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "name": "地下赌局_锈蚀心跳_变奏试听.mp3",
+      "bytes": 4051328,
+      "duration_seconds": 126.5455,
+      "codec": "mp3float",
+      "sample_rate": 48000,
+      "channels": 2,
+      "decoded_samples": 6074182,
+      "finite": true,
+      "clipped_sample_count": 0,
+      "sample_peak_dbfs": -1.465,
+      "dc_offset": [
+        -4.027592979127803e-07,
+        4.852603524341248e-06
+      ],
+      "start_20ms_rms_dbfs": -92.7,
+      "end_20ms_rms_dbfs": -87.3,
+      "stereo_correlation": 0.993
+    },
+    {
+      "name": "地下赌局_锈蚀心跳_变奏试听.wav",
+      "bytes": 36445194,
+      "duration_seconds": 126.5455,
+      "codec": "pcm_s24le",
+      "sample_rate": 48000,
+      "channels": 2,
+      "decoded_samples": 6074182,
+      "finite": true,
+      "clipped_sample_count": 0,
+      "sample_peak_dbfs": -1.473,
+      "dc_offset": [
+        1.7616166587686166e-06,
+        2.0284069250919856e-06
+      ],
+      "start_20ms_rms_dbfs": -92.7,
+      "end_20ms_rms_dbfs": -87.3,
+      "stereo_correlation": 0.993
+    }
+  ],
+  "independent_ebur128_summary": "Summary:\n\n  Integrated loudness:\n    I:         -16.1 LUFS\n    Threshold: -26.6 LUFS\n\n  Loudness range:\n    LRA:         9.2 LU\n    Threshold: -36.5 LUFS\n    LRA low:   -22.9 LUFS\n    LRA high:  -13.6 LUFS\n\n  True peak:\n    Peak:       -1.4 dBFS\n[out#0/null @ 00000183b5509e40] video:0KiB audio:23727KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown\nsize=N/A time=00:02:06.54 bitrate=N/A speed= 120x    \n",
+  "listening_review": "Not performed: this environment cannot directly audition audio."
+}

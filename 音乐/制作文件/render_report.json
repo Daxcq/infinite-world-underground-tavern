@@ -1,0 +1,62 @@
+{
+  "bpm": 110,
+  "duration_seconds": 126.54545454545453,
+  "sample_rate": 48000,
+  "wav_bits": 24,
+  "reference": "D:\\staacher\\游戏《恶魔轮盘⧸Buckshot Roulette》原声带（OST）.m4a",
+  "reference_fragments_start_seconds": [
+    41,
+    159,
+    329,
+    471
+  ],
+  "mastering": {
+    "input_i": "-19.45",
+    "input_tp": "-5.28",
+    "input_lra": "12.50",
+    "input_thresh": "-30.25",
+    "output_i": "-16.12",
+    "output_tp": "-1.50",
+    "output_lra": "9.10",
+    "output_thresh": "-26.63",
+    "normalization_type": "dynamic",
+    "target_offset": "0.12"
+  },
+  "sections": [
+    {
+      "start_s": 0.0,
+      "end_s": 8.727,
+      "description": "进入地下空间"
+    },
+    {
+      "start_s": 8.727,
+      "end_s": 26.182,
+      "description": "落座与试探"
+    },
+    {
+      "start_s": 26.182,
+      "end_s": 52.364,
+      "description": "赌局主节奏"
+    },
+    {
+      "start_s": 52.364,
+      "end_s": 61.091,
+      "description": "抽空与等待"
+    },
+    {
+      "start_s": 61.091,
+      "end_s": 87.273,
+      "description": "变奏再入"
+    },
+    {
+      "start_s": 87.273,
+      "end_s": 104.727,
+      "description": "筹码加压"
+    },
+    {
+      "start_s": 104.727,
+      "end_s": 122.182,
+      "description": "抽离与悬置"
+    }
+  ]
+}
